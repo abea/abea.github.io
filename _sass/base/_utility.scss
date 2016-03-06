@@ -1,5 +1,4 @@
 // Mix-ins
-
 %padding-small {
   padding: $padding-x-small $padding-x-small * 2;
 
@@ -31,22 +30,19 @@
 // Buttons
 .button {
   display: inline-block;
-
   margin: 1em 0;
   padding: .5em .75em;
-
   border: 1px solid;
   border-radius: .3em;
 }
 
 a.button:hover {
   border: $linked-border;
-
   background: $link-color;
-
   color: $background-color;
   text-decoration: none;
 }
+
 // States
 .disabled {
   opacity: .7;
