@@ -20,22 +20,19 @@
   "vendor-prefix-align": true,
 	"sort-order": [
 		[
-			"$variable"
-		],
-		[
+			"$variable",
+      
 			"@import",
       "@extend",
-      "@include"
-    ],
-    [
+      "@include",
+      
       "display",
 			"position",
 			"top",
 			"right",
 			"bottom",
-			"left"
-    ],
-    [
+			"left",
+      
       "flex",
 			"flex-basis",
 			"flex-direction",
@@ -89,9 +86,8 @@
 			"transition-delay",
 			"transition-duration",
 			"transition-property",
-			"transition-timing-function"
-    ],
-    [
+			"transition-timing-function",
+      
       "border",
 			"border-top",
 			"border-right",
@@ -125,18 +121,16 @@
 			"outline-color",
 			"outline-offset",
 			"outline-style",
-			"outline-width"
-    ],
-    [
+			"outline-width",
+      
       "background",
 			"background-attachment",
 			"background-color",
 			"background-image",
 			"background-repeat",
 			"background-position",
-			"background-size"
-    ],
-    [
+			"background-size",
+      
       "color",
 			"font",
 			"font-family",
@@ -157,9 +151,8 @@
 			"text-transform",
 			"text-wrap",
 			"white-space",
-			"word-spacing"
-    ],
-    [
+			"word-spacing",
+      
 			"border-collapse",
 			"border-spacing",
 			"box-shadow",
