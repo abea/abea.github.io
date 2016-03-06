@@ -1,29 +1,30 @@
 .site-header {
-  @extend %padding-small;
-  background: $brand-color;
-  border-top:5px solid $header-desc-background-color;
   display: inline-block;
   width: 100%;
+  border-top: 5px solid $header-desc-background-color;
+  background: $brand-color;
+  @extend %padding-small;
 
   a {
     color: $header-link-color;
   }
+
   a:hover {
     color: $link-color;
   }
 
   .avatar {
-    height: 2em;
     width: 2em;
-    float: left;
+    height: 2em;
     margin-top: -3px;
-    border-radius: 0.2em;
     margin-right: 1em;
+    float: left;
+    border-radius: .2em;
   }
 
   .site-title {
-    font-weight: bold;
     font-size: 1em;
+    font-weight: bold;
     line-height: 1.5;
   }
 
@@ -31,33 +32,33 @@
     ul {
       margin: 0;
       padding: 0;
-      list-style: none;
-      line-height: 1.5;
       float: right;
+      line-height: 1.5;
+      list-style: none;
       text-align: right;
     }
+
     li {
       display: inline;
-      float: left;
       margin-left: 1.4rem;
+      float: left;
     }
+
     @media (max-width: 1100px) {
       ul {
         display: inline-block;
-        float: left;
-        padding-top: $padding-small;
-        text-align: left;
         width: 100%;
+        padding-top: $padding-small;
+        float: left;
+        text-align: left;
       }
     }
   }
+
   .call-out {
     h2 {
+      margin: 0 0 2rem;
       font-size: 1.7rem;
-      margin: 0 0 2rem 0;
     }
-//    a {
-//      color: $header-link-color;
-//    }
   }
 }

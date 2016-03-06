@@ -3,69 +3,68 @@
   display: inline-block;
   width: 100%;
   padding: 3% 0;
+  background-position: center center;
   background-size: cover;
+  color: $text-color;
   font-size: 1.2em;
   text-align: center;
-  color: $text-color;
-  background-position: center center;
-  
+
   .site-title {
     display: block;
     width: 100%;
-    
+
     a {
+      color: $header-link-color;
       font-size: 2.2em;
       text-transform: lowercase;
-      text-transform: lowercase;
-      color: $header-link-color;
     }
   }
 
   ul {
     li {
-      list-style-type: none;
       display: inline-block;
       margin: 0 .5em;
+
+      list-style-type: none;
     }
   }
 
   h1 {
-    margin-bottom: .25em;
     display: block;
+    margin-bottom: .25em;
   }
 
   .divider {
+    display: block;
     width: 80px;
     height: 3px;
-    background-color: $border-color;
-    display: block;
     margin: .5em auto;
+    background-color: $border-color;
   }
-  
+
   p:last-child {
     margin-bottom: 0;
   }
 }
-
 // Post listing
 .posts {
   @extend %padding-header;
-  
+
   .post-header {
     text-align: center;
   }
 
   .post-teaser {
+    display: block;
     width: 100%;
-    
+    margin: 0 2% 1em;
+    float: left;
+    background-size: $feature-image-size;
+
     @media (min-width:768px) {
       width: 46%;
     }
-    margin: 0 2% 1em;
-    display: block;
-    background-size: $feature-image-size;
-    float: left;
-    
+
     &:first-child {
       padding-top: 0;
     }
@@ -83,44 +82,44 @@
 // Work listing
 .work {
   @extend %padding-regular;
+  display: block;
+  width: 100%;
+  float: left;
   background-size: $feature-image-size;
   text-align: center;
-  display: block;
-  float: left;
-  width: 100%;
 }
 
 .project {
   display: block;
-  float: left;
-  clear: both;
   width: 100%;
   margin: 0 auto 2rem;
-  
+  float: left;
+  clear: both;
+
   .project-thumb {
-    width: 99%;
-    float: left;
-    margin-bottom: 0;
     display: inline-block;
-    
+    width: 99%;
+    margin-bottom: 0;
+    float: left;
+
     @media (min-width: 768px) {
       width: 50%;
     }
 
     img {
       display: block;
-      text-align: center;
       margin: 0 auto 1%;
+      text-align: center;
     }
   }
 
   .project-description {
+    display: inline-block;
     width: 99%;
+    margin-bottom: 0;
     float: left;
     text-align: center;
-    margin-bottom: 0;
-    display: inline-block;
-    
+
     @media (min-width: 768px) {
       width: 45%;
       padding-left: 3%;
@@ -128,8 +127,8 @@
 
     a {
       strong {
-        font-size: 1.4em;
         margin-bottom: .5em;
+        font-size: 1.4em;
         font-weight: 600;
       }
     }
@@ -143,15 +142,14 @@
     margin-top: 1em;
   }
 }
-
 // Pagination
 .pagination {
   padding: $padding-small $padding-large 0;
   text-align: center;
-  
+
   .button {
     margin: 0 1.5em;
-    
+
     i {
       vertical-align: middle;
     }
