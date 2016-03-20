@@ -68,7 +68,6 @@ collections:
 # BUILD SETTINGS
 markdown: kramdown
 
-highlighter: pygments
 sass:
   sass_dir: _sass
   style: :compressed
