@@ -186,3 +186,39 @@ p {
     border: 1px $border-color solid;
   }
 }
+
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em;
+  padding: .5em;
+  border: $form-border;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  margin: 1em 0;
+  padding: .5em .75em;
+  border: $linked-border;
+  border-radius: .3em;
+  background-color: $brand-color;
+  color: $background-color;
+
+  &:hover {
+    background: $link-color;
+  }
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em;
+  padding: .5em;
+  border: $form-border;
+  border-radius: 6px;
+  box-shadow: none;
+}

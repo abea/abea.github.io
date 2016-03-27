@@ -68,10 +68,6 @@
     &:first-child {
       padding-top: 0;
     }
-
-    p a:hover {
-      @extend %link-hover;
-    }
   }
 
   .excerpt {
@@ -123,10 +119,6 @@
     @media (min-width: 768px) {
       width: 45%;
       padding-left: 3%;
-    }
-
-    p a:hover {
-      @extend %link-hover;
     }
   }
 
