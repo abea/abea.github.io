@@ -1,9 +1,9 @@
 .site-header {
+  @extend %padding-small;
   display: inline-block;
   width: 100%;
   border-top: 5px solid $header-desc-background-color;
   background: $brand-color;
-  @extend %padding-small;
 
   a {
     color: $header-link-color;

@@ -10,11 +10,8 @@ html {
 }
 
 // Typography
+::-moz-selection,
 ::selection {
-  background: $selection-color;
-}
-
-::-moz-selection {
   background: $selection-color;
 }
 
@@ -22,7 +19,6 @@ body {
   color: $text-color;
   font-family: $font-family-main;
   font-size: $font-size;
-
   word-wrap: break-word;
 }
 
@@ -43,20 +39,20 @@ h6 {
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: $font-size-h1;
   line-height: 1.1;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: $font-size-h2;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: $font-size-h3;
 }
 
 h4 {
-  font-size: 1.15em;
+  font-size: $font-size-h3;
 }
 
 blockquote {
@@ -145,15 +141,16 @@ hr {
 
   border: 0;
   border-top: 1px solid $border-color;
-  border-bottom: 1px solid #fff;
+  // border-bottom: 1px solid #fff; // @TODO Delete if unused
 }
 
 a {
   color: $link-color;
   text-decoration: none;
 
-  :hover {
-    //    @extend %link-hover;
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
   }
 }
 
@@ -188,4 +185,40 @@ p {
 
     border: 1px $border-color solid;
   }
+}
+
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em;
+  padding: .5em;
+  border: $form-border;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  margin: 1em 0;
+  padding: .5em .75em;
+  border: $linked-border;
+  border-radius: .3em;
+  background-color: $brand-color;
+  color: $background-color;
+
+  &:hover {
+    background: $link-color;
+  }
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em;
+  padding: .5em;
+  border: $form-border;
+  border-radius: 6px;
+  box-shadow: none;
 }
