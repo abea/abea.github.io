@@ -1,8 +1,10 @@
 ---
 ---
+
 // External
-@import "external/reset";
-@import "external/solarized-dark";
+@import "vendor/reset";
+@import "vendor/solarized-dark";
+@import "vendor/bourbon/bourbon";
 
 // Variables and Mixins
 @import "variables";
