@@ -7,7 +7,7 @@ short-description: Designed and built an updated Wordpress theme for trail runni
 ---
 
 {:.center}
-![]({{ site.baseurl }}/{{page.thumbnail-path}})
+![Screenshot of the new Rock Creek Runner website]({{ site.baseurl }}/{{page.thumbnail-path}})
 
 ## Explanation
 A few years ago, Doug Hay made the bold move to fully pursue his passion for sharing the joys of trail running. He had been blogging about the sport and producing a few educational products for years. Now that he was ready to make it his full-time pursuit, rockcreekrunner.com needed an upgrade.
