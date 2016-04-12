@@ -2,6 +2,7 @@
 layout: page
 title: Resume
 permalink: /resume/
+hide: true
 ---
 
 # Alexander Bea
