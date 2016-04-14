@@ -8,7 +8,7 @@ tags:
 ---
 
 
-I love [Sass](http://sass-lang.com/). My feelings on sass (lowercased) are more complicated, but that’s another story. Sass, the CSS preprocessor *, has a huge suite of built in tools to make theming easier: mixins, variables, functions. And extends.
+I love [Sass](http://sass-lang.com/). My feelings on sass (lowercased) are more complicated, but that’s another story. Sass, the CSS preprocessor \*, has a huge suite of built in tools to make theming easier: mixins, variables, functions. And extends.
 
 Extends are a great tool to let me write a rule once and reuse it many times. They’re written as something like:
 
@@ -58,6 +58,7 @@ Let’s say instead that I had a `.btn` class for button styling. It’s sprinkl
 We have special styles for when the button is in a wide form or in a signup form. Now let’s say I want to create a set of tabs ([example](http://www.zetaprints.com/help/wp-content/uploads/2009/03/tabs.jpg)) that I want to look similar to my button style. That’s easy! I’ll just extend the `.btn` class that defines its look.
 
 The Sass:
+
     .tab {
       @extend .btn;
     }
