@@ -1,16 +1,17 @@
-.site-header {
+.l-header {
   @extend %padding-small;
   display: inline-block;
   width: 100%;
   border-top: 5px solid $header-desc-background-color;
-  background: $brand-color;
+  background: $banner-bg;
 
   a {
-    color: $header-link-color;
-  }
+    color: $banner-link;
 
-  a:hover {
-    color: $link-color;
+    &:hover {
+      outline: 1px dotted currentColor;
+      color: $banner-link-hover;
+    }
   }
 
   .avatar {

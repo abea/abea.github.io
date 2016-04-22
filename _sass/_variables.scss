@@ -27,9 +27,13 @@ $selection-color: #d4d4d4; // visible when highlighting text
 $form-border-color: #cfcfcf;
 
 // Other colours
-$header-link-color: rgb(230, 230, 230);
 $linked-border: 1px solid $link-color;
 $form-border: 1px solid $form-border-color;
+
+// Banner colors
+$banner-bg: $brand-color;
+$banner-link: rgb(230, 230, 230);
+$banner-link-hover: lighten($banner-link, 30%);
 
 
 // Feature image for articles
