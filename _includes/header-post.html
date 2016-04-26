@@ -1,6 +1,6 @@
 <header class="l-header">
   <nav class="site-nav">
-    <ul>
+    <ul class="l-site-nav l-list-inline">
       {% for page in site.pages %}
       {% if page.title and page.hide != true %}
       <li>
@@ -13,7 +13,6 @@
     </ul>
   </nav>
 
-  {% if site.theme.header_text %}
   <div class="call-out" 
   style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
     <h1 class="site-title">
@@ -22,5 +21,4 @@
     <div class="divider"></div>
     <h1 class="title">{{ page.title }}</h1>
   </div>
-  {% endif %}
 </header>

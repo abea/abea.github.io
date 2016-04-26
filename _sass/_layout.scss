@@ -3,3 +3,22 @@
   flex-wrap: wrap;
   padding: 0;
 }
+
+.l-site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+
+  @media (min-width: 37.5em) {
+    justify-content: flex-end;
+  }
+}
+
+.l-list-inline {
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}

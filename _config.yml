@@ -10,14 +10,13 @@ theme:
 
   # Header and footer text
   header_text: >
-     <h2>Lord of the Internet, according to my in-laws</h2>
-     <p>Front end web developer in Ithaca, NY</p>
+     <h2>Front end web developer in Ithaca, NY</h2>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with code. And love.
 
   # Icons
-  rss: false
+  rss: true
   email_address: "alex@abcreations.co" # Full email address, e.g. "sam@example.com"
   behance:
   bitbucket:
@@ -31,7 +30,7 @@ theme:
   pinterest:
   reddit:
   soundcloud:
-  stack_exchange:  # Full URL
+  stack_exchange: "http://stackoverflow.com/users/888550/alexbea" # Full URL
   steam:
   tumblr:
   twitter: "alexbea"
@@ -45,7 +44,7 @@ theme:
 
   # Localization strings
   str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
+  str_rss_follow: "My RSS feed"
   str_email: "Email"
   str_next: "Next"
   str_prev: "Prev"

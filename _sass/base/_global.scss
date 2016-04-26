@@ -18,7 +18,7 @@ html {
 body {
   color: $text-color;
   font-family: $font-family-main;
-  font-size: $font-size;
+  font-size: $font-size-base;
   word-wrap: break-word;
 }
 
@@ -60,7 +60,7 @@ blockquote {
 
   border-left: 5px darken($link-color, 15%) solid;
 
-  background-color: lighten($brand-color, 40%);
+  background-color: lighten($color-primary, 40%);
 }
 
 blockquote p:last-child,
@@ -205,7 +205,7 @@ input[type="submit"] {
   padding: .5em .75em;
   border: $linked-border;
   border-radius: .3em;
-  background-color: $brand-color;
+  background-color: $color-primary;
   color: $background-color;
 
   &:hover {

@@ -1,6 +1,6 @@
 <header class="l-header">
   <nav class="site-nav">
-    <ul>
+    <ul class="l-site-nav l-list-inline">
       {% for page in site.pages %}
       {% if page.title and page.hide != true %}
       <li>
@@ -13,18 +13,18 @@
     </ul>
   </nav>
 
-	{% if site.theme.header_text %}
   <div class="call-out" 
   style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
   	<h1 class="site-title">
 			<a href="{{ site.baseurl }}/">{{ site.theme.title }}</a>
     </h1>
-    {{ site.theme.header_text }}
+    {% if site.theme.header_text %}
+      {{ site.theme.header_text }}
+    {% endif %}      
     <div class="divider"></div>
     <!-- Social icons from Font Awesome, if enabled -->
-    <ul>
-	  {% include icons.html %}
-	</ul>
+    <ul class="l-list-inline">
+  	  {% include icons.html %}
+  	</ul>
   </div>
-  {% endif %}
 </header>

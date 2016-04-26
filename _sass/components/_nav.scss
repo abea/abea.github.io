@@ -1,0 +1,15 @@
+.site-nav {
+  font-size: $font-size-small;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    padding: .5rem;
+  }
+}
