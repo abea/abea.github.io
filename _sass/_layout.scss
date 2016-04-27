@@ -4,21 +4,28 @@
   padding: 0;
 }
 
-.l-site-nav {
+.l-flex-spread {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  justify-content: space-between;
+}
 
-  @media (min-width: 37.5em) {
-    justify-content: flex-end;
-  }
+.l-inline-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .l-list-inline {
+  margin: 0;
   padding: 0;
   list-style: none;
 
   li {
     display: inline-block;
+
+    &:not(:first-of-type) {
+      margin-left: .5rem;
+    }
   }
 }

@@ -1,6 +1,7 @@
 <header class="l-header">
-  <nav class="site-nav">
-    <ul class="l-site-nav l-list-inline">
+  <nav class="site-nav l-flex-spread">
+    <a href="{{ site.baseurl }}/" class="h1">{{ site.theme.title }}</a>
+    <ul class="l-inline-menu l-list-inline">
       {% for page in site.pages %}
       {% if page.title and page.hide != true %}
       <li>
@@ -15,9 +16,6 @@
 
   <div class="call-out" 
   style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
-  	<h1 class="site-title">
-			<a href="{{ site.baseurl }}/">{{ site.theme.title }}</a>
-    </h1>
     {% if site.theme.header_text %}
       {{ site.theme.header_text }}
     {% endif %}      
