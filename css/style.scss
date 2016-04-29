@@ -6,11 +6,15 @@
 @import "vendor/solarized-dark";
 @import "vendor/bourbon/bourbon";
 
+// Utilities
+@import "utilities/mixins";
+
 // Variables and Mixins
 @import "variables";
 
 // Base
-@import "base/global";
+@import "base/base";
+@import "base/typography";
 @import "base/utility";
 
 // Posts

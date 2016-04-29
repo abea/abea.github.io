@@ -41,7 +41,7 @@ $text-color: $grey-dark;
 $text-light: rgba($text-color, .5);
 $link-color: $color-secondary;
 $link-color-hover: darken($link-color, 15%);
-$selection-color: #d4d4d4; // visible when highlighting text
+$selection-color: $color-light; // visible when highlighting text
 $form-border-color: #cfcfcf;
 
 // Other colours
