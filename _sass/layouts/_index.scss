@@ -61,10 +61,6 @@
       padding-top: 0;
     }
   }
-
-  .excerpt {
-    margin: .5rem 0;
-  }
 }
 
 // Work listing
@@ -113,25 +109,4 @@
       padding-left: 3%;
     }
   }
-
-  .excerpt {
-    margin-top: 1em;
-  }
-}
-// Pagination
-.pagination {
-  padding: $padding-small $padding-large 0;
-  text-align: center;
-
-  .button {
-    margin: 0 1.5em;
-
-    i {
-      vertical-align: middle;
-    }
-  }
-}
-
-.center {
-  text-align: center;
 }

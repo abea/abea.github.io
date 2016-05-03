@@ -13,7 +13,6 @@ I had been in the fortunate position of working for an organization I believed i
 
 I began doing that and have always remembered that advice with every job I’ve had. I’ve also been in a managerial position with a team of young professionals who I tried to pass that lesson along to as well. Of course, that doesn’t mean I’ve mastered the skill in any sense.
 
-{:.center}
 !["Saying no" as a skill on LinkedIn]({{ site.baseurl }}/{{page.feature-img}})
 
 Saying “no” is most definitely a skill. I think most of us like to help our co-workers. Especially at smaller organizations and start-ups, we have neither the comfort of institutional permanence nor any kind of excess of professional capacity. And when trying to grow, it can feel like taking on more (as opposed to focusing on “better”) is the right thing to do. That is pretty ripe breeding ground for overcommitment. I can think of a few times in the last six months when I’ve given into the knee-jerk reaction to say “yes.”

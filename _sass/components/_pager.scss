@@ -1,0 +1,13 @@
+// Pagination
+.pagination {
+  padding: $padding-small $padding-large 0;
+  text-align: center;
+
+  .button {
+    margin: 0 1.5em;
+
+    i {
+      vertical-align: middle;
+    }
+  }
+}
