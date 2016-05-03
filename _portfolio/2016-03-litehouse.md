@@ -6,7 +6,6 @@ short-description: Led theming for B-Corp packaged food company Litehouse Foods'
 
 ---
 
-{:.center}
 ![Screenshot of the new Litehouse Foods website]({{ site.baseurl }}/{{page.thumbnail-path}})
 
 Litehouse Foods is an employee-owned packaged food business out of Idaho. They not only have a large variety of products in several categories, but also a huge number of blog posts and recipes they have used for content marketing. The new website needed to show off their products, present all company information clearly and beautifully, and create as smooth a path as possible from their legacy content on a proprietary CMS to the new open-source Drupal CMS.

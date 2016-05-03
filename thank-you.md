@@ -8,12 +8,9 @@ hide: true
 
 Thanks for your email to connect about [work, the universe, and everything](https://www.youtube.com/watch?v=aboZctrHfK8). You can also keep in touch via the various internet media below.
 
-<div class="signature">
-<h2>Cheers, Alex</h2>
-</div>
+<p class=".h2">Cheers, Alex</p>
 
-<div class="call-out">
-  <ul>
-    {% include icons.html %}
-  </ul>
-</div>
+<ul class="l-list-inline header__social text-center">
+  {% include icons.html %}
+</ul>
+<!-- @TODO Replace header__social class. Not semantic. -->

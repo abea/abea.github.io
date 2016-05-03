@@ -32,13 +32,13 @@ ishome: 1
               {{ post.title }}
             </a>
           </h3>
-          <p class="meta">
+          <time class="meta" datetime="{{ post.date }}">
             {{ post.date | date: "%B %-d, %Y" }}
-          </p>
+          </time>
         </header>
-        <div class="excerpt">
+        <p>
           {{ post.excerpt | | strip_html | strip_newlines | truncate: 120 }}
-        </div>
+        </p>
         <a href="{{ post.url | prepend: site.baseurl }}">
           {{ site.theme.str_continue_reading }}
         </a>

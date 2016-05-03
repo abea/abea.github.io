@@ -6,7 +6,6 @@ short-description: Designed and built an updated Wordpress theme for trail runni
 
 ---
 
-{:.center}
 ![Screenshot of the new Rock Creek Runner website]({{ site.baseurl }}/{{page.thumbnail-path}})
 
 ## Explanation

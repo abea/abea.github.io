@@ -6,7 +6,6 @@ short-description: Designed and built a new Wordpress site for this Washington, 
 
 ---
 
-{:.center}
 ![Screenshot of the new PHBPA website.]({{ site.baseurl }}/img/projects/phbpa.jpg)
 
 ## Explanation
