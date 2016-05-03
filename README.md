@@ -1,4 +1,4 @@
-# Alex Bea's Portfolio
+# Alexander Bea's Portfolio
 
 ## Portfolio Kami Theme Variant
 Based on Type Theme. A free and open-source [Jekyll](http://jekyllrb.com) theme.

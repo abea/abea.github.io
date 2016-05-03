@@ -1,7 +1,7 @@
 {% if site.theme.rss %}
 <li>
 	<a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.theme.str_rss_follow }}">
-		<i class="fa fa-fw fa-rss"></i>
+		{% include social-icons/rss.svg %}
 	</a>
 </li>
 {% endif %}
@@ -9,7 +9,7 @@
 {% if site.theme.email_address %}
 <li>
 	<a href="mailto:{{ site.theme.email_address }}" title="{{ site.theme.str_email }}">
-		<i class="fa fa-fw fa-envelope"></i>
+		{% include social-icons/envelope.svg %}
 	</a>
 </li>
 {% endif %}
@@ -57,7 +57,7 @@
 {% if site.theme.github %}
 <li>
 	<a href="https://github.com/{{ site.theme.github }}" title="{{ site.theme.str_follow_on }} GitHub">
-		<i class="fa fa-fw fa-github"></i>
+		{% include social-icons/github.svg %}
 	</a>
 </li>
 {% endif %}
@@ -81,7 +81,7 @@
 {% if site.theme.linkedin %}
 <li>
 	<a href="{{ site.theme.linkedin }}" title="{{ site.theme.str_follow_on }} LinkedIn">
-		<i class="fa fa-fw fa-linkedin"></i>
+		{% include social-icons/linkedin.svg %}
 	</a>
 </li>
 {% endif %}
@@ -113,7 +113,7 @@
 {% if site.theme.stack_exchange %}
 <li>
 	<a href="{{ site.theme.stack_exchange }}" title="{{ site.theme.str_follow_on }} Stack Exchange">
-		<i class="fa fa-fw fa-stack-exchange"></i>
+		{% include social-icons/stack-exchange.svg %}
 	</a>
 </li>
 {% endif %}
@@ -137,7 +137,7 @@
 {% if site.theme.twitter %}
 <li>
 	<a href="https://twitter.com/{{ site.theme.twitter }}" title="{{ site.theme.str_follow_on }} Twitter">
-		<i class="fa fa-fw fa-twitter"></i>
+		{% include social-icons/twitter.svg %}
 	</a>
 </li>
 {% endif %}

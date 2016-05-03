@@ -1,12 +1,21 @@
+// Breakpoints
+// $bp-palm:
+$bp-hands: 30rem;
+// $bp-lap:
+// $bp-desk:
+// $bp-wall
+
 // Typography
 $font-family-main: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 $font-family-headings: 'Cabin Sketch', 'Arial Black', serif, cursive;
 $font-size: 1.125rem;
-$font-size-h1: 2.2rem;
+$font-size-h1: 2.5rem;
 $font-size-h2: 2rem;
 $font-size-h3: 1.5rem;
 $font-size-h4: 1.15rem;
 
+$font-size-base: 1rem;
+$font-size-small: 80%;
 
 // Padding
 $padding-large: 15%;
@@ -14,23 +23,35 @@ $padding-small: 5%;
 $padding-x-small: 1%;
 
 // Brand colours
-$brand-color: #fe5d26;
+$color-primary: #ff7100;
+$color-secondary: #009b95;
+$color-light: #ffa900;
+$color-deep: #fd0006;
+
+$black: #000;
+$grey-dark: lighten($black, 20%);
+$grey: lighten($black, 40%);
+$white: #fff;
+
 $background-color: #fff;
-$border-color: rgba(0, 0, 0, .1); // rgba recommended if using feature images
+$border-color: rgba($black, .1); // rgba recommended if using feature images
 
 // Typography colours
-$text-color: #4a4a4a;
+$text-color: $grey-dark;
 $text-light: rgba($text-color, .5);
-$link-color: #a62a01;
+$link-color: $color-secondary;
 $link-color-hover: darken($link-color, 15%);
-$selection-color: #d4d4d4; // visible when highlighting text
+$selection-color: $color-light; // visible when highlighting text
 $form-border-color: #cfcfcf;
 
 // Other colours
-$header-link-color: rgb(230, 230, 230);
 $linked-border: 1px solid $link-color;
 $form-border: 1px solid $form-border-color;
 
+// Banner colors
+$banner-bg: $color-primary;
+$banner-link: $white;
+$banner-link-hover: $link-color-hover;
 
 // Feature image for articles
 $feature-image-text-color: #fff;
@@ -38,5 +59,5 @@ $feature-image-text-light: rgba($feature-image-text-color, .7);
 $feature-image-size: cover; // options include "cover", "contain", "auto"
 
 // Header description box
-$header-desc-background-color: #0070bb;
+$header-desc-background-color: $color-light;
 $header-desc-text-color: #fff;

@@ -1,0 +1,34 @@
+.header {
+  @extend %padding-small;
+  padding: $gutter;
+  background: $banner-bg;
+
+  a {
+    color: $banner-link;
+
+    &:hover {
+      outline: 1px dotted currentColor;
+      color: $banner-link-hover;
+    }
+  }
+}
+
+.header__social {
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+  }
+}
+
+.header__tagline {
+  font-size: $font-size-h3;
+}
+
+.divider {
+  display: block;
+  width: 80px;
+  height: 3px;
+  margin: .5em auto;
+  background-color: $border-color;
+}
