@@ -5,8 +5,11 @@
 @import "vendor/reset";
 @import "vendor/solarized-dark";
 @import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat-helpers";
+@import "vendor/neat/neat";
 
 // Utilities
+@import "utilities/helpers";
 @import "utilities/mixins";
 
 // Variables and Mixins
@@ -22,11 +25,11 @@
 @import "layouts/index";
 
 // Partials
-@import "includes/header";
 @import "includes/embeds";
 @import "includes/footer";
 @import "layout";
 
 // Components
 @import "components/icons";
+@import "components/header";
 @import "components/nav";

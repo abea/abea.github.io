@@ -1,4 +1,4 @@
-<header class="l-header">
+<header class="header text-center">
   <nav class="nav--main">
     <ul class="l-list-inline text--right">
       {% for page in site.pages %}
@@ -12,17 +12,14 @@
       {% endfor %}
     </ul>
   </nav>
-  <a href="{{ site.baseurl }}/" class="h1">{{ site.theme.title }}</a>
-
-  <div class="call-out" 
-  style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
-    {% if site.theme.header_text %}
-      {{ site.theme.header_text }}
-    {% endif %}      
-    <div class="divider"></div>
-    <!-- Social icons from Font Awesome, if enabled -->
-    <ul class="l-list-inline">
-  	  {% include icons.html %}
-  	</ul>
-  </div>
+  <h1><a href="{{ site.baseurl }}/">{{ site.theme.title }}</a></h1>
+  
+  {% if site.theme.header_text %}
+    {{ site.theme.header_text }}
+  {% endif %}      
+  <div class="divider"></div>
+  <!-- Social icons from Font Awesome, if enabled -->
+  <ul class="l-list-inline header__social">
+	  {% include icons.html %}
+	</ul>
 </header>

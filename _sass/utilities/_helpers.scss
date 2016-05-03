@@ -1,0 +1,6 @@
+.text-center { text-align: center; }
+
+.block-center {
+  @include margin(null auto);
+  display: block;
+}

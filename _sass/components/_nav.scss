@@ -1,6 +1,10 @@
 .nav--main {
   font-size: $font-size-small;
 
+  @media (min-width: $bp-hands) {
+    font-size: inherit;
+  }
+
   ul {
     list-style: none;
   }
