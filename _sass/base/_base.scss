@@ -10,6 +10,7 @@ body {
   color: $text-color;
   font-family: $font-family-main;
   font-size: $font-size-base;
+  line-height: $line-height-base;
 }
 
 %heading {
@@ -55,14 +56,11 @@ footer p:last-child {
 
 table {
   width: 100%;
-
   table-layout: fixed;
-
   word-wrap: break-word;
 
   @media (max-width: 1100px) {
     display: inline-block;
-
     overflow-x: scroll;
   }
 }
@@ -70,9 +68,7 @@ table {
 td,
 th {
   padding: .5em 1em;
-
   border: 1px solid $border-color;
-
   text-align: left;
 }
 
@@ -86,17 +82,9 @@ samp {
   margin: 1em 0;
 }
 
-pre {
-  padding: 1em;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-left: 2em;
-}
+pre { padding: 1em; }
+dt { font-weight: bold; }
+dd { margin-left: 2em; }
 
 p,
 ol,
@@ -104,13 +92,10 @@ ul,
 dl,
 .math-display {
   margin-bottom: 1em;
-
-  line-height: 1.5;
 }
 
 .math-display {
   display: inline-block;
-
   width: 100%;
 }
 
@@ -123,10 +108,8 @@ ul {
 
 hr {
   margin: 1em 0;
-
   border: 0;
   border-top: 1px solid $border-color;
-  // border-bottom: 1px solid #fff; // @TODO Delete if unused
 }
 
 a {
@@ -185,9 +168,7 @@ input[type="submit"] {
   background-color: $color-primary;
   color: $background-color;
 
-  &:hover {
-    background: $link-color;
-  }
+  &:hover { background: $link-color; }
 }
 
 textarea {
@@ -200,6 +181,4 @@ textarea {
   box-shadow: none;
 }
 
-@include selection {
-  background: $selection-color;
-}
+@include selection { background: $selection-color; }
