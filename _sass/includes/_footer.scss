@@ -2,24 +2,6 @@
   @extend %padding-regular;
   display: inline-block;
   width: 100%;
-  color: lighten($text-color, 30%);
-  font-size: .9em;
+  color: $text-color;
   text-align: center;
-
-  ul {
-    margin: 0 0 1em;
-    padding: 0;
-    list-style-type: none;
-
-    li {
-      display: inline-block;
-      list-style-type: none;
-
-      a {
-        margin: 0 .25em 2em;
-        color: $header-desc-background-color;
-        font-size: 2em;
-      }
-    }
-  }
 }
