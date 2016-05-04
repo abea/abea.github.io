@@ -25,24 +25,22 @@ $padding-x-small: 1%;
 // Brand colours
 $color-primary: #ff7100;
 $color-secondary: #009b95;
-$color-light: #ffa900;
-$color-deep: #fd0006;
 
 $black: #000;
-$grey-dark: lighten($black, 20%);
-$grey: lighten($black, 40%);
+$grey-dark: mix($color-primary, lighten($black, 10%), 5%);
+$grey-light: mix($color-primary, lighten($black, 80%), 8%);
 $white: #fff;
 
 $background-color: #fff;
-$border-color: rgba($black, .1); // rgba recommended if using feature images
+$border-color: rgba($grey-dark, .25); // rgba recommended if using feature images
 
 // Typography colours
 $text-color: $grey-dark;
-$text-light: rgba($text-color, .5);
+$text-light: lighten($text-color, 10%);
 $link-color: $color-secondary;
 $link-color-hover: darken($link-color, 15%);
-$selection-color: $color-light; // visible when highlighting text
-$form-border-color: #cfcfcf;
+$selection-color: $color-primary; // visible when highlighting text
+$form-border-color: $grey-light;
 
 // Other colours
 $linked-border: 1px solid $link-color;
@@ -54,10 +52,6 @@ $banner-link: $white;
 $banner-link-hover: $link-color-hover;
 
 // Feature image for articles
-$feature-image-text-color: #fff;
-$feature-image-text-light: rgba($feature-image-text-color, .7);
+$feature-image-text-color: $white;
+$feature-image-text-light: $grey-light;
 $feature-image-size: cover; // options include "cover", "contain", "auto"
-
-// Header description box
-$header-desc-background-color: $color-light;
-$header-desc-text-color: #fff;
