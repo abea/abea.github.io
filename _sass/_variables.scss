@@ -25,8 +25,9 @@ $padding-small: 5%;
 $padding-x-small: 1%;
 
 // Brand colours
-$color-primary: #ff7100;
-$color-secondary: #009b95;
+// http://paletton.com/palette.php?uid=60A0u0kw0w0jvDaoOy4y4oODajv
+$color-primary: #ea7f00;
+$color-secondary: complement($color-primary);
 
 $black: #000;
 $grey-dark: mix($color-primary, lighten($black, 10%), 5%);
@@ -39,7 +40,7 @@ $border-color: rgba($grey-dark, .25); // rgba recommended if using feature image
 // Typography colours
 $text-color: $grey-dark;
 $text-light: lighten($text-color, 10%);
-$link-color: $color-secondary;
+$link-color: darken($color-secondary, 7%);
 $link-color-hover: darken($link-color, 15%);
 $selection-color: $color-primary; // visible when highlighting text
 $form-border-color: $grey-light;
