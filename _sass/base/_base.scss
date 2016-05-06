@@ -114,6 +114,7 @@ hr {
 
 a {
   color: $link-color;
+  text-decoration-style: dashed;
 
   @include haf {
     color: $link-color-hover;
