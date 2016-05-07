@@ -11,7 +11,7 @@ My favorite thing about web developer is the problem solving. As a kid who did l
 
 For the uninitiated, my current definition of code refactoring is when you make an existing codebase more efficient, more understandable, more future-proof, or otherwise more better. Or [as wikipedia puts it](https://en.wikipedia.org/wiki/Code_refactoring):
 
-> Code refactoring is the process of restructuring existing computer code —- changing the factoring —- without changing its external behavior.
+> Code refactoring is the process of restructuring existing computer code--changing the factoring--without changing its external behavior.
 
 So if your starting codebase is a pile of cooked spaghetti, your refactoring project might be to unravel it and lay each piece straight and in a nice row. Ruins the fun of pasta, but great for continued use of software.
 
