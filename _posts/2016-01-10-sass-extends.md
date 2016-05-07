@@ -2,8 +2,8 @@
 layout: post
 title: Safe Sass Extending or How I learned to stop worrying and love placeholder selectors
 tags:
-- Sass
-- Front end development
+- sass
+- front end development
 - web development
 ---
 
