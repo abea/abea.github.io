@@ -45,8 +45,9 @@ h6 { @extend %heading; }
 
 blockquote {
   padding: 1em;
-  border-left: 5px darken($link-color, 15%) solid;
-  background-color: lighten($color-primary, 40%);
+  border-left: 5px $color-secondary solid;
+  background-color: lighten($color-secondary, 40%);
+  font-size: $font-size-h4;
 }
 
 blockquote p:last-child,
