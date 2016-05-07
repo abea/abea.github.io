@@ -12,74 +12,84 @@ I love [Sass](http://sass-lang.com/). My feelings on sass (lowercased) are more 
 
 Extends are a great tool to let me write a rule once and reuse it many times. They’re written as something like:
 
-    %dark-blue-bg {
-      background-color: darkblue;
-    }
+```scss
+%dark-blue-bg {
+  background-color: darkblue;
+}
 
-    .blue-box {
-      @extend %dark-blue-bg;
-    }
+.blue-box {
+  @extend %dark-blue-bg;
+}
 
-    .another-blue-box {
-    	@extend %dark-blue-bg;
-    	border-width: 1px;
-    }
+.another-blue-box {
+	@extend %dark-blue-bg;
+	border-width: 1px;
+}
+```
 
 Nothing too crazy. And it’s worth noting that the first rule will rarely be directly next to places where its being extended in this example.
 
 This all compiles to:
 
-    .blue-box,
-    .another-blue-box{
-      background-color: darkblue;
-    }
+```scss
+.blue-box,
+.another-blue-box{
+  background-color: darkblue;
+}
 
-    .another-blue-box {
-    	border-width: 1px;
-    }
+.another-blue-box {
+	border-width: 1px;
+}
+```
 
 One rule touching two selectors from one master rule and two separate rules extending it. Great! It’s great for when a common property or set of properties would be used repeatedly. Of course, that’s not the limit of `@extend`’s powers.
 
 Let’s say instead that I had a `.btn` class for button styling. It’s sprinkled throughout a Sass file for when the button component is nested within other selectors and whatnot.
 
-    .btn {
-      padding: 4px;
-      border: 2px $blue solid;
-    }
+```scss
+.btn {
+  padding: 4px;
+  border: 2px $blue solid;
+}
 
-    .form--wide .btn {
-      margin: 0 auto;
-    }
+.form--wide .btn {
+  margin: 0 auto;
+}
 
-    .signup .btn {
-      margin-top: 10px;
-    }
+.signup .btn {
+  margin-top: 10px;
+}
+```
 
 We have special styles for when the button is in a wide form or in a signup form. Now let’s say I want to create a set of tabs ([example](http://www.zetaprints.com/help/wp-content/uploads/2009/03/tabs.jpg)) that I want to look similar to my button style. That’s easy! I’ll just extend the `.btn` class that defines its look.
 
 The Sass:
 
-    .tab {
-      @extend .btn;
-    }
+```scss
+.tab {
+  @extend .btn;
+}
+```
 
 Compiled CSS:
 
-    .btn,
-    .tab {
-      padding: 4px;
-      border: 2px #000fff solid;
-    }
+```scss
+.btn,
+.tab {
+  padding: 4px;
+  border: 2px #000fff solid;
+}
 
-    .form--wide .btn,
-    .form--wide .tab {
-      margin: 0 auto;
-    }
+.form--wide .btn,
+.form--wide .tab {
+  margin: 0 auto;
+}
 
-    .signup .btn,
-    .signup .tab {
-      margin-top: 10px;
-    }
+.signup .btn,
+.signup .tab {
+  margin-top: 10px;
+}
+```
 
 Well, my `.tab` class matches `.btn`, but now I also have selectors for when my tab appears within a signup form or wide form. `@extend` not only inserts the new selector with the exact selector I’m extending, but also any other rule where the original selector appears.
 
@@ -105,23 +115,27 @@ There are a few solutions. One would be that we don’t overwrite `.btn` to set 
 
 Even better, I could instead write a placeholder and extend that in `.btn`, `.tab`, and wherever else I want.
 
-    %btn--design {
-      [BUTTON APPEARANCE STYLES]
-    }
+```scss
+%btn--design {
+  [BUTTON APPEARANCE STYLES]
+}
 
-    .btn {
-      @extend %btn--design;
-    }
+.btn {
+  @extend %btn--design;
+}
 
-    .tab {
-      @extend %btn--design;
-    }
+.tab {
+  @extend %btn--design;
+}
+```
 
 The placeholder only has rules for the look of a “button” and only appears once in my Sass, so it’s all good. I’d end up with something like this:
 
-    .btn, .tab {
-      [BUTTON APPEARANCE STYLES]
-    }
+```scss
+.btn, .tab {
+  [BUTTON APPEARANCE STYLES]
+}
+```
 
 Then all the position and relational rules are totally separate and not shared at all.
 
