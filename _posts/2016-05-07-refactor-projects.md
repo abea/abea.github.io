@@ -15,7 +15,7 @@ For the uninitiated, my current definition of code refactoring is when you make 
 
 So if your starting codebase is a pile of cooked spaghetti, your refactoring project might be to unravel it and lay each piece straight and in a nice row. Ruins the fun of pasta, but great for continued use of software.
 
-##Get inspired
+## Get inspired
 
 In the last week, a few events have coincided to make me think a bit more conceptually about this kind of project. First, I've recently started a refactoring project at work. It is taking a five year old website theme and making it responsive to browser size. That's on the border of "changing external behavior," but I think it fits since my job is mainly to let people use the existing functionality better regardless of their device.
 
@@ -25,12 +25,12 @@ Finally, at a recent Ithaca Web People meet up, a tech business consultant talke
 
 So refactoring is good and I'm a nerd. Moving on.
 
-##Deep Thought
+## Deep Thought
 Starting into my project, I want to fix all the things. [Scss-lint](https://github.com/brigade/scss-lint/) is my favorite code editor plugin, and making each of those little warnings disappear makes my heart a touch warmer each time. When I opened up this five year old theme that was created from a (good) Drupal theme starter kit, my linter just about had a panic attack. Spending days reordering CSS rules, renaming classes, and replacing ID selectors would have gotten old even for a lint-squasher like me. On top of that, we don't have time for all that.
 
 That led to my first question for myself.
 
-###How much time you got?
+### How much time you got?
 There are certainly time limitations when you're refactoring your own company's app or site code. When in client services, that is even more critical. Going over budget makes no one happy.
 
 One response to a short timeline is piling on more tech debt. I could a thirteenth CSS file to load after the existing stylesheets and use `!important` with reckless abandon. Or slightly better, I could leave _all_ of the bad practices in place and squeeze good responsive styles in between... using `!important` only half as often.
@@ -43,7 +43,7 @@ Talking to my colleague Jared at the IWP meet up, I mentioned hearing a podcast 
 
 The point is that with limited time, we have to make decisions about the most important things to clean up while not making things worse. Sort of like a medical triage with the "Do No Harm" motto painted on every wall. Of course, tied to the time we have is the actual scope of work we're hired to do.
 
-###What's the scope?
+### What's the scope?
 
 In my case, job number one is to make this older site theme responsive. We weren't really asked to make the site cleaner or simpler or anything like that. One way to look at extra code refactoring is that it's added benefit. Buy the car and get premium windshield wipers for free.
 
@@ -51,7 +51,7 @@ More importantly, I pull from Alan Willett's talk here. I could do zero code ref
 
 Still, it's not my job here to make this codebase spotless. As mentioned above, I could add days of work onto the project by tackling only the lower hanging fruit. In practice, this is essentially greater support for my approach described above. By cleaning primarily only what I come across while working on the specified scope and what is getting in the way of that work, I keep the original scope in focus. That results in better, if not perfect, and hopefully even finishing under budget.
 
-###Who carries the torch?
+### Who carries the torch?
 
 Finally, I've come across the question of who will be working with this code when I'm done. As is pretty clear, I do my styling almost exclusively in [the Sass CSS preprocessor language](http://sass-lang.com/). One of the first eye-opening moments of this project was when I realized that much of the Sass in the theme had been overwritten directly in the compiled CSS by the day-to-day site managers. These folks are not front end developers first, and CSS is what they know. That's completely understandable.
 
@@ -59,7 +59,7 @@ For those not immediately seeing the problem here, since Sass is compiled into t
 
 In this case, I checked in with the client site manager and cleared the file reorganization ideas I had. I also went file-by-file and made sure to bring the CSS-only styles into Sass before finally compiling and committing the code. Going forward, the site manager may continue to want to write CSS styles, which is their prerogative. The specifics here are less important than the general approach: As the hired developer, I need to document my workflow well, capture the existing overrides, and communicate well with the client to understand their needs going forward.
 
-##TLDR;
+## End thought
 Actually taking on a refactoring project has dulled my excitement for refactoring noticeably. It turns out that professional code refactoring isn't quite as direct as a middle school logic puzzle. Unlike my ongoing, and maybe never-ending, refactoring of my own site however, refactoring code professionally requires restraint, focus, and thought before diving in deep.
 
 Still, I do get a charge out of pushing a code commit with seriously net negative lines of code and making those little lint warnings disappear. As a wise Jared once said, the most important thing we can do often is delete code.
