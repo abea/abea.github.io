@@ -5,18 +5,19 @@
 
   a {
     color: $banner-link;
+    text-decoration-line: none;
 
     &:hover {
-      outline: 1px dotted currentColor;
-      color: $banner-link-hover;
+      outline: 1px solid currentColor;
     }
   }
 }
 
 .header__social {
   svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    padding: .25rem;
     fill: currentColor;
   }
 }

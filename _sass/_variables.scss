@@ -32,16 +32,17 @@ $color-secondary: complement($color-primary);
 $black: #000;
 $grey-dark: mix($color-primary, lighten($black, 10%), 5%);
 $grey-light: mix($color-primary, lighten($black, 80%), 8%);
+$grey-lighter: lighten($grey-light, 10%);
 $white: #fff;
 
 $background-color: #fff;
-$border-color: rgba($grey-dark, .25); // rgba recommended if using feature images
+$border-color: rgba($grey-dark, .25);
 
 // Typography colours
 $text-color: $grey-dark;
 $text-light: lighten($text-color, 10%);
 $link-color: darken($color-secondary, 7%);
-$link-color-hover: darken($link-color, 15%);
+$link-color-hover: darken($link-color, 10%);
 $selection-color: $color-primary; // visible when highlighting text
 $form-border-color: $grey-light;
 
@@ -57,4 +58,5 @@ $banner-link-hover: $link-color-hover;
 // Feature image for articles
 $feature-image-text-color: $white;
 $feature-image-text-light: $grey-light;
-$feature-image-size: cover; // options include "cover", "contain", "auto"
+// $feature-image-size is a `background-size:` value.
+$feature-image-size: cover;

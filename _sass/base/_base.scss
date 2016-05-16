@@ -118,6 +118,7 @@ a {
 
   @include haf {
     color: $link-color-hover;
+    text-decoration-style: solid;
   }
 }
 
