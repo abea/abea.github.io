@@ -21,7 +21,7 @@ In the last week, a few events have coincided to make me think a bit more concep
 
 Second, I read a great post on CSS refactoring that popped up in several newsletters I receive: [Refactoring Legacy CSS](http://seesparkbox.com/foundry/refactoring_legacy_css). The post has some really great practical advice about approaching refactor projects, particularly CSS. Kasey Bonifacio hits the major pitfalls and how to avoid them as well.
 
-Finally, at a recent Ithaca Web People meet up, a tech business consultant talked about ["the Seven Types of Tech Debt."](http://www.meetup.com/ithaca-web-people/events/230119785/). The speaker, Alan Willet, spoke of different ways that we coders can cause ourselves problems thanks to perceived (or actual) pressure to take short cuts. The crux of the talk was A) don't do that, and B) though refactoring seems like time and money spent for no new functionality, it can result in exponential increases to productivity going forward.
+Finally, at a recent Ithaca Web People meet up, a tech business consultant talked about ["the Seven Types of Tech Debt."](http://www.meetup.com/ithaca-web-people/events/230119785/) The speaker, Alan Willet, spoke of different ways that we coders can cause ourselves problems thanks to perceived (or actual) pressure to take short cuts. The crux of the talk was A) don't do that, and B) though refactoring seems like time and money spent for no new functionality, it can result in exponential increases to productivity going forward.
 
 So refactoring is good and I'm a nerd. Moving on.
 
@@ -31,13 +31,13 @@ Starting into my project, I want to fix all the things. [Scss-lint](https://gith
 That led to my first question for myself.
 
 ### How much time you got?
-There are certainly time limitations when you're refactoring your own company's app or site code. When in client services, that is even more critical. Going over budget makes no one happy.
+There are certainly time limitations when you're refactoring your own company's app or site code. In client services, that is even more the case. Going over budget makes no one happy.
 
-One response to a short timeline is piling on more tech debt. I could a thirteenth CSS file to load after the existing stylesheets and use `!important` with reckless abandon. Or slightly better, I could leave _all_ of the bad practices in place and squeeze good responsive styles in between... using `!important` only half as often.
+One response to a short timeline is piling on more tech debt. I could add a thirteenth CSS file to load after the existing stylesheets and use `!important` with reckless abandon. Or slightly better, I could leave _all_ of the bad practices in place and squeeze good responsive styles in between... using `!important` only half as often.
 
 Besides delivering on the goals of the project, I'd also love to leave the campsite looking nicer than I found it for the next dev. And hey, if we're hired to work on this again, it'd be great to be in cleaner code.
 
-In Bonifacio's article, she talks about working in small chunks. I'm finding this key with limited time. Rather than go through the whole site theme and fix all the scss-lint warnings first, I'm focusing on working through the Sass partials that get me closer to the ultimate goal. If this takes me into the `_carousel.scss` file, I can make the necessary responsive design changes and do a pass through to clear up other clunky or messy code while I'm there.  If the whole project doesn't take me through `_other-component.scss`, then maybe it doesn't get cleaned up this time.
+In Bonifacio's article, she talks about working in small chunks. I'm finding this key with limited time. Rather than go through the whole site theme and fix all the scss-lint warnings first, I'm focusing on working through the Sass partials that contribute to making the site responsive. If this takes me into the `_carousel.scss` file, I can make the necessary responsive design changes and do a pass through to clear up other clunky or messy code while I'm there. If the whole project doesn't take me through `_other-component.scss`, then maybe it doesn't get cleaned up this time.
 
 Talking to my colleague Jared at the IWP meet up, I mentioned hearing a podcast where a dev described using a separate CSS file called `hacks.css` where he'd throw in embarrassing hacks that he knew he had to clean up later. Jared told me about a refactor project where they left the big file of ugly code in place and systematically chipped away, moving functionality out of it and into new files. The original file was named to indicate its status, and we went on to joke about naming files `this-is-bad-code.css` or `hey-dont-add-to-this.css`. We have fun.
 
@@ -45,7 +45,7 @@ The point is that with limited time, we have to make decisions about the most im
 
 ### What's the scope?
 
-In my case, job number one is to make this older site theme responsive. We weren't really asked to make the site cleaner or simpler or anything like that. One way to look at extra code refactoring is that it's added benefit. Buy the car and get premium windshield wipers for free.
+In my case, job number one is to make this older site theme responsive. We weren't really asked to make the site codebase cleaner, simpler, or anything like that. One way to look at extra code refactoring is that it's added benefit. Buy the car and get premium windshield wipers for free.
 
 More importantly, I pull from Alan Willett's talk here. I could do zero code refactoring other than making the components responsive. The thing is that trying to add on top of messy code is hard, frustrating, and simply takes longer. By doing other cleaning and reorganizing first or during, I make my own work faster and more efficient. Something as simple as deleting 60 lines of empty CSS selectors that came with the starter kit makes it that much easier to read through the substantial code.
 
@@ -53,13 +53,13 @@ Still, it's not my job here to make this codebase spotless. As mentioned above, 
 
 ### Who carries the torch?
 
-Finally, I've come across the question of who will be working with this code when I'm done. As is pretty clear, I do my styling almost exclusively in [the Sass CSS preprocessor language](http://sass-lang.com/). One of the first eye-opening moments of this project was when I realized that much of the Sass in the theme had been overwritten directly in the compiled CSS by the day-to-day site managers. These folks are not front end developers first, and CSS is what they know. That's completely understandable.
+Finally, I've come across the question of who will be working with this code when I'm done. As is pretty clear from previous posts, I do my styling almost exclusively in [the Sass CSS preprocessor language](http://sass-lang.com/). One of the first eye-opening moments of this project was when I realized that much of the Sass in the theme had been overwritten directly in the compiled CSS by the day-to-day site managers. These folks are not primarily front end developers, and CSS is what they know. That's completely understandable.
 
 For those not immediately seeing the problem here, since Sass is compiled into the CSS browsers will use, as soon as I run the compilation command all the stuff only in CSS will be wiped away. Still, I'm a fragile snowflake who doesn't want to work in CSS anymore. (Also I'm faster and more efficient with Sass.)
 
 In this case, I checked in with the client site manager and cleared the file reorganization ideas I had. I also went file-by-file and made sure to bring the CSS-only styles into Sass before finally compiling and committing the code. Going forward, the site manager may continue to want to write CSS styles, which is their prerogative. The specifics here are less important than the general approach: As the hired developer, I need to document my workflow well, capture the existing overrides, and communicate well with the client to understand their needs going forward.
 
 ## End thought
-Actually taking on a refactoring project has dulled my excitement for refactoring noticeably. It turns out that professional code refactoring isn't quite as direct as a middle school logic puzzle. Unlike my ongoing, and maybe never-ending, refactoring of my own site however, refactoring code professionally requires restraint, focus, and thought before diving in deep.
+Actually taking on a refactoring project has dulled my excitement for refactoring noticeably, though not completely. It turns out that professional code refactoring isn't quite as direct as a middle school logic puzzle. Unlike my ongoing, and maybe never-ending, refactoring of my own site, refactoring code professionally requires significant restraint, focus, and thought before diving in deep.
 
-Still, I do get a charge out of pushing a code commit with seriously net negative lines of code and making those little lint warnings disappear. As a wise Jared once said, the most important thing we can do often is delete code.
+Still, it's even more of a puzzle than I'd thought and very challenging puzzles can be even more fun. I do get a charge out of pushing a code commit with seriously net negative lines of code and making those little lint warnings disappear. As a wise Jared once said, the most important thing we can do often is delete code. Refactoring does let me do a whole lot of that.
