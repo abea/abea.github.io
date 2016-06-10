@@ -1,0 +1,344 @@
+// Base theme template for reveal.js
+
+// GLOBAL STYLES
+// *********************************************
+
+body {
+  @include body-background();
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: normal;
+}
+
+::selection {
+  background: $selection-bg;
+  color: $selection-color;
+  text-shadow: none;
+}
+
+.slides > section,
+.slides > section > section {
+  font-weight: inherit;
+  line-height: 1.3;
+}
+
+// HEADERS
+// *********************************************
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: $heading-margin;
+  color: $color-heading;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-heading;
+  letter-spacing: $letter-spacing-heading;
+  line-height: $line-height-heading;
+  text-shadow: $heading-shadow;
+  text-transform: $heading-transform;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-size: $h1-size;
+  text-shadow: $h1-shadow;
+}
+
+h2 {
+  font-size: $h2-size;
+}
+
+h3 {
+  font-size: $h3-size;
+}
+
+h4 {
+  font-size: $h4-size;
+}
+
+// OTHER
+// *********************************************
+
+p {
+  margin-bottom: $block-margin;
+  line-height: 1.3;
+}
+
+// Ensure certain elements are never larger than the slide itself
+iframe,
+img,
+video {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+dl,
+ol,
+ul {
+  display: inline-block;
+  margin: 0 0 0 1em;
+  text-align: left;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ul ul {
+  list-style-type: square;
+}
+
+ul ul ul {
+  list-style-type: circle;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  display: block;
+  margin-left: 40px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 40px;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: $block-margin auto;
+  padding: 5px;
+
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+blockquote p:first-child,
+blockquote p:last-child {
+  display: inline-block;
+}
+
+q {
+  font-style: italic;
+}
+
+pre {
+  display: block;
+  position: relative;
+  width: 110%;
+  margin: $block-margin auto $block-margin -5%;
+
+  font-family: monospace;
+  font-size: .6em;
+  line-height: 1.2em;
+  text-align: left;
+
+  word-wrap: break-word;
+
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+code {
+  font-family: monospace;
+}
+
+pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table td,
+table th {
+  text-align: left;
+  padding: .2em .5em;
+  border-bottom: 1px solid;
+}
+
+table td[align="center"],
+table th[align="center"] {
+  text-align: center;
+}
+
+table td[align="right"],
+table th[align="right"] {
+  text-align: right;
+}
+
+table tbody tr:last-child td,
+table tbody tr:last-child th {
+  border-bottom: none;
+}
+
+sup {
+  vertical-align: super;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+small {
+  display: inline-block;
+  font-size: .6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+small * {
+  vertical-align: top;
+}
+
+// LINKS
+// *********************************************
+
+a {
+  transition: color .15s ease;
+  color: $link-color;
+  text-decoration: none;
+
+  img {
+    transition: all .15s linear;
+  }
+
+  &:hover {
+    border: 0;
+    color: $link-color-hover;
+    text-shadow: none;
+
+    img {
+      border-color: $link-color;
+      background: rgba(255,255,255,0.2);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+    }
+  }
+}
+
+.roll span::after {
+  background: darken( $link-color, 15% );
+  color: #fff;
+}
+
+// IMAGES
+// *********************************************
+
+section img {
+  border: 4px solid $text-color;
+  background: rgba(255,255,255,0.12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+
+section img.plain {
+  border: 0;
+  box-shadow: none;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+.controls .navigate-left,
+.controls .navigate-left.enabled {
+  border-right-color: $link-color;
+}
+
+.controls .navigate-right,
+.controls .navigate-right.enabled {
+  border-left-color: $link-color;
+}
+
+.controls .navigate-up,
+.controls .navigate-up.enabled {
+  border-bottom-color: $link-color;
+}
+
+.controls .navigate-down,
+.controls .navigate-down.enabled {
+  border-top-color: $link-color;
+}
+
+.controls .navigate-left.enabled:hover {
+  border-right-color: $link-color-hover;
+}
+
+.controls .navigate-right.enabled:hover {
+  border-left-color: $link-color-hover;
+}
+
+.controls .navigate-up.enabled:hover {
+  border-bottom-color: $link-color-hover;
+}
+
+.controls .navigate-down.enabled:hover {
+  border-top-color: $link-color-hover;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+
+.progress {
+  background: rgba(0,0,0,0.2);
+}
+
+.progress span {
+  background: $link-color;
+
+  -webkit-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+  transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+}
+
+.progress {
+  background: rgba(0,0,0,.2);
+}
+
+.progress span {
+  -webkit-transition: width 800ms cubic-bezier(.260, .860, .440, .985);
+  -moz-transition: width 800ms cubic-bezier(.260, .860, .440, .985);
+  transition: width 800ms cubic-bezier(.260, .860, .440, .985);
+
+  background: $link-color;
+}

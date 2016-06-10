@@ -1,0 +1,731 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Sassy CSS | Presentation by Alex Bea</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/bloodless.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/solarized-dark.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown class="text-center">
+				<script type="text/template">
+					# Sassy CSS
+					
+					[Alex Bea](http://alexbea.com) / [@alexbea](http://twitter.com/alexbea)
+					
+				</script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+		  ## The problem(?)
+
+				Vanilla CSS isn’t that bad, really...
+			  </script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				## The problem
+
+				Vanilla CSS isn’t that bad, really...
+
+				- CSS can be slow to write.
+				- CSS can get confusing.			
+					- Repeating values
+					- Verbose declarations
+					- Repeated complex rules
+					- Maths
+        <aside class="notes" data-markdown>
+        	- Slow to write the same thing repeatedly.
+        	- More confusing as the size grows.
+        </aside>
+				</script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				## SASS is...
+
+				**Awesome, syntactically!**
+				<small>(SASS = syntactically awesome stylesheets)</small>
+				
+				- CSS pre-processor
+				- Adds abstraction
+				- And much more...
+				</script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Pre-processors CAN help:
+				- Reduce mistakes
+				- Write CSS faster and cleaner
+				- Make fanciness easier
+				- Do maths and manipulate colors
+				<aside class="notes" data-markdown>
+					- Similar to what Haml does for HTML
+					- I’ll hit on some of the alternatives later on. Until then, I’ll only refer to Sass, though others have similar features.  
+					- Caveat: Like any tool/language, it can backfire if used recklessly
+				</aside>
+			  </script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Hello World
+				
+				1. Have Ruby installed
+				1. Install gem
+				1. Code
+				1. ???
+				1. Profit
+			  </script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				### Hello World
+				
+				1. Have Ruby installed
+				1. Install gem
+				1. Code
+				1. Compile
+				1. Profit
+				</script>
+			</section>
+		
+			<section data-markdown>
+			  <script type="text/template">
+				### Compiling to CSS
+				<small>(in order of preference)</small>
+				- Build tools, e.g., Grunt and Gulp
+				- Command line
+					- ```
+						sass input.scss output.css
+						sass --watch input.scss:output.css --style compressed
+						```
+				- Use a tool, e.g., Compass.app, Scout, Codekit
+				- Probably some other way?
+
+<aside class="notes" data-markdown>
+	- Style options: nested (default), compact, expanded, compressed    
+</aside>
+			  </script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				### LibSass
+				<small>C/C++ port of the Sass engine</small>
+				
+				**Wrappers:**
+				
+				- SassC, Go, Java, JavaScript, Lua, .NET, Node, Perl, PHP, Python, Ruby, Scala
+					<aside class="notes" data-markdown>
+						- Node-sass the most popular of these as I know.
+					</aside>
+				</script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### .sass v. .scss
+				
+				- Indentation v. brackets
+				- Different mixin syntax
+			  </script>
+<aside class="notes" data-markdown>
+	I use Sassy CSS because 
+	
+	1. it has the word “sassy” in it
+	1. it’s what I learned first
+	1. and most importantly because all CSS files are valid .scss
+</aside>
+			</section>
+
+			<section data-markdown>
+			  <script type="text/template">
+				## Sassy coding.
+
+				- Partials
+				- Variables
+				- Nesting
+				- Mixins
+				- Extends
+				- Maths and colors
+				- And more...
+				
+				<aside class="notes" data-markdown>
+					- I'm going to cover a wide breadth rather than deep depth.
+					- My Goal: Get you interested in trying this
+					- OR show you something in SCSS you haven't tried yet
+				</aside>
+			  </script>
+			</section>
+      <section data-markdown>
+        <script type="text/template">
+        ### Partials
+        
+        - Use @import to group SCSS files together
+        - Underscore `_partial.scss` to ignore
+        
+        ```scss
+        // Base
+        @import "base/base";
+        @import "base/typography";
+        @import "base/utility";
+
+        // Components
+        @import "components/nav";
+        @import "components/pager";
+        ```
+        </script>
+      </section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Variables
+
+				`$variable-name: value;`
+				
+				- No need to remember values
+				- Easily change all instances
+
+				  <aside class="notes" data-markdown>
+						- CSS variables are starting to get support, but won’t replace Sass variables
+					</aside>
+			  </script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				### Variables
+				
+				![Listed Sass variables from alexbea.com](lib/images/variables.png)
+				</script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				### Variable thoughts
+
+				- Variables file + w/in partials
+				- Variable inception
+				 
+				```scss
+				$brand-color: #c01085;
+				$link-color: $brand-color;
+				```
+        
+				</script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				### Nesting
+				
+				- Allows clearer organization
+				- Easy scoping
+				
+				
+<aside class="notes" data-markdown>
+	- Important to not nest too deeply (3 lvls?)
+	- Easy to end up with unintended specificity
+</aside>
+				</script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Nesting
+				
+				```scss
+				// SCSS
+				.nav--main {
+					ul {
+						margin: 0;
+						list-style: none;
+					}
+					
+					li { display: inline-block; }
+				}
+				```
+				
+			  </script>
+			</section>
+      <section data-markdown>
+				<script type="text/template">
+				### Nesting
+
+				```css
+				/* CSS */
+				.nav--main ul {
+					margin: 0;
+					list-style: none;
+				}
+				
+				.nav--main li { display: inline-block; }
+				```
+				
+				</script>
+			</section>
+      <section data-markdown>
+        <script type="text/template">
+        ### Nesting deep
+        
+        ```scss
+        // SCSS
+        .nav--main {
+          ul {
+            margin: 0;
+            list-style: none;
+            
+            li {
+              display: inline-block;
+              
+              a { color: $link-color; }
+            }
+          }
+          
+          
+        }
+        ```
+        
+        <aside class="notes" data-markdown>
+          - Important to not nest too deeply (3 lvls?)
+          - Easy to end up with unintended specificity
+        </aside>
+        </script>
+      </section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Parent selector nesting
+				
+				```scss
+				// SCSS
+				.btn {
+					&.btn--light { ... }
+					header & { ... }
+					&--large { ... }
+				}
+				```
+
+				```css
+				/* CSS */
+				.btn.btn--light { ... }
+				
+				header .btn { ... }
+				
+				.btn--large { ... }
+				}
+				```
+			  </script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Mixins
+	
+				- Group CSS declarations
+				- With or without custom values.
+
+				```scss
+				// SCSS
+				@mixin clearfix() {
+				  &::after {
+				    clear: both;
+				    content: "";
+				    display: table;
+				  }
+				}
+
+				section { @include clearfix; }
+				```
+				<small>Source: Bourbon Sass</small>
+			  </script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				### Mixins
+	
+				- Group CSS declarations
+				- With or without custom values.
+				
+				```CSS
+				/* CSS */
+				section::after {
+					clear: both;
+					content: "";
+					display: table;
+				}
+				```
+				</script>
+			</section>
+			<!-- <section data-markdown>
+			  <script type="text/template">
+				### Mixins with content blocks
+
+				```
+				// SCSS from alexbea.com
+				@mixin haf {
+				  &:hover,
+				  &:active,
+				  &:focus { @content; }
+				}
+
+				a {
+				  @include haf { color: $link-color-hover; }
+				}
+				```
+
+				```css
+				/* CSS */
+				a:hover, a:active, a:focus {
+					color: #000099;
+				}
+				```    
+			  </script>
+			</section> -->
+			<section data-markdown>
+			  <script type="text/template">
+				### Mixins w/ arguments
+
+				```scss
+				// SCSS
+				@mixin haf-color($color) {
+				  &:hover,
+				  &:active,
+				  &:focus {
+				    color: $color;
+				  }
+				}
+
+				a {
+				  @include haf-color($link-color-hover);
+				}
+				```
+				
+				```css
+				/* CSS */
+				a:hover, a:active, a:focus {
+				  color: #000099;
+				}
+				```    
+			  </script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Mixin power
+
+				```scss
+				@mixin directional-property($pre, $suf, $vals) {
+				  // Property Names
+				  $top:    $pre + "-top"    + if($suf, "-#{$suf}", "");
+				  $bottom: $pre + "-bottom" + if($suf, "-#{$suf}", "");
+				  $left:   $pre + "-left"   + if($suf, "-#{$suf}", "");
+				  $right:  $pre + "-right"  + if($suf, "-#{$suf}", "");
+				  $all:    $pre +             if($suf, "-#{$suf}", "");
+
+				  $vals: collapse-directionals($vals);
+
+				  @if contains-falsy($vals) {
+				    @if nth($vals, 1) { #{$top}: nth($vals, 1); }
+
+				    @if length($vals) == 1 {
+				      @if nth($vals, 1) { #{$right}: nth($vals, 1); }
+				    } @else {
+				      @if nth($vals, 2) { #{$right}: nth($vals, 2); }
+				    }
+
+				    @if length($vals) == 2 {
+				      @if nth($vals, 1) { #{$bottom}: nth($vals, 1); }
+				      @if nth($vals, 2) { #{$left}:   nth($vals, 2); }
+				    } @else if length($vals) == 3 {
+				      @if nth($vals, 3) { #{$bottom}: nth($vals, 3); }
+				      @if nth($vals, 2) { #{$left}:   nth($vals, 2); }
+				    } @else if length($vals) == 4 {
+				      @if nth($vals, 3) { #{$bottom}: nth($vals, 3); }
+				      @if nth($vals, 4) { #{$left}:   nth($vals, 4); }
+				    }
+				  } @else {
+				    #{$all}: $vals;
+				  }
+				}
+				```    
+
+				<small>Source: Bourbon Sass</small>
+			  </script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Extends v. mixins
+								
+				- Extends combine rule-sets.
+				- Mixins add declarations into a new rule-set.
+				- Use extends when:
+					- Duplicating the rules of a limited-use selector.
+    
+				  <aside class="notes" data-markdown>
+						- Simplest versions of each are very similar.
+				  </aside>
+			  </script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				### Extends
+				
+				From sass-lang.com
+
+				```SCSS
+				.error {
+					border: 1px #f00;
+					background-color: #fdd;
+				}
+				
+				.seriousError {
+					@extend .error;
+					border-width: 3px;
+				}
+				```
+				</script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				### Extends
+				
+				From sass-lang.com
+
+				``` CSS
+				.error, .seriousError {
+					border: 1px #f00;
+					background-color: #fdd;
+				}
+
+				.seriousError { border-width: 3px; }
+				```    
+				</script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Extends caveat
+				
+				- Unintentional selector generation
+				- Doesn’t only extend exact matches
+				
+				```scss
+				// SCSS
+				.btn {
+				  padding: 4px;
+				  border: 2px $blue solid;
+				}
+
+				form .btn { margin: 0 auto; }
+
+				.tab { @extend .btn; }
+				```
+			  </script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Extends caveat
+
+				- Unintentional selector generation
+				- Doesn’t only extend exact matches
+
+				```css
+				/* CSS */
+				.btn,
+				.tab {
+				  padding: 4px;
+				  border: 2px #000fff solid;
+				}
+
+				form .btn,
+				form .tab {
+				  margin: 0 auto;
+				}
+				```
+			  </script>
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				### Extends caveat
+				
+				1. Use placeholder selectors
+				1. Extend thoughtfully
+				
+				```scss
+				%heading { margin: .25em 0 .75em; font-family: Times; }
+
+				h1 {
+				  @extend %heading;
+				  font-size: $font-size-h1;
+				}
+
+				h2 {
+				  @extend %heading;
+				  font-size: $font-size-h2;
+				}
+				```
+				
+				<small>Blog post: search “Alex Bea extends”</small>
+				</script>
+			</section>
+      <!-- <section data-markdown>
+        <script type="text/template">
+        ### Custom functions
+        
+        ```scss
+        @function collapse-directionals($vals) {
+          $output: null;
+
+          $a: nth($vals, 1);
+          $b: if(length($vals) < 2, $a, nth($vals, 2));
+          $c: if(length($vals) < 3, $a, nth($vals, 3));
+          $d: if(length($vals) < 2, $a, nth($vals, if(length($vals) < 4, 2, 4)));
+
+          @if $a == 0 { $a: 0; }
+          @if $b == 0 { $b: 0; }
+          @if $c == 0 { $c: 0; }
+          @if $d == 0 { $d: 0; }
+
+          @if $a == $b and $a == $c and $a == $d { $output: $a;          }
+          @else if $a == $c and $b == $d         { $output: $a $b;       }
+          @else if $b == $d                      { $output: $a $b $c;    }
+          @else                                  { $output: $a $b $c $d; }
+
+          @return $output;
+        }
+        ```
+        </script>
+      </section> -->
+			<section data-markdown>
+			  <script type="text/template">
+				### Maths
+				
+				Calculates in compiling
+				
+				```scss
+				// SCSS
+				width: 800px - 20px;
+				
+				width: $column-width - $gutter-width;
+				
+				width: calc(100% - (#{$column-width * $column-count}));
+				```
+					
+				  <aside class="notes" data-markdown>
+				  	- Considered putting this as an extra, but it’s so cool.
+						- Match your units
+						- Use `calc()` when appropriate
+				  </aside>
+			  </script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Colors
+				
+				Color functions:
+				- `rgba(#000, .7)`
+				- `lighten($color, 15%)`
+				- `complement($color)`
+				- `mix($color, $other-color)`
+				- `#010203 + #040506` = `#050709`
+
+				  <aside class="notes" data-markdown>
+						- Adding colors works by adding pairs in HEX.
+						- Easier way for a non-designer to quickly generate color palettes				  	
+				  </aside>
+			  </script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Colors
+
+				![Color pallette made use Sass color functions](lib/images/colors.png)
+				
+				<aside class="notes" data-markdown>
+					Others:
+					
+					- Pull red, blue or green values from any color.
+					- Saturate, desaturate, grayscale, opacity, transparancy.
+				</aside>
+			  </script>
+			</section>
+			<section data-markdown>
+			  <script type="text/template">
+				### Extras
+				
+				- Other Sass functions and custom functions
+					- `floor()`, `unquote()`, `str-slice()`
+					- `@if type-of($style) == string {...} @else {...}`
+				- Control directives and expressions
+					- `@if`, `@for`, `@each`, `@while`
+        - Comments: SCSS's `//` v. CSS's `/* */`
+			  </script>
+			</section>
+			<!-- <section data-markdown>
+			  <script type="text/template">
+					## v. Less
+					- Less
+						- Node.js-based
+						- Different syntax `@variable` v. `$variable`
+						- Arguably more complex conditional and looping syntax
+						- Doesn’t display errors or do debugging as well.
+					
+					<small>Credit: http://www.hongkiat.com/blog/sass-vs-less/</small>
+
+<aside class="notes" data-markdown>
+	- Errors:  `margin: 10px - 10%`: `0px` (LESS) vs `ERROR` (Sass).
+	- Bootstrap moved from LESS to SCSS
+</aside>
+			  </script>
+			</section> -->
+			<section data-markdown>
+			  <script type="text/template">
+				## Resources
+				- [ABA book, Sass for Web Designers](https://abookapart.com/products/sass-for-web-designers)
+				- http://sass-lang.com/documentation
+				- codeschool.com: [“Assembling Sass” course](https://www.codeschool.com/courses/assembling-sass)
+				- [sassmeister.com](http://sassmeister.com) sandbox
+
+			  </script>
+			</section>
+			<section data-background="http://i.giphy.com/12lWiaBAnen5FS.gif" class="text--overlay text--center" data-markdown>
+			  <script type="text/template">
+			  ## ???
+				
+			alexbea.com | @alexbea
+
+        <small>Running on Reveal.js by Hakim El Hattab</small>
+
+			  </script>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+			center: false,
+			transition: 'fade',
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+</html>

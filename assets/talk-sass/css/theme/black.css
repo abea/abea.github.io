@@ -1,0 +1,268 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
+  color: #222; }
+
+body {
+  background: #222;
+  background-color: #222;
+  color: #fff;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 38px;
+  font-weight: normal; }
+
+::selection {
+  background: #bee4fd;
+  color: #fff;
+  text-shadow: none; }
+
+.slides > section,
+.slides > section > section {
+  font-weight: inherit;
+  line-height: 1.3; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.25em 0;
+  color: #fff;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.2;
+  text-shadow: none;
+  text-transform: uppercase;
+  word-wrap: break-word; }
+
+h1 {
+  font-size: 2.5em;
+  text-shadow: none; }
+
+h2 {
+  font-size: 1.6em; }
+
+h3 {
+  font-size: 1.3em; }
+
+h4 {
+  font-size: 1em; }
+
+p {
+  margin-bottom: 0.25em;
+  line-height: 1.3; }
+
+iframe,
+img,
+video {
+  max-width: 95%;
+  max-height: 95%; }
+
+b,
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+dl,
+ol,
+ul {
+  display: inline-block;
+  margin: 0 0 0 1em;
+  text-align: left; }
+
+ol {
+  list-style-type: decimal; }
+
+ul {
+  list-style-type: disc; }
+
+ul ul {
+  list-style-type: square; }
+
+ul ul ul {
+  list-style-type: circle; }
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  display: block;
+  margin-left: 40px; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-left: 40px; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 0.25em auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
+
+blockquote p:first-child,
+blockquote p:last-child {
+  display: inline-block; }
+
+q {
+  font-style: italic; }
+
+pre {
+  display: block;
+  position: relative;
+  width: 110%;
+  margin: 0.25em auto 0.25em -5%;
+  font-family: monospace;
+  font-size: .6em;
+  line-height: 1.2em;
+  text-align: left;
+  word-wrap: break-word;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+
+code {
+  font-family: monospace; }
+
+pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal; }
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+table th {
+  font-weight: bold; }
+
+table td,
+table th {
+  text-align: left;
+  padding: .2em .5em;
+  border-bottom: 1px solid; }
+
+table td[align="center"],
+table th[align="center"] {
+  text-align: center; }
+
+table td[align="right"],
+table th[align="right"] {
+  text-align: right; }
+
+table tbody tr:last-child td,
+table tbody tr:last-child th {
+  border-bottom: none; }
+
+sup {
+  vertical-align: super; }
+
+sub {
+  vertical-align: sub; }
+
+small {
+  display: inline-block;
+  font-size: .6em;
+  line-height: 1.2em;
+  vertical-align: top; }
+
+small * {
+  vertical-align: top; }
+
+a {
+  transition: color .15s ease;
+  color: #42affa;
+  text-decoration: none; }
+  a img {
+    transition: all .15s linear; }
+  a:hover {
+    border: 0;
+    color: #8dcffc;
+    text-shadow: none; }
+    a:hover img {
+      border-color: #42affa;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+.roll span::after {
+  background: #068de9;
+  color: #fff; }
+
+section img {
+  border: 4px solid #fff;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
+section img.plain {
+  border: 0;
+  box-shadow: none; }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.controls .navigate-left,
+.controls .navigate-left.enabled {
+  border-right-color: #42affa; }
+
+.controls .navigate-right,
+.controls .navigate-right.enabled {
+  border-left-color: #42affa; }
+
+.controls .navigate-up,
+.controls .navigate-up.enabled {
+  border-bottom-color: #42affa; }
+
+.controls .navigate-down,
+.controls .navigate-down.enabled {
+  border-top-color: #42affa; }
+
+.controls .navigate-left.enabled:hover {
+  border-right-color: #8dcffc; }
+
+.controls .navigate-right.enabled:hover {
+  border-left-color: #8dcffc; }
+
+.controls .navigate-up.enabled:hover {
+  border-bottom-color: #8dcffc; }
+
+.controls .navigate-down.enabled:hover {
+  border-top-color: #8dcffc; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.progress span {
+  background: #42affa;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.progress span {
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  background: #42affa; }
