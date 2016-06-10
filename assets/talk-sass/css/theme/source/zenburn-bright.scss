@@ -1,0 +1,80 @@
+/*
+
+Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
+based on dark.css by Ivan Sagalaev
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #3f3f3f;
+  color: #dcdcdc;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  color: darken(saturate(#e3ceab, 90%), 25%);
+}
+
+.hljs-template-tag {
+  color:  darken(saturate(#dcdcdc, 90%), 15%);
+}
+
+.hljs-number {
+  color: darken(saturate(#8cd0d3, 90%), 15%);
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute {
+  color: darken(saturate(#efdcbc, 90%), 15%);
+}
+
+.hljs-literal {
+  color: darken(saturate(#efefaf, 90%), 15%);
+}
+
+.hljs-subst {
+  color: lighten(#8f8f8f, 15%) #8f8f8f;
+}
+
+.hljs-title,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-section,
+.hljs-type {
+  color: darken(saturate(#efef8f, 20%), 35%);
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: darken(saturate(#dca3a3, 30%), 15%);
+}
+
+.hljs-deletion,
+.hljs-string,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: darken(saturate(#cc9393, 30%), 10%);
+}
+
+.hljs-addition,
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: lighten(saturate(#7f9f7f, 50%), 15%);
+}
+
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

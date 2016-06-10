@@ -1,0 +1,35 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is brown.
+ *
+ * This theme is Copyright (C) 2012-2013 Owen Versteeg, http://owenversteeg.com - it is MIT licensed.
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Override theme settings (see ../template/settings.scss)
+$font-family-base: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$text-color: #000;
+$font-family-heading: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$color-heading: #383D3D;
+$heading-shadow: none;
+$heading-transform: none;
+$bg-color: #F0F1EB;
+$link-color: #51483D;
+$link-color-hover: lighten( $link-color, 20% );
+$selection-bg: #26351C;
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

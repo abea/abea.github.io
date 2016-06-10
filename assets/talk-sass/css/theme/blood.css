@@ -1,0 +1,291 @@
+/**
+ * Blood theme for reveal.js
+ * Author: Walther http://github.com/Walther
+ *
+ * Designed to be used with highlight.js theme
+ * "monokai_sublime.css" available from
+ * https://github.com/isagalaev/highlight.js/
+ *
+ * For other themes, change $codeBackground accordingly.
+ *
+ */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+body {
+  background: #222;
+  background-color: #222;
+  color: #eee;
+  font-family: Ubuntu, "sans-serif";
+  font-size: 36px;
+  font-weight: normal; }
+
+::selection {
+  background: #a23;
+  color: #fff;
+  text-shadow: none; }
+
+.slides > section,
+.slides > section > section {
+  font-weight: inherit;
+  line-height: 1.3; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.25em 0;
+  color: #eee;
+  font-family: Ubuntu, "sans-serif";
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.2;
+  text-shadow: 2px 2px 2px #222;
+  text-transform: none;
+  word-wrap: break-word; }
+
+h1 {
+  font-size: 3.77em;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }
+
+h2 {
+  font-size: 2.11em; }
+
+h3 {
+  font-size: 1.55em; }
+
+h4 {
+  font-size: 1em; }
+
+p {
+  margin-bottom: 0.25em;
+  line-height: 1.3; }
+
+iframe,
+img,
+video {
+  max-width: 95%;
+  max-height: 95%; }
+
+b,
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+dl,
+ol,
+ul {
+  display: inline-block;
+  margin: 0 0 0 1em;
+  text-align: left; }
+
+ol {
+  list-style-type: decimal; }
+
+ul {
+  list-style-type: disc; }
+
+ul ul {
+  list-style-type: square; }
+
+ul ul ul {
+  list-style-type: circle; }
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  display: block;
+  margin-left: 40px; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-left: 40px; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 0.25em auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
+
+blockquote p:first-child,
+blockquote p:last-child {
+  display: inline-block; }
+
+q {
+  font-style: italic; }
+
+pre {
+  display: block;
+  position: relative;
+  width: 110%;
+  margin: 0.25em auto 0.25em -5%;
+  font-family: monospace;
+  font-size: .6em;
+  line-height: 1.2em;
+  text-align: left;
+  word-wrap: break-word;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+
+code {
+  font-family: monospace; }
+
+pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal; }
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+table th {
+  font-weight: bold; }
+
+table td,
+table th {
+  text-align: left;
+  padding: .2em .5em;
+  border-bottom: 1px solid; }
+
+table td[align="center"],
+table th[align="center"] {
+  text-align: center; }
+
+table td[align="right"],
+table th[align="right"] {
+  text-align: right; }
+
+table tbody tr:last-child td,
+table tbody tr:last-child th {
+  border-bottom: none; }
+
+sup {
+  vertical-align: super; }
+
+sub {
+  vertical-align: sub; }
+
+small {
+  display: inline-block;
+  font-size: .6em;
+  line-height: 1.2em;
+  vertical-align: top; }
+
+small * {
+  vertical-align: top; }
+
+a {
+  transition: color .15s ease;
+  color: #a23;
+  text-decoration: none; }
+  a img {
+    transition: all .15s linear; }
+  a:hover {
+    border: 0;
+    color: #dd5566;
+    text-shadow: none; }
+    a:hover img {
+      border-color: #a23;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+.roll span::after {
+  background: #6a1520;
+  color: #fff; }
+
+section img {
+  border: 4px solid #eee;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
+section img.plain {
+  border: 0;
+  box-shadow: none; }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.controls .navigate-left,
+.controls .navigate-left.enabled {
+  border-right-color: #a23; }
+
+.controls .navigate-right,
+.controls .navigate-right.enabled {
+  border-left-color: #a23; }
+
+.controls .navigate-up,
+.controls .navigate-up.enabled {
+  border-bottom-color: #a23; }
+
+.controls .navigate-down,
+.controls .navigate-down.enabled {
+  border-top-color: #a23; }
+
+.controls .navigate-left.enabled:hover {
+  border-right-color: #dd5566; }
+
+.controls .navigate-right.enabled:hover {
+  border-left-color: #dd5566; }
+
+.controls .navigate-up.enabled:hover {
+  border-bottom-color: #dd5566; }
+
+.controls .navigate-down.enabled:hover {
+  border-top-color: #dd5566; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.progress span {
+  background: #a23;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.progress span {
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  background: #a23; }
+
+.reveal p {
+  font-weight: 300;
+  text-shadow: 1px 1px #222; }
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-weight: 700; }
+
+.reveal p code {
+  background-color: #23241f;
+  display: inline-block;
+  border-radius: 7px; }
+
+.reveal small code {
+  vertical-align: baseline; }

@@ -1,0 +1,65 @@
+/*
+
+Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
+based on dark.css by Ivan Sagalaev
+
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #3f3f3f;
+  color: #dcdcdc; }
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  color: #ffa510; }
+
+.hljs-template-tag {
+  color: #f87474; }
+
+.hljs-number {
+  color: #14f5ff; }
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute {
+  color: #ffc460; }
+
+.hljs-literal {
+  color: #ffff53; }
+
+.hljs-subst {
+  color: #b5b5b5 #8f8f8f; }
+
+.hljs-title,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-section,
+.hljs-type {
+  color: #c6c605; }
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: #e54d4d; }
+
+.hljs-deletion,
+.hljs-string,
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #db5151; }
+
+.hljs-addition,
+.hljs-comment,
+.hljs-quote,
+.hljs-meta {
+  color: #86e586; }
+
+.hljs-emphasis {
+  font-style: italic; }
+
+.hljs-strong {
+  font-weight: bold; }
