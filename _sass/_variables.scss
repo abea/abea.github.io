@@ -26,7 +26,8 @@ $padding-x-small: 1%;
 
 // Brand colours
 // http://paletton.com/palette.php?uid=60A0u0kw0w0jvDaoOy4y4oODajv
-$color-primary: #ea7f00;
+$texas: #bf5700;
+$color-primary: lighten($texas, 5%);
 $color-secondary: complement($color-primary);
 
 $black: #000;
@@ -58,5 +59,4 @@ $banner-link-hover: $link-color-hover;
 // Feature image for articles
 $feature-image-text-color: $white;
 $feature-image-text-light: $grey-light;
-// $feature-image-size is a `background-size:` value.
-$feature-image-size: cover;
+$feature-bg-size: cover;

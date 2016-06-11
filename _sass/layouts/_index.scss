@@ -51,7 +51,7 @@
     width: 100%;
     margin: 0 2% 1em;
     float: left;
-    background-size: $feature-image-size;
+    background-size: $feature-bg-size;
 
     @media (min-width:768px) {
       width: 46%;
@@ -69,7 +69,7 @@
   display: block;
   width: 100%;
   float: left;
-  background-size: $feature-image-size;
+  background-size: $feature-bg-size;
   text-align: center;
 }
 
