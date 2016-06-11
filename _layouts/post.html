@@ -2,7 +2,17 @@
 layout: post-header
 ---
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
-  <section class="post-content">{{ content }}</section>
+  <section class="post-content">
+    <header>
+      <h1 class="title">{{ page.title }}</h1>
+      {% if page.audio %}
+      <audio controls="controls">
+        <source type="audio/mp3" src="../../../assets/audio/{{ page.audio }}"></source>
+      </audio>
+      {% endif %}
+    </header>
+    {{ content }}
+  </section>
 </article>
 
 <!-- Disqus -->
