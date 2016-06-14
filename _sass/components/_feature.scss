@@ -1,0 +1,21 @@
+.feature {
+  @include fill-parent();
+  margin-bottom: $gutter;
+
+  @media (min-width: $bp-hands-wide) {
+    @include row;
+    @include margin(null auto);
+  }
+
+  .feature__image,
+  .feature__description {
+    @media (min-width: $bp-hands-wide) {
+      @include span-columns(6 of 12);
+    }
+  }
+
+  .feature__description {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

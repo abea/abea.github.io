@@ -1,2 +1,7 @@
 .text--right { text-align: right; }
 .text--small { font-size: $font-size-small; }
+
+.meta {
+  font-size: $font-size-small;
+  letter-spacing: .1em;
+}

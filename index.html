@@ -3,17 +3,16 @@ layout: default
 ishome: 1
 ---
 
-<div class="home">
-  <div class="work">
-    <h2>My Work</h2>
+  <section class="section">
+    <h2 class="section__heading">My Work</h2>
     {% for project in site.portfolio limit:2 %}
-    <div class="project">
-      <div class="project-thumb">
+    <div class="feature">
+      <div class="feature__image">
         <a href="{{ project.url | prepend: site.baseurl }}">
           <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
         </a>
       </div>
-      <div class="project-description">
+      <div class="feature__description">
         <a href="{{ project.url | prepend: site.baseurl }}"><h3>{{ project.title }}</h3></a>
         <p>{{ project.short-description }}</p>
       </div>
@@ -22,48 +21,48 @@ ishome: 1
     <p>
       <a href="/work">More projects</a>
     </p>
-  </div>
-
-  <div class="posts">
-    <h2 class="post-header">Blog Posts</h2>
+  </section>
+  <section class="section">
+    <h2 class="section__heading">Blog Posts</h2>
     <ul class="l-flex-grid">
       {% for post in paginator.posts %}
       <li class="post-teaser">
-        <header>
-          <h3>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-              {{ post.title }}
-            </a>
-          </h3>
-          <time class="meta" datetime="{{ post.date }}">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </time>
-        </header>
-        <p>
-          {{ post.excerpt | | strip_html | strip_newlines | truncate: 120 }}
-        </p>
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          {{ site.theme.str_continue_reading }}
-        </a>
+        <article>
+          <header>
+            <h3>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                {{ post.title }}
+              </a>
+            </h3>
+            <time class="meta" datetime="{{ post.date }}">
+              {{ post.date | date: "%B %-d, %Y" }}
+            </time>
+          </header>
+          <p>
+            {{ post.excerpt | | strip_html | strip_newlines | truncate: 120 }}
+          </p>
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            {{ site.theme.str_continue_reading }}
+          </a>
+        </article>
       </li>
       {% endfor %}
     </ul>
-  </div>
-
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-      <i class="fa fa-chevron-left"></i>
-      {{ site.theme.str_prev }}
-    </a>
+    
+    {% if paginator.total_pages > 1 %}
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
+        <i class="fa fa-chevron-left"></i>
+        {{ site.theme.str_prev }}
+      </a>
+      {% endif %}
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
+        {{ site.theme.str_next }}
+        <i class="fa fa-chevron-right"></i>
+      </a>
+      {% endif %}
+    </nav>
     {% endif %}
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-      {{ site.theme.str_next }}
-      <i class="fa fa-chevron-right"></i>
-    </a>
-    {% endif %}
-  </div>
-  {% endif %}
-</div>
+  </section>

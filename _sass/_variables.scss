@@ -1,6 +1,7 @@
 // Breakpoints
 // $bp-palm:
-$bp-hands: 30rem;
+$bp-hands: 30em;
+$bp-hands-wide: 48em;
 // $bp-lap:
 // $bp-desk:
 // $bp-wall
@@ -60,3 +61,8 @@ $banner-link-hover: $link-color-hover;
 $feature-image-text-color: $white;
 $feature-image-text-light: $grey-light;
 $feature-bg-size: cover;
+
+// Layout
+// *******
+$max-width: 75rem;
+$reading-width: 40rem;
