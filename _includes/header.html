@@ -1,25 +1,27 @@
-<header class="header text-center">
-  <nav class="nav--main">
-    <ul class="l-list-inline text--right">
-      {% for page in site.pages %}
-      {% if page.title and page.hide != true %}
-      <li>
-        <a href="{{ page.url | prepend: site.baseurl }}">
-          {{ page.title }}
-        </a>
-      </li>
-      {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
-  <h1><a href="{{ site.baseurl }}/" class="link--simple">{{ site.theme.title }}</a></h1>
-  
-  {% if site.theme.header_text %}
-    {{ site.theme.header_text }}
-  {% endif %}      
-  <div class="divider"></div>
-  <!-- Social icons from Font Awesome, if enabled -->
-  <ul class="l-list-inline header__social">
-	  {% include icons.html %}
-	</ul>
+<header class="l-header text-center">
+  <div class="l-container">
+    <nav class="nav--main">
+      <ul class="l-list-inline text--right">
+        {% for page in site.pages %}
+        {% if page.title and page.hide != true %}
+        <li>
+          <a href="{{ page.url | prepend: site.baseurl }}">
+            {{ page.title }}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+    <h1><a href="{{ site.baseurl }}/" class="link--simple">{{ site.theme.title }}</a></h1>
+    
+    {% if site.theme.header_text %}
+      {{ site.theme.header_text }}
+    {% endif %}      
+    <div class="divider"></div>
+    <!-- Social icons from Font Awesome, if enabled -->
+    <ul class="l-list-inline header__social">
+  	  {% include icons.html %}
+  	</ul>
+  </div>
 </header>

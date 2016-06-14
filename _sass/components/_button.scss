@@ -1,0 +1,15 @@
+// Buttons
+.button {
+  display: inline-block;
+  margin: 1em 0;
+  padding: .5em .75em;
+  border: 1px solid;
+  border-radius: .3em;
+
+  @include haf {
+    border: $linked-border;
+    background: $link-color;
+    color: $background-color;
+    text-decoration: none;
+  }
+}
