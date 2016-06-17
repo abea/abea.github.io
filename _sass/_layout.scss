@@ -18,6 +18,13 @@ main,
   @include outer-container;
 }
 
+.l-reading,
+.article,
+.comments {
+  @include margin(null auto);
+  max-width: $reading-width;
+}
+
 .l-flex-grid {
   @include row;
   display: flex;

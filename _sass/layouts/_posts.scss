@@ -1,9 +1,3 @@
-.article,
-.comments {
-  @include margin(null auto);
-  max-width: $reading-width;
-}
-
 .article {
   header {
     margin-bottom: 6%;
