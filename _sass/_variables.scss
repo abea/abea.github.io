@@ -15,6 +15,7 @@ $font-size-h2: 2rem;
 $font-size-h3: 1.5rem;
 $font-size-h4: 1.15rem;
 
+$em-base: 18px;
 $font-size-base: 1rem;
 $font-size-small: 80%;
 
@@ -51,6 +52,7 @@ $form-border-color: $grey-light;
 // Other colours
 $linked-border: 1px solid $link-color;
 $form-border: 1px solid $form-border-color;
+$default-border: .0625rem solid $border-color;
 
 // Banner colors
 $banner-bg: $color-primary;
@@ -64,5 +66,5 @@ $feature-bg-size: cover;
 
 // Layout
 // *******
-$max-width: 75rem;
+$max-width: 60rem;
 $reading-width: 40rem;

@@ -10,15 +10,17 @@ Please explore some of my work below. In addition, I have [years of experience](
 ## Case Studies
 
 {% for project in site.portfolio %}
-<div class="project">
-  <div class="project-thumb">
+<section class="feature u-divide">
+  <header>
+    <a href="{{ project.url | prepend: site.baseurl }}">
+      <h3>{{ project.title }}</h3>
+    </a>
+    <p>{{ project.short-description }}</p>
+  </header>
+  <div>
     <a href="{{ project.url | prepend: site.baseurl }}">
       <img src="/{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
     </a>
   </div>
-  <div class="project-description">
-    <a href="{{ project.url | prepend: site.baseurl }}"><strong>{{ project.title }}</strong></a>
-    <p>{{ project.short-description }}</p>
-  </div>
-</div>
+</section>
 {% endfor %}
