@@ -26,6 +26,7 @@ h1,
 .h1 {
   @extend %heading;
   font-size: $font-size-h1;
+  text-align: center;
 }
 
 h2 {

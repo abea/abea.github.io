@@ -18,9 +18,7 @@ main,
   @include outer-container;
 }
 
-.l-reading,
-.article,
-.comments {
+.l-reading {
   @include margin(null auto);
   max-width: $reading-width;
 }
