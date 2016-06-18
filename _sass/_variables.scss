@@ -1,3 +1,4 @@
+$visual-grid: true;
 // Breakpoints
 // $bp-palm:
 $bp-hands: 30em;
@@ -46,7 +47,7 @@ $text-color: $grey-dark;
 $text-light: lighten($text-color, 10%);
 $link-color: darken($color-secondary, 7%);
 $link-color-hover: darken($link-color, 10%);
-$selection-color: $color-primary; // visible when highlighting text
+$selection-color: lighten($color-primary, 20%); // visible when highlighting text
 $form-border-color: $grey-light;
 
 // Other colours
@@ -66,5 +67,5 @@ $feature-bg-size: cover;
 
 // Layout
 // *******
-$max-width: 60rem;
+$max-width: 50rem;
 $reading-width: 40rem;

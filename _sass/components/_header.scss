@@ -1,5 +1,5 @@
-.l-header {
-  padding: $gutter;
+.header {
+  @include pad;
   background: $banner-bg;
 
   a {
