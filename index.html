@@ -26,8 +26,8 @@ ishome: 1
     <h2 class="section__heading">Blog Posts</h2>
     <ul class="l-flex-grid">
       {% for post in paginator.posts %}
-      <li class="post-teaser">
-        <article>
+      <li>
+        <article class="teaser">
           <header>
             <h3>
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">

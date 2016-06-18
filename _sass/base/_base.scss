@@ -26,6 +26,7 @@ h1,
 .h1 {
   @extend %heading;
   font-size: $font-size-h1;
+  text-align: center;
 }
 
 h2 {
@@ -40,7 +41,7 @@ h3 {
 
 h4 {
   @extend %heading;
-  font-size: $font-size-h3;
+  font-size: $font-size-h4;
 }
 
 h5,
@@ -94,8 +95,10 @@ p,
 ol,
 ul,
 dl,
+audio,
+video,
 .math-display {
-  margin-bottom: 1em;
+  margin-bottom: $gutter;
 }
 
 .math-display {

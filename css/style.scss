@@ -31,12 +31,11 @@
 // Layout
 // *******
 @import "layout";
-@import "layouts/posts";
 
 // Components
 // ***********
-@import "includes/embeds";
-@import "includes/footer";
+@import "components/embeds";
+@import "components/footer";
 @import "components/feature";
 @import "components/header";
 @import "components/icons";
@@ -45,3 +44,4 @@
 @import "components/nav";
 @import "components/pager";
 @import "components/section";
+@import "components/teaser";

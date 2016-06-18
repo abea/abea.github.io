@@ -1,28 +1,21 @@
-.l-header,
+.header,
 main,
-.l-footer {
-  @include padding(null $gutter);
-  margin-bottom: $gutter;
-}
-
-
-.l-footer {
-  display: inline-block;
-  width: 100%;
-  color: $text-color;
-  text-align: center;
-}
+.footer { margin-bottom: $gutter; }
 
 // Main layout
 .l-container {
   @include outer-container;
 }
 
-.l-reading,
-.article,
-.comments {
-  @include margin(null auto);
-  max-width: $reading-width;
+.l-reading {
+  @include pad;
+
+  @media (min-width:$bp-hands-wide) {
+    @include span-columns(10 of 12);
+    @include shift(1);
+  }
+
+  header { text-align: center; }
 }
 
 .l-flex-grid {

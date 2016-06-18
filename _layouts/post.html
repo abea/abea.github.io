@@ -2,13 +2,13 @@
 layout: post-header
 ---
 <article class="l-reading">
-  <section class="post-content">
+  <section>
     <header>
       <h1 class="title">{{ page.title }}</h1>
       {% if page.audio %}
       <audio controls="controls">
         <source type="audio/mp3" src="../../../assets/audio/{{ page.audio }}"></source>
-        <p>Please use a new browser version to hear the audio recording.</p>
+        <p>Please use a newer browser version to hear the audio recording.</p>
       </audio>
       {% endif %}
     </header>
@@ -18,7 +18,7 @@ layout: post-header
 
 <!-- Disqus -->
 {% if site.theme.disqus_shortname %}
-<aside class="comments">
+<aside class="l-reading">
   {% include disqus.html %}
 </aside>
 {% endif %}
