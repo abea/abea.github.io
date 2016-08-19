@@ -3,7 +3,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://alexbea.com" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
-theme:
+config:
   # Meta
   title: Alexander Bea # Your name will go here
   description: "Front end web developer in Ithaca, NY" # used by search engines
