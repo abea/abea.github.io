@@ -13,10 +13,10 @@
         {% endfor %}
       </ul>
     </nav>
-    <h1><a href="{{ site.baseurl }}/" class="link--simple">{{ site.theme.title }}</a></h1>
+    <h1><a href="{{ site.baseurl }}/" class="link--simple">{{ site.config.title }}</a></h1>
     
-    {% if site.theme.header_text %}
-      {{ site.theme.header_text }}
+    {% if site.config.header_text %}
+      {{ site.config.header_text }}
     {% endif %}      
     <div class="divider"></div>
     <!-- Social icons from Font Awesome, if enabled -->

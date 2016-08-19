@@ -42,7 +42,7 @@ ishome: 1
             {{ post.excerpt | | strip_html | strip_newlines | truncate: 120 }}
           </p>
           <a href="{{ post.url | prepend: site.baseurl }}">
-            {{ site.theme.str_continue_reading }}
+            {{ site.config.str_continue_reading }}
           </a>
         </article>
       </li>
@@ -54,12 +54,12 @@ ishome: 1
       {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
         <i class="fa fa-chevron-left"></i>
-        {{ site.theme.str_prev }}
+        {{ site.config.str_prev }}
       </a>
       {% endif %}
       {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-        {{ site.theme.str_next }}
+        {{ site.config.str_next }}
         <i class="fa fa-chevron-right"></i>
       </a>
       {% endif %}
