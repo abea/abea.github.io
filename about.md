@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Howdy. I am a front end web developer based in Ithaca, NY, currently building the web with [Singlebrook Technology](http://singlebrook.com). We are proudly a B Corp and love working with clients who share a passion for making a better world. I specialize in and love learning about responsive, accessible, and highly usable web development.
+Howdy. I am a front end web developer based in Ithaca, NY, building the web with [Origin Eight](http://origineight.net). I specialize in and love learning about responsive, accessible, and highly usable web development.
 
-I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.config.linkedin }}). I earned a B.A. in communication from Marist and and M.A. in the same from Virginia Tech. I then ran social media and email for a couple of great climate change organizations, was a project manager and digital strategist, then ran a digital communications team for an international nonprofit. Moving far from the big cities was the push I needed to go into coding full time.
+I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.config.linkedin }}). I earned a B.A. in communication from Marist and and M.A. in the same from Virginia Tech. I then ran social media and email for a couple of great climate change organizations, was a project manager and digital strategist, eventually managing a digital communications team for an international nonprofit. Moving far from the big cities was the push I needed to go into coding full time.
 
 Now as a developer, I'm constantly impressed, excited, and a occasionally overwhelmed by all the languages, services, and techniques that we have available. [Please check out my latest work](/work/) for what I've done with them lately.
 
@@ -21,7 +21,12 @@ My primary interests are:
 If you're interested in working together or simply discussing generally important or cool matters, send me a message at [alex@abcreations.co](mailto:alex@abcreations.co). I'll reply as soon as I'm able.
 
 
-## Site credits:
+## Favorite tools
+
+Though I get a little better at resisting playing with all the latest shiny tools every day, I do enjoy a lot that others have created. Here are a bunch that I like and have used while working on this and other sites.
 
 - [Coolors](http://coolors.co/app/): Color palette inspiration for non-designers like me.
-- [Bloc's Kami template](https://github.com/Bloc/portfolio-kami): I learned much from my Bloc boot camp and the starter template for this Jekyll site is theirs.
+- [Sassmeister](http://www.sassmeister.com/): My favorite preprocessor has a great side benefit of inspiring great tool names. This one is great for quickly testing Sass or creating demo code.
+- [FillMurray](http://www.fillmurray.com/): You can use your cats, dogs, bears, or grey squares for placeholder images. I'll use Bill Murray's sweet face.
+- [Unsplash.it](https://unsplash.it/): When placeholder images need to be a bit more serious for client work, the photos from Unsplash are beautiful and versatile.
+- [Social Good Ipsum](http://socialgoodipsum.com/#!/#top): Everyone has their favorite placeholder text generator. Coming from the nonprofit world and often building sites for NGOs, this one is mine.
