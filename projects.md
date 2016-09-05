@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Web development projects
+menu_title: Projects
 permalink: /projects/
 excerpt: A collection of some of the web development projects I've been tinkering around in spare time.
 ---
