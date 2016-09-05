@@ -13,6 +13,15 @@
         {% endfor %}
       </ul>
     </nav>
-    <a href="{{ site.baseurl }}/" class="h1 link--simple">{{ site.config.title }}</a>
+    <h1>{{ site.config.title }}</h1>
+    
+    {% if site.config.header_text %}
+      {{ site.config.header_text }}
+    {% endif %}      
+    <div class="divider"></div>
+    <!-- Social icons from Font Awesome, if enabled -->
+    <ul class="l-list-inline header__social">
+  	  {% include icons.html %}
+  	</ul>
   </div>
 </header>
