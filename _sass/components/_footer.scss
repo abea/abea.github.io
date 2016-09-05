@@ -1,4 +1,5 @@
 .footer {
+  @extend %bottom-gutter;
   color: $text-color;
   text-align: center;
 }

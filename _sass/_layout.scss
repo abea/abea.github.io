@@ -1,6 +1,4 @@
-.header,
-main,
-.footer { margin-bottom: $gutter; }
+%bottom-gutter { margin-bottom: $gutter; }
 
 // Main layout
 .l-container {
@@ -8,8 +6,6 @@ main,
 }
 
 .l-reading {
-  @include pad;
-
   @media (min-width:$bp-hands-wide) {
     @include span-columns(10 of 12);
     @include shift(1);
