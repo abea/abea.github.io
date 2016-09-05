@@ -16,6 +16,11 @@ body {
   line-height: $line-height-base;
 }
 
+main {
+  @extend %bottom-gutter;
+  @include pad;
+}
+
 %heading {
   margin: .25em 0 .75em;
   font-family: $font-family-headings;

@@ -1,4 +1,5 @@
 .header {
+  @extend %bottom-gutter;
   @include pad;
   background: $banner-bg;
 

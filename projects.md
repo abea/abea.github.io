@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Projects
+title: Web development projects
 permalink: /projects/
+excerpt: A collection of some of the web development projects I've been tinkering around in spare time.
 ---
 
 Always looking to do some learning and exploration on my own, I'll start collecting some personal work here. Most will be open-source or otherwise free, so enjoy!
