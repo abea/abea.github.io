@@ -7,6 +7,7 @@ config:
   # Meta
   title: Alexander Bea # Your name will go here
   description: "Front end web developer in Ithaca, NY" # used by search engines
+  default_img: "img/ab-logo-min.png"
 
   # Header and footer text
   header_text: >

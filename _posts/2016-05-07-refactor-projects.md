@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Thoughts on code refactoring
-feature-img:
 tags:
 - front end development
 - web development

@@ -2,7 +2,7 @@
 layout: page
 title: My Work
 permalink: /work/
-feature-img: "img/color.png"
+image: "img/color.png"
 ---
 
 Please explore some of my work below. In addition, I have [years of experience]({{ site.config.linkedin }}) with digital strategy and web project management both within organizations and as an agency project manager. I'd love to talk about how we can collaborate. Please [email me](mailto:alex@abcreations.co).
