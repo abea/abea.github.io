@@ -34,7 +34,8 @@ h1,
   text-align: center;
 }
 
-h2 {
+h2,
+.h2 {
   @extend %heading;
   font-size: $font-size-h2;
 }
