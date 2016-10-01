@@ -25,7 +25,7 @@ ishome: 1
   <section class="section">
     <h2 class="section__heading">Blog Posts</h2>
     <ul class="l-flex-grid">
-      {% for post in paginator.posts %}
+      {% for post in paginator.posts limit:6 %}
       <li>
         <article class="teaser">
           <header>
@@ -48,21 +48,7 @@ ishome: 1
       </li>
       {% endfor %}
     </ul>
-    
-    {% if paginator.total_pages > 1 %}
-    <nav class="pagination">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-        <i class="fa fa-chevron-left"></i>
-        {{ site.config.str_prev }}
-      </a>
-      {% endif %}
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
-        {{ site.config.str_next }}
-        <i class="fa fa-chevron-right"></i>
-      </a>
-      {% endif %}
-    </nav>
-    {% endif %}
+    <p>
+      <a href="/blog">More blog posts</a>
+    </p>
   </section>

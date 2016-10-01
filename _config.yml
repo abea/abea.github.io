@@ -56,8 +56,8 @@ config:
   google_fonts: "Baloo"
 
 # PAGINATION
-paginate: 100
-paginate_path: "blog/page:num"
+# paginate: 10
+# paginate_path: "blog/page:num"
 
 # COLLECTIONS
 collections:

@@ -4,14 +4,10 @@
   background: $banner-bg;
   color: $banner-color;
 
-  a {
-    color: inherit;
+  a { @extend %banner-links; }
 
-    &:hover {
-      outline: 1px solid currentColor;
-      text-decoration-line: none;
-    }
-  }
+  h1,
+  h2 { text-shadow: 0 1px $grey-dark; }
 }
 
 .header__social {
