@@ -2,13 +2,14 @@
   @extend %bottom-gutter;
   @include pad;
   background: $banner-bg;
+  color: $banner-color;
 
   a {
-    color: $banner-link;
-    text-decoration-line: none;
+    color: inherit;
 
     &:hover {
       outline: 1px solid currentColor;
+      text-decoration-line: none;
     }
   }
 }

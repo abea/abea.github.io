@@ -8,8 +8,8 @@ $bp-hands-wide: 48em;
 
 // Typography
 $system-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-$font-family-main: 'Source Sans Pro', $system-fonts;
-$font-family-headings: 'Cabin Sketch', $system-fonts;
+$font-family-main: $system-fonts;
+$font-family-headings: Baloo, $system-fonts;
 $font-size: 1.125rem;
 $font-size-h1: 2.5rem;
 $font-size-h2: 2rem;
@@ -47,7 +47,7 @@ $text-color: $grey-dark;
 $text-light: lighten($text-color, 10%);
 $link-color: darken($color-secondary, 7%);
 $link-color-hover: darken($link-color, 10%);
-$selection-color: lighten($color-primary, 20%); // visible when highlighting text
+$selection-color: lighten($color-secondary, 40%); // visible when highlighting text
 $form-border-color: $grey-light;
 
 // Other colours
@@ -57,8 +57,8 @@ $default-border: .0625rem solid $border-color;
 
 // Banner colors
 $banner-bg: $color-primary;
-$banner-link: $white;
-$banner-link-hover: $link-color-hover;
+$banner-color: $white;
+$banner-color-hover: $link-color-hover;
 
 // Feature image for articles
 $feature-image-text-color: $white;
