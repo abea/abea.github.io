@@ -25,7 +25,7 @@ ishome: 1
   <section class="section">
     <h2 class="section__heading">Blog Posts</h2>
     <ul class="l-flex-grid">
-      {% for post in paginator.posts limit:6 %}
+      {% for post in site.posts limit:6 %}
       <li>
         <article class="teaser">
           <header>
