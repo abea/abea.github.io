@@ -2,15 +2,12 @@
   @extend %bottom-gutter;
   @include pad;
   background: $banner-bg;
+  color: $banner-color;
 
-  a {
-    color: $banner-link;
-    text-decoration-line: none;
+  a { @extend %banner-links; }
 
-    &:hover {
-      outline: 1px solid currentColor;
-    }
-  }
+  h1,
+  h2 { text-shadow: 0 1px $grey-dark; }
 }
 
 .header__social {

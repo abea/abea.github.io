@@ -5,3 +5,12 @@
   font-size: $font-size-small;
   letter-spacing: .1em;
 }
+
+%banner-links {
+  color: inherit;
+
+  &:hover {
+    outline: 1px solid currentColor;
+    text-decoration-line: none;
+  }
+}
