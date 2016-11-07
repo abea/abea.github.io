@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Digital KonMari
+audio: digital-konmari.mp3
 tags:
 - personal
 - organization
@@ -23,10 +24,10 @@ My steps were very similar:
 1. Delete what’s no longer useful — DON’T simply move it into an external drive or other storage location.
 1. Identify the proper place for the stuff that remains, create simple systems of organization where needed, and make sure things end up in the right spot.
 
-As with the physical Konmari, this took a while and is best done in chunks (e.g., Documents, then Downloads, then Music, then Video, etc). It’s sort of still in progress. Just yesterday I open up my notes in [Simplenote](https://simplenote.com/) and realized I had meeting notes from a few jobs ago. No more!
+As with the physical KonMari, this took a while and is best done in chunks (e.g., Documents, then Downloads, then Music, then Video, etc). It’s sort of still in progress. Just yesterday I open up my notes in [Simplenote](https://simplenote.com/) and realized I had meeting notes from a few jobs ago. No more!
 
 There were ideas for writing projects in multiple files (now one), duplicate archived directories, music that came in a bundle that I never played. I had some applications that were not compatible with my updated operating system, that had long expired registration, or that I had replaced with another alternative. There were also old freelance client projects in my `Sites` directory that are inactive and could be easily reinstalled from a remote git repository.
 
 My computer has always been the place I’m most obsessively organized, so the effect isn’t night and day. Still, as I traverse my file system on the command line or simply click-open folders, things are easier to find and feel less visually cluttered. As a front end developer I work to make websites easier to use, so why not my own machine?
 
-I encourage other devs especially to go through this kind of process every so often. Hopefully, as the Konmari method goes, a one-time deep dive should mean easier organization and, most importantly, more efficient work (and play) going forward.
+I encourage other devs especially to go through this kind of process every so often. Hopefully, as the KonMari method goes, a one-time deep dive should mean easier organization and, most importantly, more efficient work (and play) going forward.
