@@ -1,6 +1,6 @@
 <header class="header text-center">
   <div class="l-container">
-    <nav class="nav--main">
+    <nav>
       <ul class="l-list-inline text--right">
         {% for page in site.pages %}
         {% if page.title and page.hide != true %}
@@ -13,6 +13,6 @@
         {% endfor %}
       </ul>
     </nav>
-    <a href="{{ site.baseurl }}/" class="h1 link--simple">{{ site.config.title }}</a>
+    <a href="{{ site.baseurl }}/" class="h1 header__heading">{{ site.config.title }}</a>
   </div>
 </header>

@@ -1,5 +1,4 @@
 .footer {
-  @include pad;
   @include padding($gutter null);
   background-color: $grey-dark;
   color: $banner-color;

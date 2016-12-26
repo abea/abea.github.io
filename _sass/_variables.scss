@@ -9,15 +9,15 @@ $bp-hands-wide: 48em;
 // Typography
 $system-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 $font-family-main: $system-fonts;
-$font-family-headings: Baloo, $system-fonts;
+$font-family-headings: "Work Sans", $system-fonts;
 $font-size: 1.125rem;
 $font-size-h1: 2.5rem;
 $font-size-h2: 2rem;
 $font-size-h3: 1.5rem;
-$font-size-h4: 1.15rem;
+$font-size-h4: 1.25rem;
 
-$em-base: 18px;
-$font-size-base: 1rem;
+$em-base: 16px;
+$font-size-base: 1.125rem;
 $font-size-small: 80%;
 
 $line-height-base: 1.4;
@@ -67,11 +67,9 @@ $feature-bg-size: cover;
 
 // Layout
 // *******
-$max-width: 50rem;
 $reading-width: 40rem;
 
 // Neat layout variables
-$column: 5rem;
 $gutter: 1.25rem;
-$grid-columns: 12;
-$max-width: 75rem;
+$gutter-vertical: 1.25em;
+$max-width: 42rem;

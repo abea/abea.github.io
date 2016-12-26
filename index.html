@@ -3,40 +3,39 @@ layout: home
 ishome: 1
 ---
 
-  <section class="section">
-    <h2 class="section__heading">Blog Posts</h2>
-    <ul class="l-flex-grid">
-      {% for post in site.posts limit:6 %}
-      <li>
-        <article class="teaser">
-          <header>
-            <h3>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                {{ post.title }}
-              </a>
-            </h3>
-            <time class="meta" datetime="{{ post.date }}">
-              {{ post.date | date: "%B %-d, %Y" }}
-            </time>
-          </header>
-          <p>
-            {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
-          </p>
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            {{ site.config.str_continue_reading }}
-          </a>
-        </article>
-      </li>
+  <section>
+    <h2>Blog Posts</h2>
+    <div class="l-listing">
+      {% for post in site.posts limit:4 %}
+      <article>
+        <header>
+          <h3>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+              {{ post.title }}
+            </a>
+          </h3>
+          <time class="meta" datetime="{{ post.date }}">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </time>
+        </header>
+        <p>
+          {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+        </p>
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          {{ site.config.str_continue_reading }}
+        </a>
+      </article>
       {% endfor %}
-    </ul>
+    </div>
     <p>
       <a href="/blog">More blog posts</a>
     </p>
   </section>
-  <section class="section">
-    <h2 class="section__heading">My Work</h2>
+  <section>
+    <h2>My Work</h2>
+    <div class="l-listing">
     {% for project in site.portfolio limit:2 %}
-    <div class="feature">
+    <article class="feature">
       <div class="feature__image">
         <a href="{{ project.url | prepend: site.baseurl }}">
           <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
@@ -46,8 +45,9 @@ ishome: 1
         <a href="{{ project.url | prepend: site.baseurl }}"><h3>{{ project.title }}</h3></a>
         <p>{{ project.short-description }}</p>
       </div>
-    </div>
+    </article>
     {% endfor %}
+    </div>
     <p>
       <a href="/work">More projects</a>
     </p>

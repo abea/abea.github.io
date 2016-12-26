@@ -3,7 +3,7 @@
 
 // Normalize
 // **********
-@import "vendor/reset";
+@import "vendor/normalize";
 
 // Variables
 // **********
@@ -13,9 +13,8 @@
 // *********
 // Code highlighter
 @import "vendor/solarized-dark";
-// Bourbon and Neat mixins
+// Bourbon mixins
 @import "vendor/bourbon/bourbon";
-@import "vendor/neat/neat";
 
 // Utilities
 // **********
@@ -39,7 +38,3 @@
 @import "components/feature";
 @import "components/header";
 @import "components/images";
-@import "components/nav";
-@import "components/pager";
-@import "components/section";
-@import "components/teaser";

@@ -1,32 +1,47 @@
 * {
   margin: 0;
-  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  line-height: inherit;
   box-sizing: border-box;
+
+  + * { margin-top: $gutter-vertical; }
+}
+
+body,
+br,
+li,
+dt,
+dd,
+th,
+td,
+option {
+  margin-top: 0;
 }
 
 html {
   background: $background-color;
-  font-size: $em-base;
-}
-
-body {
   color: $text-color;
   font-family: $font-family-main;
-  font-size: $font-size-base;
+  font-size: $em-base;
   line-height: $line-height-base;
 }
 
-main {
-  @extend %bottom-gutter;
-  @include pad;
+body {
+  font-size: $font-size-base;
 }
 
 %heading {
-  margin: .25em 0 .75em;
   font-family: $font-family-headings;
-  font-weight: normal;
-  line-height: 1.1;
+  font-weight: 800;
 }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 { display: inline-block; }
 
 h1,
 .h1 {
@@ -39,6 +54,7 @@ h2,
 .h2 {
   @extend %heading;
   font-size: $font-size-h2;
+  text-align: center;
 }
 
 h3 {
@@ -61,11 +77,6 @@ blockquote {
   font-size: $font-size-h4;
 }
 
-blockquote p:last-child,
-footer p:last-child {
-  margin-bottom: 0;
-}
-
 table {
   width: 100%;
   table-layout: fixed;
@@ -84,29 +95,8 @@ th {
   text-align: left;
 }
 
-table,
-dl,
-blockquote,
-code,
-kbd,
-pre,
-samp {
-  margin: 1em 0;
-}
-
 pre { padding: 1em; }
 dt { font-weight: bold; }
-dd { margin-left: 2em; }
-
-p,
-ol,
-ul,
-dl,
-audio,
-video,
-.math-display {
-  margin-bottom: $gutter;
-}
 
 .math-display {
   display: inline-block;
@@ -116,12 +106,10 @@ video,
 ol,
 ul {
   padding-left: 1.5rem;
-
   list-style-position: outside;
 }
 
 hr {
-  margin: 1em 0;
   border: 0;
   border-top: 1px solid $border-color;
 }
@@ -155,9 +143,8 @@ img[align=right] {
 
 p {
   img:only-child {
+    @include margin(null auto);
     display: block;
-
-    margin: 0 auto;
 
     border: 1px $border-color solid;
   }
@@ -168,7 +155,6 @@ input[type="text"],
 input[type="email"] {
   display: block;
   width: 100%;
-  margin: 0 0 1em;
   padding: .5em;
   border: $form-border;
   border-radius: 6px;
@@ -177,7 +163,6 @@ input[type="email"] {
 
 input[type="submit"] {
   display: inline-block;
-  margin: 1em 0;
   padding: .5em .75em;
   border: $linked-border;
   border-radius: .3em;
@@ -190,7 +175,6 @@ input[type="submit"] {
 textarea {
   display: block;
   width: 100%;
-  margin: 0 0 1em;
   padding: .5em;
   border: $form-border;
   border-radius: 6px;
@@ -198,3 +182,8 @@ textarea {
 }
 
 @include selection { background: $selection-color; }
+
+mark {
+  background: $color-primary;
+  color: $text-color;
+}
