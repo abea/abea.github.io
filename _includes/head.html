@@ -23,11 +23,11 @@
 	{% if site.config.google_fonts %}
 	<link href="//fonts.googleapis.com/css?family={{ site.config.google_fonts }}" rel="stylesheet" type="text/css">
 	{% endif %}
-  
+
   <!-- Open Graph -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.config.title }}{% endif %}" />
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.config.description }}{% endif %}" />
-  
+
   <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: '/' | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.config.default_img | prepend: '/' | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.config.title }}" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />

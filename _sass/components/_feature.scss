@@ -1,22 +1,18 @@
 .feature {
-  @include fill-parent();
-  margin-bottom: $gutter;
-
-  @media (min-width: $bp-hands-wide) {
-    @include row;
+  @media (min-width: $bp-hands) {
     @include margin(null auto);
+    display: flex;
   }
 
   .feature__image,
   .feature__description {
-    @media (min-width: $bp-hands-wide) {
-      @include span-columns(6 of 12);
-    }
-  }
+    @media (min-width: $bp-hands) {
+      width: calc(50% - #{$gutter});
+      width: 48%;
+      margin-right: $gutter;
 
-  .feature__description {
-    @include pad;
-    margin-bottom: 0;
-    text-align: center;
+      &:nth-of-type(-n+2) { margin-top: 0; }
+      &:last-child { margin-right: 0; }
+    }
   }
 }

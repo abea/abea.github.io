@@ -26,7 +26,7 @@ config:
   flickr:
   github: "abea" # github profile name, e.g. "madebymunsters"
   google_plus:
-  instagram: 
+  instagram:
   linkedin:  "https://www.linkedin.com/in/alexbea" # Full URL
   pinterest:
   reddit:
@@ -53,7 +53,7 @@ config:
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Baloo"
+  google_fonts: "Work+Sans:800"
 
 # PAGINATION
 # paginate: 10

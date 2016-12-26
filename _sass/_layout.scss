@@ -1,48 +1,11 @@
-%bottom-gutter { margin-bottom: $gutter; }
-
 // Main layout
 .l-container {
-  @include outer-container;
-}
-
-.l-reading {
-  @media (min-width:$bp-hands-wide) {
-    @include span-columns(10 of 12);
-    @include shift(1);
-  }
-
-  header { text-align: center; }
-}
-
-.l-flex-grid {
-  @include row;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-
-  li {
-    display: block;
-    margin-bottom: $gutter;
-    float: left;
-    background-size: $feature-bg-size;
-
-    @media (min-width:768px) {
-      width: calc(50% - (#{$gutter} / 2));
-      margin-right: $gutter;
-
-      &:nth-of-type(2n) {
-        margin-right: 0;
-      }
-    }
-
-    &:first-child {
-      padding-top: 0;
-    }
-  }
+  @include margin(null auto);
+  @include padding(null ($gutter / 2));
+  max-width: $max-width;
 }
 
 .l-list-inline {
-  margin: 0;
   padding: 0;
   list-style: none;
 
@@ -50,7 +13,14 @@
     display: inline-block;
 
     &:not(:first-of-type) {
-      margin-left: .5rem;
+      margin-left: $gutter / 2;
     }
+  }
+}
+
+.l-listing {
+  > * + * {
+    padding-top: $gutter;
+    border-top: $default-border;
   }
 }

@@ -5,8 +5,9 @@ title: Blog posts
 permalink: /blog/
 ---
 
+<div class="l-listing">
 {% for post in site.posts %}
-<article class="u-divide">
+<article>
   <header>
     <time class="meta" datetime="{{ post.date }}">
       {{ post.date | date: "%B %-d, %Y" }}
@@ -20,3 +21,4 @@ permalink: /blog/
   </p>
 </article>
 {% endfor %}
+</div>

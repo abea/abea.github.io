@@ -1,6 +1,4 @@
-iframe {
-  border: 0;
-}
+iframe { border: 0; }
 
 .embed-container {
   position: relative;
@@ -9,9 +7,7 @@ iframe {
   padding-bottom: 56.25%;
   overflow: hidden;
 
-  &--tall {
-    padding-bottom: 75%;
-  }
+  &--tall { padding-bottom: 75%; }
 }
 
 .embed-container iframe,

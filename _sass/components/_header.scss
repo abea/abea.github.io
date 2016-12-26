@@ -1,13 +1,11 @@
 .header {
-  @extend %bottom-gutter;
-  @include pad;
+  @include padding($gutter null);
   background: $banner-bg;
   color: $banner-color;
 
   a { @extend %banner-links; }
 
-  h1,
-  h2 { text-shadow: 0 1px $grey-dark; }
+  &__heading { text-shadow: 3px 3px $text-light; }
 }
 
 .header__social {
@@ -26,9 +24,11 @@
 }
 
 .divider {
+  @include margin(null auto);
   display: block;
-  width: 80px;
-  height: 3px;
-  margin: .5em auto;
+  width: 5rem;
+  min-width: 50%;
+  max-width: 80%;
+  height: .125rem;
   background-color: $border-color;
 }

@@ -1,6 +1,6 @@
 <header class="header text-center">
   <div class="l-container">
-    <nav class="nav--main">
+    <nav>
       <ul class="l-list-inline text--right">
         {% for page in site.pages %}
         {% if page.title and page.hide != true %}
@@ -13,11 +13,11 @@
         {% endfor %}
       </ul>
     </nav>
-    <h1>{{ site.config.title }}</h1>
-    
+    <h1 class="header__heading">{{ site.config.title }}</h1>
+
     {% if site.config.header_text %}
       {{ site.config.header_text }}
-    {% endif %}      
+    {% endif %}
     <div class="divider"></div>
     <!-- Social icons from Font Awesome, if enabled -->
     <ul class="l-list-inline header__social">

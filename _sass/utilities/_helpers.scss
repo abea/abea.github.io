@@ -4,8 +4,3 @@
   @include margin(null auto);
   display: block;
 }
-
-.u-divide + .u-divide {
-  padding-top: $gutter;
-  border-top: $default-border;
-}
