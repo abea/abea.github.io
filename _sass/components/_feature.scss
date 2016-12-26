@@ -1,12 +1,12 @@
 .feature {
-  @media (min-width: $bp-hands-wide) {
+  @media (min-width: $bp-hands) {
     @include margin(null auto);
     display: flex;
   }
 
   .feature__image,
   .feature__description {
-    @media (min-width: $bp-hands-wide) {
+    @media (min-width: $bp-hands) {
       width: calc(50% - #{$gutter});
       width: 48%;
       margin-right: $gutter;
@@ -15,6 +15,4 @@
       &:last-child { margin-right: 0; }
     }
   }
-
-  .feature__description { text-align: center; }
 }

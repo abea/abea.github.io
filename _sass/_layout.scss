@@ -1,6 +1,7 @@
 // Main layout
 .l-container {
   @include margin(null auto);
+  @include padding(null ($gutter / 2));
   max-width: $max-width;
 }
 
