@@ -1,8 +1,16 @@
 // Main layout
 .l-container {
-  @include margin(null auto);
-  @include padding(null ($gutter / 2));
   max-width: $max-width;
+
+  &,
+  &--demo {
+    @include margin(null auto);
+    @include padding(null ($gutter / 2));
+    width: 100%;
+    max-width: $max-width;
+  }
+
+  &--demo { max-width: $demo-width; }
 }
 
 .l-banner {

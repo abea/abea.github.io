@@ -15,6 +15,7 @@
   a { @extend %theme-links; }
 }
 
-.t-primary { background: $banner-bg; }
-.t-secondary { background: $color-secondary; }
+.t-primary { background-color: $banner-bg; }
+.t-secondary { background-color: $color-secondary; }
 .t-dark { background-color: $grey-dark; }
+.t-gray { background-color: $grey-lighter; }

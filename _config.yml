@@ -18,7 +18,7 @@ config:
 
   # Icons
   rss: true
-  email_address: "alex@abcreations.co" # Full email address, e.g. "sam@example.com"
+  email_address: "alex@abcreations.co" # Full email address
   behance:
   bitbucket:
   dribbble:
@@ -64,6 +64,9 @@ collections:
   portfolio:
     output: true
     permalink: /work/:path/
+  demos:
+    output: true
+    permalink: /demos/:path/
 
 # BUILD SETTINGS
 markdown: kramdown
