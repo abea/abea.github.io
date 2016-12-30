@@ -1,0 +1,21 @@
+%theme-links {
+  color: inherit;
+
+  &:hover {
+    outline: 1px solid currentColor;
+    text-decoration-line: none;
+  }
+}
+
+.t-primary,
+.t-secondary,
+.t-dark {
+  color: $banner-color;
+
+  a { @extend %theme-links; }
+}
+
+.t-primary { background-color: $banner-bg; }
+.t-secondary { background-color: $color-secondary; }
+.t-dark { background-color: $grey-dark; }
+.t-gray { background-color: $grey-lighter; }

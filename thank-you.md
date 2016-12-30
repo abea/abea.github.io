@@ -10,7 +10,7 @@ Thanks for your email to connect about [work, the universe, and everything](http
 
 <p class=".h2">Cheers, Alex</p>
 
-<ul class="l-list-inline header__social text-center">
+<ul class="l-list-inline text-center">
   {% include icons.html %}
 </ul>
 <!-- @TODO Replace header__social class. Not semantic. -->

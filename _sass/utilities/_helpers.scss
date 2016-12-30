@@ -4,3 +4,13 @@
   @include margin(null auto);
   display: block;
 }
+
+.u-divider {
+  @include margin(null auto);
+  display: block;
+  width: 5rem;
+  min-width: 50%;
+  max-width: 80%;
+  height: .125rem;
+  background-color: $border-color;
+}

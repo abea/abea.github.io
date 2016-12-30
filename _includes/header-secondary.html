@@ -1,7 +1,10 @@
-<header class="t-primary l-banner">
+<header class="t-secondary l-banner">
   <div class="l-container">
     <nav>
       <ul class="l-list-inline text--right">
+        <li>
+          <a href="{{ site.baseurl }}/">Home</a>
+        </li>
         {% for page in site.pages %}
         {% if page.title and page.hide != true %}
         <li>
@@ -13,6 +16,5 @@
         {% endfor %}
       </ul>
     </nav>
-    <a href="{{ site.baseurl }}/" class="h1">{{ site.config.title }}</a>
   </div>
 </header>

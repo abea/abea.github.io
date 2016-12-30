@@ -1,20 +1,41 @@
 // Main layout
 .l-container {
-  @include margin(null auto);
-  @include padding(null ($gutter / 2));
   max-width: $max-width;
+
+  &,
+  &--demo {
+    @include margin(null auto);
+    @include padding(null ($gutter / 2));
+    width: 100%;
+    max-width: $max-width;
+  }
+
+  &--demo { max-width: $demo-width; }
+}
+
+.l-banner {
+  @include padding($gutter null);
+  text-align: center;
 }
 
 .l-list-inline {
   padding: 0;
   list-style: none;
 
-  li {
-    display: inline-block;
+  a,
+  li { display: inline-block; }
 
+  li {
     &:not(:first-of-type) {
       margin-left: $gutter / 2;
     }
+  }
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    padding: .25rem;
+    fill: currentColor;
   }
 }
 
@@ -23,4 +44,20 @@
     padding-top: $gutter;
     border-top: $default-border;
   }
+}
+
+// Sticky footer layout
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  > header,
+  > footer { flex-grow: 0; }
+
+  > main { flex-grow: 1; }
 }
