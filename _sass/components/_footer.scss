@@ -1,8 +1,0 @@
-.footer {
-  @include padding($gutter null);
-  background-color: $grey-dark;
-  color: $banner-color;
-  text-align: center;
-
-  a { @extend %banner-links; }
-}

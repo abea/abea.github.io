@@ -1,4 +1,4 @@
-<header class="header text-center">
+<header class="header t-primary l-banner">
   <div class="l-container">
     <nav>
       <ul class="l-list-inline text--right">
@@ -13,12 +13,12 @@
         {% endfor %}
       </ul>
     </nav>
-    <h1 class="header__heading">{{ site.config.title }}</h1>
+    <h1>{{ site.config.title }}</h1>
 
     {% if site.config.header_text %}
       {{ site.config.header_text }}
     {% endif %}
-    <div class="divider"></div>
+    <div class="u-divider"></div>
     <!-- Social icons from Font Awesome, if enabled -->
     <ul class="l-list-inline header__social">
   	  {% include icons.html %}

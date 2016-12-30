@@ -48,6 +48,8 @@ h1,
   @extend %heading;
   font-size: $font-size-h1;
   text-align: center;
+
+  body > header & { text-shadow: 3px 3px $text-light; }
 }
 
 h2,
@@ -57,12 +59,14 @@ h2,
   text-align: center;
 }
 
-h3 {
+h3,
+.h3 {
   @extend %heading;
   font-size: $font-size-h3;
 }
 
-h4 {
+h4,
+.h4 {
   @extend %heading;
   font-size: $font-size-h4;
 }

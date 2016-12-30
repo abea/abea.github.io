@@ -11,7 +11,7 @@ config:
 
   # Header and footer text
   header_text: >
-     <h2 class="header__tagline">Front end web developer in Ithaca, NY</h2>
+     <h2 class="h3">Front end web developer in Ithaca, NY</h2>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> and made with code. And love.
