@@ -6,7 +6,7 @@ tags:
 - front end development
 ---
 
-Ask 20 front end developers what they like to name their responsive breakpoints and you’ll get… probably like 10 answers probably. Most people use similar ones, but many of us like to switch it up. For me, I’ve landed on a system I like based on screen interaction context.
+Ask 20 front end developers what they like to name their responsive breakpoints and you’ll get… probably 10 or so answers. Most people use similar ones, but many of us like to switch it up. For me, I’ve landed on a system I like based on screen interaction context.
 
 To be more clear, what I’m talking about here are variable names for responsive breakpoint values while using CSS preprocessors. I use bracketed Sass, but all the pre- or post-processors I’m aware of (and worth using) have some system for using variables. They allow us to say that `$color-primary` is always `#663399`, then never need to remember in what order those 3s, 6s, and 9s go.
 
