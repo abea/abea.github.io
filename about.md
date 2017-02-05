@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Howdy. I am a front end web developer based in Ithaca, NY. I specialize in and love learning about responsive, accessible, and highly usable web development.
+Howdy. I am a front end developer and proponent of building efficient, accessible, and highly usable web experiences.
 
 I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.config.linkedin }}). I earned a B.A. in communication from Marist and and M.A. in the same from Virginia Tech. I then ran social media and email for a couple of great climate change organizations, was a project manager and digital strategist, eventually managing a digital communications team for an international nonprofit. Moving far from the big cities was the push I needed to go into coding full time.
 
