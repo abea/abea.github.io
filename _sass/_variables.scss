@@ -29,9 +29,10 @@ $padding-x-small: 1%;
 
 // Brand colours
 // http://paletton.com/palette.php?uid=60A0u0kw0w0jvDaoOy4y4oODajv
-$texas: #bf5700;
-$color-primary: lighten($texas, 5%);
-$color-secondary: complement($color-primary);
+$rebeccapurple: #639;
+$primary-old: #d96300;
+$color-primary: darken(adjust-hue($primary-old, -6%), 10%);
+$color-secondary: darken(adjust-hue($rebeccapurple, -26%), 10%);
 
 $black: #000;
 $grey-dark: mix($color-primary, lighten($black, 10%), 5%);
@@ -45,9 +46,9 @@ $border-color: rgba($grey-dark, .25);
 // Typography colours
 $text-color: $grey-dark;
 $text-light: lighten($text-color, 10%);
-$link-color: darken($color-secondary, 7%);
-$link-color-hover: darken($link-color, 10%);
-$selection-color: lighten($color-secondary, 40%); // visible when highlighting text
+$link-color: $color-secondary;
+$link-color-hover: adjust-hue(saturate(darken($link-color, 10%), 2%), 4%);
+$selection-color: adjust-hue(desaturate(lighten($color-secondary, 20%), 5%), -3%); // visible when highlighting text
 $form-border-color: $grey-light;
 
 // Other colours
