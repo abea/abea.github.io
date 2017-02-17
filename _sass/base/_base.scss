@@ -173,7 +173,7 @@ input[type="submit"] {
   background-color: $color-primary;
   color: $background-color;
 
-  &:hover { background: $link-color; }
+  &:hover { background-color: $link-color; }
 }
 
 textarea {
@@ -183,11 +183,4 @@ textarea {
   border: $form-border;
   border-radius: 6px;
   box-shadow: none;
-}
-
-::selection { background: $selection-color; }
-
-mark {
-  background: $color-primary;
-  color: $text-color;
 }

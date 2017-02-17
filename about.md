@@ -8,7 +8,7 @@ Howdy. I am a front end developer and proponent of building efficient, accessibl
 
 I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.config.linkedin }}). I earned a B.A. in communication from Marist and and M.A. in the same from Virginia Tech. I then ran social media and email for a couple of great climate change organizations, was a project manager and digital strategist, eventually managing a digital communications team for an international nonprofit. Moving far from the big cities was the push I needed to go into coding full time.
 
-Now as a developer, I'm constantly impressed, excited, and a occasionally overwhelmed by all the languages, services, and techniques that we have available. [Please check out my latest work](/work/) for some of what I've done with them lately.
+Now as a developer, I'm constantly impressed, excited, and a occasionally overwhelmed by all the languages, services, and techniques that we have available. [Please check out some of my latest work](/work/) for some of what I've done with them lately.
 
 My primary interests are:
 
@@ -29,4 +29,3 @@ Though I get a little better at resisting playing with all the latest shiny tool
 - [Sassmeister](http://www.sassmeister.com/): My favorite preprocessor has a great side benefit of inspiring great tool names. This one is great for quickly testing Sass or creating demo code.
 - [FillMurray](http://www.fillmurray.com/): You can use your cats, dogs, bears, or grey squares for placeholder images. I'll use Bill Murray's sweet face.
 - [Unsplash.it](https://unsplash.it/): When placeholder images need to be a bit more serious for client work, the photos from Unsplash are beautiful and versatile.
-- [Social Good Ipsum](http://socialgoodipsum.com/#!/#top): Everyone has their favorite placeholder text generator. Coming from the nonprofit world and often building sites for NGOs, this one is mine.
