@@ -56,7 +56,6 @@ h2,
 .h2 {
   @extend %heading;
   font-size: $font-size-h2;
-  text-align: center;
 }
 
 h3,
@@ -99,13 +98,13 @@ th {
   text-align: left;
 }
 
-pre { padding: 1em; }
-dt { font-weight: bold; }
-
-.math-display {
-  display: inline-block;
-  width: 100%;
+pre {
+  padding: 1em;
+  background-color: $color-primary;
+  color: $gray-10;
 }
+
+dt { font-weight: bold; }
 
 ol,
 ul {
@@ -154,33 +153,14 @@ p {
   }
 }
 
+label,
+input,
+textarea,
+select { display: block; }
 
-input[type="text"],
-input[type="email"] {
-  display: block;
-  width: 100%;
+#{$all-text-inputs},
+select {
   padding: .5em;
   border: $form-border;
-  border-radius: 6px;
-  box-shadow: none;
-}
-
-input[type="submit"] {
-  display: inline-block;
-  padding: .5em .75em;
-  border: $linked-border;
-  border-radius: .3em;
-  background-color: $color-primary;
-  color: $background-color;
-
-  &:hover { background-color: $link-color; }
-}
-
-textarea {
-  display: block;
-  width: 100%;
-  padding: .5em;
-  border: $form-border;
-  border-radius: 6px;
-  box-shadow: none;
+  font-size: inherit;
 }

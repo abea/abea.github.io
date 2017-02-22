@@ -6,9 +6,9 @@ permalink: /about/
 
 Howdy. I am a front end developer and proponent of building efficient, accessible, and highly usable web experiences.
 
-I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.config.linkedin }}). I earned a B.A. in communication from Marist and and M.A. in the same from Virginia Tech. I then ran social media and email for a couple of great climate change organizations, was a project manager and digital strategist, eventually managing a digital communications team for an international nonprofit. Moving far from the big cities was the push I needed to go into coding full time.
+I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.config.linkedin }}). I've been a academic nerd in grad school, studying digital communications. After that I was a digital advocacy nerd, supporting a couple of great climate change and environmental organizations. Finally, I started focusing in on being a web development nerd, as a technical project manager then developer.
 
-Now as a developer, I'm constantly impressed, excited, and a occasionally overwhelmed by all the languages, services, and techniques that we have available. [Please check out some of my latest work](/work/) for some of what I've done with them lately.
+I'm constantly impressed, excited, and a occasionally overwhelmed by all the languages, services, and techniques that we have available. [Please check out some of my latest work](/work/) for some of what I've done with them lately.
 
 My primary interests are:
 
@@ -17,6 +17,15 @@ My primary interests are:
 - component-based styling with Sass/CSS
 - progressive enhancement with Javascript and jQuery
 - efficient workflows using Grunt
+
+## Speaking
+
+I've enjoyed giving talks at my local web development Meetups.
+
+- [SCSS introduction](http://alexbea.com/2016/06/09/sass-talk.html), Ithaca Web People
+- [Semantic HTML Rules](http://alexbea.com/2016/02/15/semantic-html5-talk.html), Ithaca Web People
+
+## Get in touch
 
 If you're interested in working together or simply discussing generally important or cool matters, send me a message at [alex@abcreations.co](mailto:alex@abcreations.co). I'll reply as soon as I'm able.
 
