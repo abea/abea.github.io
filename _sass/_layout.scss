@@ -10,7 +10,20 @@
     max-width: $max-width;
   }
 
-  &--demo { max-width: $demo-width; }
+  &--demo {
+    max-width: 90%;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include margin(null auto);
+      max-width: $max-width;
+    }
+  }
 }
 
 .l-banner {
