@@ -12,7 +12,9 @@ After tinkering with this personal portfolio site for a while more or less live,
 
 The answer to how to build the style guide was pretty easy for me: [Pattern Lab](http://patternlab.io/). [As I discussed a bit in a previous post](http://alexbea.com/2016/04/03/pattern-lab-git.html), Pattern Lab is a pretty fantastic tool for intentionally designing and building site or app components from the ground up. I briefly considered [KSS](http://warpspire.com/kss/styleguides/), which seems like a great tool overall. Ultimately my familiarity and affinity for Pattern Lab won out. I did some quick searching for other recommendations specifically to work with [Github Pages](https://pages.github.com/), but didn’t see anything.
 
-Specifically, I decided on the **[Node version of Pattern Lab, Grunt edition](https://github.com/pattern-lab/edition-node-grunt)**. Pattern Lab was originally built with PHP, which was awesome when I used it on a Drupal project. This time around, no reason to spin up a local server with PHP if the rest of the site isn’t using it.
+Specifically, I decided on the **[Node version of Pattern Lab, Grunt edition](https://github.com/pattern-lab/edition-node-grunt)**. ~~Pattern Lab was originally built with PHP, which was awesome when I used it on a Drupal project. This time around, no reason to spin up a local server with PHP if the rest of the site isn’t using it.~~
+
+(*Correction:* I totally forgot that you don't need any local server set up to build the PHP version of Pattern Lab. [It's really simple by design.](http://patternlab.io/docs/generating-pattern-lab.html) I'll stick with the Node version for now if only to try the new flavor.)
 
 Once I had that settled and started setting it up with my existing styles, I was faced with the question of how to host it. Hosting it publicly was important because… well, it’s fun to share. A public style guide could also be useful to host code samples for potential employers.
 
