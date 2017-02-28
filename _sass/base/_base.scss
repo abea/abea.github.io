@@ -47,9 +47,6 @@ h1,
 .h1 {
   @extend %heading;
   font-size: $font-size-h1;
-  text-align: center;
-
-  body > header & { text-shadow: 3px 3px $text-light; }
 }
 
 h2,
@@ -124,6 +121,15 @@ a {
   @include haf {
     color: $link-color-hover;
     text-decoration-style: solid;
+  }
+
+  %dark-theme & {
+    color: inherit;
+
+    &:hover {
+      outline: 1px solid currentColor;
+      text-decoration-line: none;
+    }
   }
 }
 

@@ -11,8 +11,6 @@
   }
 
   &--demo {
-    max-width: 90%;
-
     p,
     h1,
     h2,
@@ -21,14 +19,15 @@
     h5,
     h6 {
       @include margin(null auto);
-      max-width: $max-width;
+      max-width: $content-width;
     }
   }
 }
 
-.l-banner {
-  @include padding($gutter null);
-  text-align: center;
+.l-single-col {
+  @include margin(null auto);
+  @include padding(null ($gutter / 2));
+  max-width: $content-width;
 }
 
 .l-list-inline {
@@ -51,6 +50,14 @@
     fill: currentColor;
   }
 }
+
+.l-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.l-flush { margin-top: 0; }
 
 .l-listing {
   > * + * {

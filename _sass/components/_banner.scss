@@ -1,0 +1,16 @@
+.banner {
+  @include padding($gutter null);
+}
+
+.banner--header {
+  @include padding($gutter null);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $bp-hands-wide) {
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-between;
+  }
+}

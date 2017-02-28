@@ -1,15 +1,16 @@
 // Breakpoints
-// $bp-palm:
-$bp-hands: 30em;
-$bp-hands-wide: 48em;
-// $bp-lap:
-// $bp-desk:
+$bp-palm: 20em;
+$bp-hands: 37.5em;
+$bp-hands-wide: 53.125em;
+$bp-lap: 75em;
+$bp-desk: 100em;
 // $bp-wall
 
 // Brand colours
 // http://paletton.com/palette.php?uid=60A0u0kw0w0jvDaoOy4y4oODajv
 $color-primary: #a63c06;
 $color-primary-dark: darken(adjust-hue($color-primary, -3%), 6%);
+$color-primary-light: lighten(adjust-hue($color-primary, 4%), 10%);
 $color-secondary: #297799;
 
 $white: #fff;
@@ -21,7 +22,7 @@ $black: #000;
 
 $color-pos: #23b249;
 $color-neg: #c11526;
-$color-neut: #ef6926;
+$color-neut: $color-primary-light;
 
 // Typography
 $system-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -75,5 +76,5 @@ $feature-bg-size: cover;
 // *******
 $gutter: 1.25rem;
 $gutter-vertical: 1.25em;
-$max-width: 42rem;
-$demo-width: 50rem;
+$max-width: 64rem;
+$content-width: 42rem;
