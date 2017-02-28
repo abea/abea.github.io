@@ -1,0 +1,52 @@
+.logo--name-icon {
+  @media (min-width: $bp-palm) {
+    display: inline-flex;
+    align-items: center;
+    height: 6.25rem;
+  }
+}
+
+.logo-icon {
+  min-width: 6.25rem;
+
+  .logo--name-icon & {
+    @include margin(null auto);
+    display: block;
+    max-height: 6.25rem;
+
+    @media (min-width: $bp-palm) {
+      @include margin(null 0);
+      display: inline-block;
+      min-width: 0;
+      max-height: 100%;
+    }
+  }
+}
+
+.logo__outer {
+  fill: $color-primary-light;
+
+  %dark-theme & {
+    fill: $text-color;
+  }
+}
+
+.logo__inner {
+  fill: $text-color;
+
+  %dark-theme & {
+    fill: $white;
+  }
+}
+
+.logo__name {
+  .logo--name-icon & {
+    display: block;
+    margin-top: 0;
+
+    @media (min-width: $bp-palm) {
+      display: inline-block;
+      margin-left: 1rem;
+    }
+  }
+}

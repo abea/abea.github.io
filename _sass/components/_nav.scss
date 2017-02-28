@@ -1,3 +1,7 @@
 .nav--primary {
-  text-align: right;
+  text-align: center;
+
+  @media (min-width: $bp-hands) { text-align: initial; }
+
+  @media (min-width: $bp-hands-wide) { margin-top: 0; }
 }
