@@ -61,7 +61,7 @@ $bp-wall
 
 Luke’s list included “wrist” and “mall sized screens”. I’ve yet to be called on to make a site for anything larger than a wall-sized screen and anything lower than “palm” should be suitable for wristwatch size screens (though I admit I rarely test for anything that small). I also like some short prefixing for clarity.
 
-I also added some in-between levels. People interact with devices in their palm, but also devices they need both their hands to hold (e.g., most tablets). My `$bp-hands-wide` is essentially a portrait tablet width. I don’t love the name, but I’ve not thought of anything better yet.
+I also added some in-between levels. People interact with devices in their palm, but also devices they need both their hands to hold (e.g., most tablets). My `$bp-hands-wide` is essentially a landscape tablet width. I don’t love the name, but I’ve not thought of anything better yet.
 
 I can hear the argument that all I’ve done is taken the device-type approach to variables and renamed them. Totally valid. And a screen built into a kiosk might be the size of one that I’d hold wide in my hands while it’s embedded into a refrigerator-sized machine—so we’re no longer interacting while holding in our hands.
 
@@ -81,4 +81,8 @@ The `em` relative unit is based on the current standard 16px default font size. 
 
 If you want a deeper dive into that, check out the provocatively named, but thoughtful post, [The 100% correct way to do CSS breakpoints](https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862). Gilbertson’s focus on ranges for devices rather than hard, well, breakpoints spoke to me. Clearly his thoughts on variable naming had less of an effect.
 
-Also check out the inspiring CSS-Tricks post and its comments for more brainstorming and front end dev silliness, too: https://css-tricks.com/naming-media-queries/
+Also check out [the inspiring CSS-Tricks post and its comments](https://css-tricks.com/naming-media-queries/) for more brainstorming and front end dev silliness, too.
+
+<hr/>
+
+Updated (2017-03-14): Initially incorrectly stated that `$bp-hands-wide` was related to portrait tablet orientation. The breakpoint is meant to reflect *landscape* tablet orientation.
