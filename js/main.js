@@ -73,3 +73,52 @@ Array.prototype.forEach.call(elements, function(element) {
   }
 });
 // End KaTex
+
+
+// Begin Github activity banner
+const xhr = new XMLHttpRequest(),
+      apiKey = "053efb22fc88ae67838a0ee796d02537f164934e"
+      reqUrl = `https://api.github.com/users/abea/events?access_token=${apiKey}`,
+      timeline = document.getElementById("gh-timeline");
+
+const eventTypes = [
+  "CommitCommentEvent", "CreateEvent", "DeleteEvent", "DeploymentEvent", "DeploymentStatusEvent", "DownloadEvent", "FollowEvent", "ForkEvent", "ForkApplyEvent", "GistEvent", "GollumEvent", "IssueCommentEvent", "IssuesEvent", "LabelEvent", "MemberEvent", "MembershipEvent", "MilestoneEvent", "OrganizationEvent", "OrgBlockEvent", "PageBuildEvent", "ProjectCardEvent", "ProjectColumnEvent", "ProjectEvent", "PublicEvent", "PullRequestEvent", "PullRequestReviewEvent", "PullRequestReviewCommentEvent", "PushEvent", "ReleaseEvent", "RepositoryEvent", "StatusEvent", "TeamEvent", "TeamAddEvent", "WatchEvent"
+];
+
+const events = eventTypes.map(
+  function(eventKey, i) {
+    const event = {
+      name: eventKey,
+      color: `hsl(24, 93%, ${ Math.round(100 - ((100/eventTypes.length) * i))}%)`
+    }
+
+    return event;
+  }
+);
+
+xhr.open("GET", reqUrl, true);
+xhr.onreadystatechange = getTimeline;
+xhr.onerror = function () {
+  console.log("That didn't work.");
+  timeline.remove();
+}
+xhr.send();
+
+function getTimeline() {
+  if(xhr.readyState == XMLHttpRequest.DONE) {
+    JSON.parse(xhr.responseText, eventBlocks);
+  }
+}
+
+function eventBlocks(key, value) {
+  if (key === "type" && eventTypes.includes(value)) {
+    const typeObj = events.find(obj => obj.name === value);
+
+    const div = document.createElement("div");
+    div.classList.add("color-band__block");
+    div.setAttribute("title", value);
+    div.style.backgroundColor = typeObj.color;
+    timeline.appendChild(div);
+  };
+}
+// End Github activity banner

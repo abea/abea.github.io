@@ -14,3 +14,15 @@
     justify-content: space-between;
   }
 }
+
+.color-band {
+  display: flex;
+  min-height: 1rem;
+  margin-top: 0;
+  padding: 0;
+}
+
+.color-band__block {
+  flex-grow: 1;
+  margin: 0;
+}
