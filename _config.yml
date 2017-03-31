@@ -41,7 +41,6 @@ config:
   # Scripts
   google_analytics: "UA-32705264-1"
   disqus_shortname: "alexbea"
-  katex: false # Enable if using math markup
 
   # Localization strings
   str_follow_on: "Follow on"

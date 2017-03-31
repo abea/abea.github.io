@@ -1,6 +1,6 @@
 //
 // 1. Logo animation
-// 2. KaTex
+// 2. Github activity banner
 //
 
 
@@ -46,34 +46,6 @@ if (logo) {
   })
 }
 // End logo animation
-
-//
-// Begin KaTex
-//
-var elements = document.getElementsByTagName('script')
-
-Array.prototype.forEach.call(elements, function(element) {
-  if (element.type.indexOf('math/tex') != -1) {
-     // Extract math markdown
-     var textToRender = element.innerText || element.textContent;
-
-     // Create span for KaTeX
-     var katexElement = document.createElement('span');
-
-     // Support inline and display math
-     if (element.type.indexOf('mode=display') != -1){
-       katexElement.className += "math-display";
-       textToRender = '\\displaystyle {' + textToRender + '}';
-     } else {
-       katexElement.className += "math-inline";
-     }
-
-     katex.render(textToRender, katexElement);
-     element.parentNode.insertBefore(katexElement, element);
-  }
-});
-// End KaTex
-
 
 // Begin Github activity banner
 const xhr = new XMLHttpRequest(),

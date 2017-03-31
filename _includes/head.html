@@ -32,12 +32,6 @@
   <meta property="og:site_name" content="{{ site.config.title }}" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
-	{% if site.config.katex %}
-	<!-- KaTeX -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.js"></script>
-	{% endif %}
-
 	<!-- Google Analytics -->
 	{% if site.config.google_analytics %}
 	<script>
