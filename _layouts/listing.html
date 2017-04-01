@@ -5,10 +5,7 @@ layout: default
   <header>
     <h1 class="text-center">{{ page.title }}</h1>
     {% if page.audio %}
-    <audio controls="controls">
-      <source type="audio/mp3" src="../../../assets/audio/{{ page.audio }}"></source>
-      <p>Please use a newer browser version to hear the audio recording.</p>
-    </audio>
+      {% include components/page-audio.html %}
     {% endif %}
   </header>
   {{ content }}

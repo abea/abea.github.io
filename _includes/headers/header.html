@@ -1,12 +1,15 @@
 <header>
   <div class="t-gray">
     <div class="l-container banner--header">
-      <h1 class="logo--name-icon">
-        {% include svg-logo.html %}
+      <div class="logo--name-icon">
+        {% include components/svg-logo.html %}
         <span class="logo__name h1">{{ site.config.title }}</span>
-      </h1>
+      </div>
       <nav class="nav--primary">
         <ul class="l-list-inline">
+          <li>
+            <a href="{{ site.baseurl }}/">Home</a>
+          </li>
           {% for page in site.pages %}
           {% if page.title and page.hide != true %}
           <li>
@@ -22,9 +25,6 @@
         </ul>
       </nav>
     </div>
-    <!-- {% if site.config.header_text %}
-      {{ site.config.header_text }}
-    {% endif %} -->
   </div>
   <div class="t-secondary l-flush">
     <div class="l-container l-center">
@@ -33,5 +33,5 @@
     	</ul>
     </div>
   </div>
-  {% include color-band.html %}
+  {% include components/color-band.html %}
 </header>

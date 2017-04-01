@@ -1,10 +1,10 @@
 <header>
-  <div class="t-secondary">
+  <div class="t-gray">
     <div class="l-container banner--header">
-      <div class="logo--name-icon">
-        {% include svg-logo.html %}
+      <h1 class="logo--name-icon">
+        {% include components/svg-logo.html %}
         <span class="logo__name h1">{{ site.config.title }}</span>
-      </div>
+      </h1>
       <nav class="nav--primary">
         <ul class="l-list-inline">
           {% for page in site.pages %}
@@ -22,6 +22,9 @@
         </ul>
       </nav>
     </div>
+    <!-- {% if site.config.header_text %}
+      {{ site.config.header_text }}
+    {% endif %} -->
   </div>
   <div class="t-secondary l-flush">
     <div class="l-container l-center">
@@ -30,6 +33,5 @@
     	</ul>
     </div>
   </div>
-  <div class="color-band" id="gh-timeline">
-  {% include color-band.html %}
+  {% include components/color-band.html %}
 </header>
