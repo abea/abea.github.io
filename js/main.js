@@ -84,22 +84,22 @@ const events = eventTypes.map(
 // Start the API call.
 ghXhr.open("GET", reqUrl, true);
 // On readystatechange run the timeline function.
-ghXhr.onreadystatechange = getTimeline;
+ghXhr.onreadystatechange = checkState;
 ghXhr.onerror = function () {
   console.log("Github API call didn't work.");
   timeline.remove();
 }
 ghXhr.send();
 
-function getTimeline() {
+function checkState() {
   // If the readyState is DONE parse the timeline JSON and turn it into event
   // blocks.
   if(ghXhr.readyState == XMLHttpRequest.DONE) {
-    JSON.parse(ghXhr.responseText, eventBlocks);
+    JSON.parse(ghXhr.responseText, buildBlocks);
   }
 }
 
-function eventBlocks(key, value) {
+function buildBlocks(key, value) {
   // In the JSON, look for event types and check if they're in the array of
   // included event types.
   if (key === "type" && eventTypes.includes(value)) {

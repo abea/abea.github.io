@@ -99,6 +99,7 @@ pre {
   padding: 1em;
   background-color: $color-primary;
   color: $gray-10;
+  overflow-x: scroll;
 }
 
 dt { font-weight: bold; }
