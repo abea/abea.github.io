@@ -18,11 +18,11 @@ The client's website is not core to his business, which is why it hadn't been up
 
 Besides needing a new coat of paint, the site was not responsive. If someone met the client for the first time and pulled up his site on their phone, the site would be hard to read and navigate. The client's own profile and descriptions of his work had not been updated in a while, in part due to the lack of a content management system (CMS). The latter point had contributed to the general lack of significant updates in several years.
 
-![Screenshot of the former phbpa.com]({{ site.baseurl }}/img/projects/phbpa-old.png)
+![Screenshot of the former phbpa.com]({{ site.baseurl }}/img/projects/phbpa-old.jpg)
 
 ## Solution
 
-The primary goal identified during discovery was to have a strong online presence to answer the question "who is he and what does he do?”, especially for new and prospective contacts. It was not to be a transactional site or highly-featured contact portal. Unfortunately we did not have past analytics information to work with. However, after reviewing existing content, we decided on an information architecture that featured areas of expertise, services, and professional history. 
+The primary goal identified during discovery was to have a strong online presence to answer the question "who is he and what does he do?”, especially for new and prospective contacts. It was not to be a transactional site or highly-featured contact portal. Unfortunately we did not have past analytics information to work with. However, after reviewing existing content, we decided on an information architecture that featured areas of expertise, services, and professional history.
 
 Mr. Bea was familiar with Wordpress from using it for his professional blog, [MTS Matters](http://mtsmatters.com), so we decided that would be the best platform for the project. For design, the client wanted something subtle and minimalist, but with visual nods to his work on marine transportation policy. The responsive design was to be built from the smallest screen sizes up ("mobile-first") using CyberChimps' [Responsive II](http://cyberchimps.com/responsive-ii/) as parent theme.
 
@@ -38,7 +38,7 @@ According to Mr. Bea:
 
 ## Conclusion
 
-This was a great first project in my new web development career. Being a developer and strategist first, designer fourth, the design stage was a great learning experience. From our wireframing and discussions, I knew that the site would be relatively simple and have only homepage and basic interior page templates. With the additional client note that the design should be fairly simple, I chose to design in-browser, using the nearly blank canvas of the Responsive II parent theme mentioned above. This was an interesting challenge in that it allowed for a certain amount of "playing" with CSS. 
+This was a great first project in my new web development career. Being a developer and strategist first, designer fourth, the design stage was a great learning experience. From our wireframing and discussions, I knew that the site would be relatively simple and have only homepage and basic interior page templates. With the additional client note that the design should be fairly simple, I chose to design in-browser, using the nearly blank canvas of the Responsive II parent theme mentioned above. This was an interesting challenge in that it allowed for a certain amount of "playing" with CSS.
 
 Designing in-browser worked in this case due to the simplicity and limited number of design elements involved. Not being a designer first, I'm not sure I would have taken that approach if many more content types and use-cases had been involved.
 
