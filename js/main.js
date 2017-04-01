@@ -54,7 +54,7 @@ const xhr = new XMLHttpRequest(),
       timeline = document.getElementById("gh-timeline");
 
 const eventTypes = [
-  "CommitCommentEvent", "CreateEvent", "DeleteEvent", "DeploymentEvent", "DeploymentStatusEvent", "DownloadEvent", "FollowEvent", "ForkEvent", "ForkApplyEvent", "GistEvent", "GollumEvent", "IssueCommentEvent", "IssuesEvent", "LabelEvent", "MemberEvent", "MembershipEvent", "MilestoneEvent", "OrganizationEvent", "OrgBlockEvent", "PageBuildEvent", "ProjectCardEvent", "ProjectColumnEvent", "ProjectEvent", "PublicEvent", "PullRequestEvent", "PullRequestReviewEvent", "PullRequestReviewCommentEvent", "PushEvent", "ReleaseEvent", "RepositoryEvent", "StatusEvent", "TeamEvent", "TeamAddEvent", "WatchEvent"
+  "CommitCommentEvent", "CreateEvent", "DeleteEvent", "ForkEvent", "GollumEvent", "IssueCommentEvent", "IssuesEvent", "MemberEvent", "OrgBlockEvent", "ProjectCardEvent", "ProjectColumnEvent", "ProjectEvent", "PublicEvent", "PullRequestEvent", "PullRequestReviewEvent", "PullRequestReviewCommentEvent", "PushEvent", "ReleaseEvent", "WatchEvent"
 ];
 
 const events = eventTypes.map(
@@ -79,6 +79,7 @@ xhr.send();
 function getTimeline() {
   if(xhr.readyState == XMLHttpRequest.DONE) {
     JSON.parse(xhr.responseText, eventBlocks);
+    console.log(xhr.responseText);
   }
 }
 
