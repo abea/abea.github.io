@@ -47,46 +47,66 @@ if (logo) {
 }
 // End logo animation
 
+//
 // Begin Github activity banner
-const xhr = new XMLHttpRequest(),
+//
+const ghXhr = new XMLHttpRequest(),
+      // API key with only public profile viewing permissions.
       apiKey = "053efb22fc88ae67838a0ee796d02537f164934e"
       reqUrl = `https://api.github.com/users/abea/events?access_token=${apiKey}`,
       timeline = document.getElementById("gh-timeline");
 
+// Event types from https://developer.github.com/v3/activity/events/types/
+// excluding deprecated or types not visibile in timelines.
 const eventTypes = [
   "CommitCommentEvent", "CreateEvent", "DeleteEvent", "ForkEvent", "GollumEvent", "IssueCommentEvent", "IssuesEvent", "MemberEvent", "OrgBlockEvent", "ProjectCardEvent", "ProjectColumnEvent", "ProjectEvent", "PublicEvent", "PullRequestEvent", "PullRequestReviewEvent", "PullRequestReviewCommentEvent", "PushEvent", "ReleaseEvent", "WatchEvent"
 ];
 
+// Create array of objects with event type and associated color.
 const events = eventTypes.map(
   function(eventKey, i) {
+    // Calculate the color (HSL) lightness based on event type position in the
+    // eventTypes array.
+    const lightness = Math.round(100 - ((100/eventTypes.length) * i));
+
     const event = {
       name: eventKey,
-      color: `hsl(24, 93%, ${ Math.round(100 - ((100/eventTypes.length) * i))}%)`
+      // Color using the brand primary color with varying lightness value.
+      color: `hsl(24, 93%, ${lightness}%)`
     }
 
     return event;
   }
 );
 
-xhr.open("GET", reqUrl, true);
-xhr.onreadystatechange = getTimeline;
-xhr.onerror = function () {
-  console.log("That didn't work.");
+// Start the API call.
+ghXhr.open("GET", reqUrl, true);
+// On readystatechange run the timeline function.
+ghXhr.onreadystatechange = getTimeline;
+ghXhr.onerror = function () {
+  console.log("Github API call didn't work.");
   timeline.remove();
 }
-xhr.send();
+ghXhr.send();
 
 function getTimeline() {
-  if(xhr.readyState == XMLHttpRequest.DONE) {
-    JSON.parse(xhr.responseText, eventBlocks);
-    console.log(xhr.responseText);
+  // If the readyState is DONE parse the timeline JSON and turn it into event
+  // blocks.
+  if(ghXhr.readyState == XMLHttpRequest.DONE) {
+    JSON.parse(ghXhr.responseText, eventBlocks);
   }
 }
 
 function eventBlocks(key, value) {
+  // In the JSON, look for event types and check if they're in the array of
+  // included event types.
   if (key === "type" && eventTypes.includes(value)) {
+    // Find the event object that matches the event type found.
     const typeObj = events.find(obj => obj.name === value);
 
+    // Create a div element, add a specific class, set the `title` attr to the
+    // event type name, and set a background color of the associated color.
+    // Finally, append it to the timeline element.
     const div = document.createElement("div");
     div.classList.add("color-band__block");
     div.setAttribute("title", value);
