@@ -1,7 +1,5 @@
 // Main layout
 .l-container {
-  max-width: $max-width;
-
   &,
   &--demo {
     @include margin(null auto);
@@ -27,6 +25,7 @@
 .l-single-col {
   @include margin(null auto);
   @include padding(null ($gutter / 2));
+  width: 100%;
   max-width: $content-width;
 }
 
