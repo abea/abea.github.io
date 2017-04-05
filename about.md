@@ -4,19 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Howdy. I am a front end developer and proponent of building efficient, accessible, and highly usable web experiences.
+Howdy. I am a web developer and proponent of building efficient, accessible, and highly usable web experiences. Also a big fan of dry humor and dark beer.
 
 I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.config.linkedin }}). I've been a academic nerd in grad school, studying digital communications. After that I was a digital advocacy nerd, supporting a couple of great climate change and environmental organizations. Finally, I started focusing in on being a web development nerd, as a technical project manager then developer.
 
-I'm constantly impressed, excited, and a occasionally overwhelmed by all the languages, services, and techniques that we have available. [Please check out some of my latest work](/work/) for some of what I've done with them lately.
-
-My primary interests are:
-
-- open-source CMS, including Drupal and Wordpress
-- semantic, accessible HTML
-- component-based styling with Sass/CSS
-- progressive enhancement with Javascript and jQuery
-- efficient workflows using Grunt
+I'm constantly on the hunt to learn new things. Some of my favorite sources are [Shop Talk Show](http://shoptalkshow.com/), [Responsive Design Weekly](https://responsivedesign.is/), [A List Apart](https://alistapart.com/), and of course [tweeters](https://twitter.com/alexbea/lists/web-development). My latest hobby outside the screen? Pottery 💥. Two mugs and several cylinders down.
 
 ## Speaking
 
