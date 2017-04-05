@@ -9,7 +9,8 @@ Please explore some of my work below. In addition, I have [years of experience](
 ## Case Studies
 
 <div class="l-listing">
-{% for project in site.portfolio %}
+{% assign revPortfolio = (site.portfolio | sort: 'launched') | reverse %}
+{% for project in revPortfolio %}
 <article class="feature">
   <div class="feature__image">
     <a href="{{ project.url | prepend: site.baseurl }}">
