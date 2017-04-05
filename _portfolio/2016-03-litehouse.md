@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: Litehouse Foods
+launched: 2016-03
 thumbnail-path: "img/projects/litehouse-foods-new.jpg"
 short-description: Led theming for B-Corp packaged food company Litehouse Foods' new Drupal 7 site.
 

@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: Rock Creek Runner
+launched: 2015-11
 thumbnail-path: "img/projects/rockcreekrunner-new.jpg"
 short-description: Designed and built an updated Wordpress theme for trail running coach and blogger, Doug Hay. Launched November 2, 2015.
 
