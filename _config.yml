@@ -78,7 +78,7 @@ sass:
   style: :compressed
 
 # GEMS
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-paginate
   - kramdown

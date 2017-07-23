@@ -34,7 +34,7 @@ ishome: 1
   <section>
     <h2 class="text-center">My Work</h2>
     <div class="l-listing">
-    {% assign revPortfolio = (site.portfolio | sort: 'launched') | reverse %}
+    {% assign revPortfolio = site.portfolio | sort:"launched" | reverse %}
     {% for project in revPortfolio limit: 2 %}
     <article class="feature">
       <div class="feature__image">

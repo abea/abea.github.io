@@ -9,7 +9,7 @@ Please explore some of my work below. In addition, I have [years of experience](
 ## Case Studies
 
 <div class="l-listing">
-{% assign revPortfolio = (site.portfolio | sort: 'launched') | reverse %}
+{% assign revPortfolio = site.portfolio | sort:"launched" | reverse %}
 {% for project in revPortfolio %}
 <article class="feature">
   <div class="feature__image">
