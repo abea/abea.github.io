@@ -17,7 +17,7 @@ config:
 
   # Icons
   rss: true
-  email_address: "alex@abcreations.co" # Full email address
+  email_address: "alex.bea@gmail.com" # Full email address
   behance:
   bitbucket:
   dribbble:

@@ -19,7 +19,7 @@ I've enjoyed giving talks at my local web development Meetups.
 
 ## Get in touch
 
-If you're interested in working together or simply discussing generally important or cool matters, send me a message at [alex@abcreations.co](mailto:alex@abcreations.co). I'll reply as soon as I'm able.
+If you're interested in working together or simply discussing generally important or cool matters, send me a message at [alex.bea@gmail.com](mailto:alex.bea@gmail.com). I'll reply as soon as I'm able.
 
 
 ## Favorite tools

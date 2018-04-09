@@ -7,7 +7,7 @@ hide: true
 
 # Alexander Bea
  
-<a href="mailto:alex@abcreations.co">email</a> | <a href="http://www.linkedin.com/in/alexbea">linkedin</a> | <a href="https://twitter.com/alexbea">twitter</a>
+<a href="mailto:alex.bea@gmail.com">email</a> | <a href="http://www.linkedin.com/in/alexbea">linkedin</a> | <a href="https://twitter.com/alexbea">twitter</a>
 
 ## SUMMARY:
 Web developer skilled in working with clients to identify their needs and translating those needs into digital products. Quick and eager student of web technologies and tools. Experienced in leading client discovery, information architecture design and wireframing, and project design and development. Passionate about working for social progress through thoughtful technology application.
