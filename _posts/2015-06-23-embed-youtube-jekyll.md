@@ -5,6 +5,7 @@ tags:
 - stuff I searched for
 - jekyll
 - web development
+- links
 ---
 
 *Second in my maybe-less-imagined series, “Stuff I searched for”*
