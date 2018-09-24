@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Howdy. I am a web developer and proponent of building efficient, accessible, and highly usable web experiences. Also a big fan of dry humor and dark beer.
+Howdy. I am a web developer and proponent of building efficient, accessible, and highly usable web experiences.
 
 I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.meta.linkedin }}). I've been a academic nerd in grad school, studying digital communications. After that I was a digital advocacy nerd, supporting a couple of great climate change and environmental organizations. Finally, I started focusing in on being a web development nerd, as a technical project manager then developer.
 
-I'm constantly on the hunt to learn new things. Some of my favorite sources are [Shop Talk Show](http://shoptalkshow.com/), [Responsive Design Weekly](https://responsivedesign.is/), [A List Apart](https://alistapart.com/), and of course [tweeters](https://twitter.com/alexbea/lists/web-development). My latest hobby outside the screen? Pottery 💥. Two mugs and several cylinders down.
+I'm constantly on the hunt to learn new things. Some of my favorite sources are [Shop Talk Show](http://shoptalkshow.com/), [Javascript Weekly](https://javascriptweekly.com/), [Responsive Design Weekly](https://responsivedesign.is/), [Toolsday](https://spec.fm/podcasts/toolsday), and of course [tweeters](https://twitter.com/alexbea/lists/web-development). My latest hobby outside the screen? Pottery 💥. Two mugs and several cylinders down.
 
 ## Speaking
 
@@ -20,7 +20,6 @@ I've enjoyed giving talks at my local web development Meetups.
 ## Get in touch
 
 If you're interested in working together or simply discussing generally important or cool matters, send me a message at [alex.bea@gmail.com](mailto:alex.bea@gmail.com). I'll reply as soon as I'm able.
-
 
 ## Favorite tools
 
