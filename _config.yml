@@ -5,37 +5,23 @@ url: "http://alexbea.com" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 meta:
   # Meta
-  title: Alex Bea # Your name will go here
-  description: "Front end web developer" # used by search engines
+  title: Alex Bea
+  description: "Front end and javascript developer" # used by search engines
   default_img: "img/ab-logo-min.png"
 
   # Header and footer text
-  header_text: >
-     <h2 class="h3">Front end web developer</h2>
-  header_text_feature_image:
+  header_text: Front end web developer
   footer_text:
 
   # Icons
   rss: true
   email_address: "alex.bea@gmail.com" # Full email address
-  behance:
   bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  github: "abea" # github profile name, e.g. "madebymunsters"
-  google_plus:
+  github: "abea" # github profile name
   instagram:
   linkedin:  "https://www.linkedin.com/in/alexbea" # Full URL
-  pinterest:
-  reddit:
-  soundcloud:
   stack_exchange: "http://stackoverflow.com/users/888550/alexbea" # Full URL
-  steam:
-  tumblr:
   twitter: "alexbea"
-  wordpress:
-  youtube:
 
   # Scripts
   google_analytics: "UA-32705264-1"
@@ -47,7 +33,7 @@ meta:
   str_email: "Email"
   str_next: "Next"
   str_prev: "Prev"
-  str_continue_reading: "Read more &raquo;"
+  str_read_more: "Read more &raquo;"
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"

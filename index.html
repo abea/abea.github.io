@@ -19,11 +19,9 @@ ishome: 1
           </time>
         </header>
         <p>
-          {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
+          {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}<br/>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ site.meta.str_read_more }}</a>
         </p>
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          {{ site.meta.str_continue_reading }}
-        </a>
       </article>
       {% endfor %}
     </div>
