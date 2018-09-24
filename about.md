@@ -6,7 +6,7 @@ permalink: /about/
 
 Howdy. I am a web developer and proponent of building efficient, accessible, and highly usable web experiences. Also a big fan of dry humor and dark beer.
 
-I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.config.linkedin }}). I've been a academic nerd in grad school, studying digital communications. After that I was a digital advocacy nerd, supporting a couple of great climate change and environmental organizations. Finally, I started focusing in on being a web development nerd, as a technical project manager then developer.
+I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.meta.linkedin }}). I've been a academic nerd in grad school, studying digital communications. After that I was a digital advocacy nerd, supporting a couple of great climate change and environmental organizations. Finally, I started focusing in on being a web development nerd, as a technical project manager then developer.
 
 I'm constantly on the hunt to learn new things. Some of my favorite sources are [Shop Talk Show](http://shoptalkshow.com/), [Responsive Design Weekly](https://responsivedesign.is/), [A List Apart](https://alistapart.com/), and of course [tweeters](https://twitter.com/alexbea/lists/web-development). My latest hobby outside the screen? Pottery 💥. Two mugs and several cylinders down.
 

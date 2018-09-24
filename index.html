@@ -22,7 +22,7 @@ ishome: 1
           {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}
         </p>
         <a href="{{ post.url | prepend: site.baseurl }}">
-          {{ site.config.str_continue_reading }}
+          {{ site.meta.str_continue_reading }}
         </a>
       </article>
       {% endfor %}

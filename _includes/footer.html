@@ -1,9 +1,9 @@
 <footer class="l-center banner t-dark">
   <p>
-    {% if site.config.footer_text %}
-    {{ site.config.footer_text }}<br/>
+    {% if site.meta.footer_text %}
+    {{ site.meta.footer_text }}<br/>
     {% endif %}
-    &copy; {{ 'now' | date: "%Y" }} {{ site.config.title }}
+    &copy; {{ 'now' | date: "%Y" }} {{ site.meta.title }}
   </p>
 </footer>
 

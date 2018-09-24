@@ -1,158 +1,158 @@
-{% if site.config.rss %}
+{% if site.meta.rss %}
 <li>
-	<a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.config.str_rss_follow }}">
+	<a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.meta.str_rss_follow }}">
 		{% include social-icons/rss.svg %}
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.email_address %}
+{% if site.meta.email_address %}
 <li>
-	<a href="mailto:{{ site.config.email_address }}" title="{{ site.config.str_email }}">
+	<a href="mailto:{{ site.meta.email_address }}" title="{{ site.meta.str_email }}">
 		{% include social-icons/envelope.svg %}
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.behance %}
+{% if site.meta.behance %}
 <li>
-	<a href="https://www.behance.net/{{ site.config.behance }}" title="{{ site.config.str_follow_on }} Behance">
+	<a href="https://www.behance.net/{{ site.meta.behance }}" title="{{ site.meta.str_follow_on }} Behance">
 		<i class="fa fa-fw fa-behance"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.bitbucket %}
+{% if site.meta.bitbucket %}
 <li>
-	<a href="https://bitbucket.org/{{ site.config.bitbucket }}" title="{{ site.config.str_follow_on }} Bitbucket">
+	<a href="https://bitbucket.org/{{ site.meta.bitbucket }}" title="{{ site.meta.str_follow_on }} Bitbucket">
 		<i class="fa fa-fw fa-bitbucket"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.dribbble %}
+{% if site.meta.dribbble %}
 <li>
-	<a href="https://dribbble.com/{{ site.config.dribbble }}" title="{{ site.config.str_follow_on }} Dribbble">
+	<a href="https://dribbble.com/{{ site.meta.dribbble }}" title="{{ site.meta.str_follow_on }} Dribbble">
 		<i class="fa fa-fw fa-dribbble"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.facebook %}
+{% if site.meta.facebook %}
 <li>
-	<a href="https://www.facebook.com/{{ site.config.facebook }}" title="{{ site.config.str_follow_on }} Facebook">
+	<a href="https://www.facebook.com/{{ site.meta.facebook }}" title="{{ site.meta.str_follow_on }} Facebook">
 		<i class="fa fa-fw fa-facebook"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.flickr %}
+{% if site.meta.flickr %}
 <li>
-	<a href="https://www.flickr.com/photos/{{ site.config.flickr }}" title="{{ site.config.str_follow_on }} Flickr">
+	<a href="https://www.flickr.com/photos/{{ site.meta.flickr }}" title="{{ site.meta.str_follow_on }} Flickr">
 		<i class="fa fa-fw fa-flickr"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.github %}
+{% if site.meta.github %}
 <li>
-	<a href="https://github.com/{{ site.config.github }}" title="{{ site.config.str_follow_on }} GitHub">
+	<a href="https://github.com/{{ site.meta.github }}" title="{{ site.meta.str_follow_on }} GitHub">
 		{% include social-icons/github.svg %}
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.google_plus %}
+{% if site.meta.google_plus %}
 <li>
-	<a href="https://plus.google.com/{{ site.config.google_plus }}" title="{{ site.config.str_follow_on }} Google+">
+	<a href="https://plus.google.com/{{ site.meta.google_plus }}" title="{{ site.meta.str_follow_on }} Google+">
 		<i class="fa fa-fw fa-google-plus"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.instagram %}
+{% if site.meta.instagram %}
 <li>
-	<a href="http://instagram.com/{{ site.config.instagram }}" title="{{ site.config.str_follow_on }} Instagram">
+	<a href="http://instagram.com/{{ site.meta.instagram }}" title="{{ site.meta.str_follow_on }} Instagram">
 		<i class="fa fa-fw fa-instagram"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.linkedin %}
+{% if site.meta.linkedin %}
 <li>
-	<a href="{{ site.config.linkedin }}" title="{{ site.config.str_follow_on }} LinkedIn">
+	<a href="{{ site.meta.linkedin }}" title="{{ site.meta.str_follow_on }} LinkedIn">
 		{% include social-icons/linkedin.svg %}
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.pinterest %}
+{% if site.meta.pinterest %}
 <li>
-	<a href="http://www.pinterest.com/{{ site.config.pinterest }}" title="{{ site.config.str_follow_on }} Pinterest">
+	<a href="http://www.pinterest.com/{{ site.meta.pinterest }}" title="{{ site.meta.str_follow_on }} Pinterest">
 		<i class="fa fa-fw fa-pinterest"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.reddit %}
+{% if site.meta.reddit %}
 <li>
-	<a href="https://www.reddit.com/user/{{ site.config.reddit }}" title="{{ site.config.str_follow_on }} Reddit">
+	<a href="https://www.reddit.com/user/{{ site.meta.reddit }}" title="{{ site.meta.str_follow_on }} Reddit">
 		<i class="fa fa-fw fa-reddit"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.soundcloud %}
+{% if site.meta.soundcloud %}
 <li>
-	<a href="https://soundcloud.com/{{ site.config.soundcloud }}" title="{{ site.config.str_follow_on }} SoundCloud">
+	<a href="https://soundcloud.com/{{ site.meta.soundcloud }}" title="{{ site.meta.str_follow_on }} SoundCloud">
 		<i class="fa fa-fw fa-soundcloud"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.stack_exchange %}
+{% if site.meta.stack_exchange %}
 <li>
-	<a href="{{ site.config.stack_exchange }}" title="{{ site.config.str_follow_on }} Stack Exchange">
+	<a href="{{ site.meta.stack_exchange }}" title="{{ site.meta.str_follow_on }} Stack Exchange">
 		{% include social-icons/stack-exchange.svg %}
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.steam %}
+{% if site.meta.steam %}
 <li>
-	<a href="http://steamcommunity.com/id/{{ site.config.steam }}" title="{{ site.config.str_follow_on }} Steam">
+	<a href="http://steamcommunity.com/id/{{ site.meta.steam }}" title="{{ site.meta.str_follow_on }} Steam">
 		<i class="fa fa-fw fa-steam"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.tumblr %}
+{% if site.meta.tumblr %}
 <li>
-	<a href="http://{{ site.config.tumblr }}.tumblr.com/" title="{{ site.config.str_follow_on }} Tumblr">
+	<a href="http://{{ site.meta.tumblr }}.tumblr.com/" title="{{ site.meta.str_follow_on }} Tumblr">
 		<i class="fa fa-fw fa-tumblr"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.twitter %}
+{% if site.meta.twitter %}
 <li>
-	<a href="https://twitter.com/{{ site.config.twitter }}" title="{{ site.config.str_follow_on }} Twitter">
+	<a href="https://twitter.com/{{ site.meta.twitter }}" title="{{ site.meta.str_follow_on }} Twitter">
 		{% include social-icons/twitter.svg %}
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.wordpress %}
+{% if site.meta.wordpress %}
 <li>
-	<a href="https://{{ site.config.wordpress }}.wordpress.com/" title="{{ site.config.str_follow_on }} WordPress">
+	<a href="https://{{ site.meta.wordpress }}.wordpress.com/" title="{{ site.meta.str_follow_on }} WordPress">
 		<i class="fa fa-fw fa-wordpress"></i>
 	</a>
 </li>
 {% endif %}
 
-{% if site.config.youtube %}
+{% if site.meta.youtube %}
 <li>
-	<a href="https://www.youtube.com/user/{{ site.config.youtube }}" title="{{ site.config.str_follow_on }} YouTube">
+	<a href="https://www.youtube.com/user/{{ site.meta.youtube }}" title="{{ site.meta.str_follow_on }} YouTube">
 		<i class="fa fa-fw fa-youtube"></i>
 	</a>
 </li>

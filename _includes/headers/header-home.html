@@ -3,7 +3,7 @@
     <div class="l-container banner--header">
       <h1 class="logo--name-icon">
         {% include components/svg-logo.html %}
-        <span class="logo__name h1">{{ site.config.title }}</span>
+        <span class="logo__name h1">{{ site.meta.title }}</span>
       </h1>
       <nav class="nav--primary">
         <ul class="l-list-inline">
@@ -22,8 +22,8 @@
         </ul>
       </nav>
     </div>
-    <!-- {% if site.config.header_text %}
-      {{ site.config.header_text }}
+    <!-- {% if site.meta.header_text %}
+      {{ site.meta.header_text }}
     {% endif %} -->
   </div>
   <div class="t-secondary l-flush">
