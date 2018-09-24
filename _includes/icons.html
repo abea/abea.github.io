@@ -1,63 +1,47 @@
 {% if site.meta.rss %}
 <li>
-	<a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.meta.str_rss_follow }}">
-		{% include social-icons/rss.svg %}
+	<a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.meta.str_rss_follow }}">RSS
+		<!-- {% include social-icons/rss.svg %} -->
 	</a>
 </li>
 {% endif %}
 
 {% if site.meta.email_address %}
 <li>
-	<a href="mailto:{{ site.meta.email_address }}" title="{{ site.meta.str_email }}">
-		{% include social-icons/envelope.svg %}
-	</a>
-</li>
-{% endif %}
-
-{% if site.meta.bitbucket %}
-<li>
-	<a href="https://bitbucket.org/{{ site.meta.bitbucket }}" title="{{ site.meta.str_follow_on }} Bitbucket">
-		<i class="fa fa-fw fa-bitbucket"></i>
+	<a href="mailto:{{ site.meta.email_address }}" title="{{ site.meta.str_email }}">Email
+		<!-- {% include social-icons/envelope.svg %} -->
 	</a>
 </li>
 {% endif %}
 
 {% if site.meta.github %}
 <li>
-	<a href="https://github.com/{{ site.meta.github }}" title="{{ site.meta.str_follow_on }} GitHub">
-		{% include social-icons/github.svg %}
-	</a>
-</li>
-{% endif %}
-
-{% if site.meta.instagram %}
-<li>
-	<a href="http://instagram.com/{{ site.meta.instagram }}" title="{{ site.meta.str_follow_on }} Instagram">
-		<i class="fa fa-fw fa-instagram"></i>
+	<a href="https://github.com/{{ site.meta.github }}" title="{{ site.meta.str_follow_on }} GitHub">Github
+		<!-- {% include social-icons/github.svg %} -->
 	</a>
 </li>
 {% endif %}
 
 {% if site.meta.linkedin %}
 <li>
-	<a href="{{ site.meta.linkedin }}" title="{{ site.meta.str_follow_on }} LinkedIn">
-		{% include social-icons/linkedin.svg %}
+	<a href="{{ site.meta.linkedin }}" title="{{ site.meta.str_follow_on }} LinkedIn">LinkedIn
+		<!-- {% include social-icons/linkedin.svg %} -->
 	</a>
 </li>
 {% endif %}
 
 {% if site.meta.stack_exchange %}
 <li>
-	<a href="{{ site.meta.stack_exchange }}" title="{{ site.meta.str_follow_on }} Stack Exchange">
-		{% include social-icons/stack-exchange.svg %}
+	<a href="{{ site.meta.stack_exchange }}" title="{{ site.meta.str_follow_on }} Stack Exchange">Stack Exchange
+		<!-- {% include social-icons/stack-exchange.svg %} -->
 	</a>
 </li>
 {% endif %}
 
 {% if site.meta.twitter %}
 <li>
-	<a href="https://twitter.com/{{ site.meta.twitter }}" title="{{ site.meta.str_follow_on }} Twitter">
-		{% include social-icons/twitter.svg %}
+	<a href="https://twitter.com/{{ site.meta.twitter }}" title="{{ site.meta.str_follow_on }} Twitter">Twitter
+		<!-- {% include social-icons/twitter.svg %} -->
 	</a>
 </li>
 {% endif %}

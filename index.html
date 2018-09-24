@@ -12,26 +12,24 @@ ishome: 1
   </section>
   <section>
     <h2>Latest writing</h2>
-    <div class="l-listing">
-      {% for post in site.posts limit:1 %}
-      <article>
-        <header>
-          <h3>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-              {{ post.title }}
-            </a>
-          </h3>
-          <time class="meta" datetime="{{ post.date }}">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </time>
-        </header>
-        <p>
-          {{ post.excerpt | strip_html | strip_newlines | truncate: 240 }}<br/>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ site.meta.str_read_more }}</a>
-        </p>
-      </article>
-      {% endfor %}
-    </div>
+    {% for post in site.posts limit:1 %}
+    <article>
+      <header>
+        <h3>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.title }}
+          </a>
+        </h3>
+        <time class="meta" datetime="{{ post.date }}">
+          {{ post.date | date: "%B %-d, %Y" }}
+        </time>
+      </header>
+      <p>
+        {{ post.excerpt | strip_html | strip_newlines | truncate: 240 }}<br/>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ site.meta.str_read_more }}</a>
+      </p>
+    </article>
+    {% endfor %}
     <p>
       <a href="/blog">More writing</a>
     </p>

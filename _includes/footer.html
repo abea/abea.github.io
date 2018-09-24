@@ -1,10 +1,13 @@
 <footer class="l-center banner t-dark">
   <p>
     {% if site.meta.footer_text %}
-    {{ site.meta.footer_text }}<br/>
+      {{ site.meta.footer_text }}<br/>
     {% endif %}
     &copy; {{ 'now' | date: "%Y" }} {{ site.meta.title }}
   </p>
+  <ul>
+    {% include icons.html %}
+  </ul>
 </footer>
 
 
