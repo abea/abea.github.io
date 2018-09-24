@@ -48,9 +48,6 @@ collections:
   portfolio:
     output: true
     permalink: /work/:path/
-  demos:
-    output: true
-    permalink: /demos/:path/
 
 # BUILD SETTINGS
 markdown: kramdown
