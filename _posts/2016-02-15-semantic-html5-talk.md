@@ -40,6 +40,5 @@ There's a ton to cover, and I'm not concerned enough about SEO to write it all o
 
 If you go through the presentation, I hope it shows you the power of these semantic elements. Accessibility is a huge topic, but it's amazing how much progress we can make towards it by just doing what we're already doing... but just a bit more thoughtfully.
 
-<div class="embed-container embed-container--tall">
-  <iframe class="revealjs--noteless" src='../../../assets/talk-html5/index.html'></iframe>
-</div>
+<!-- TODO: move iframe into an include component -->
+<iframe class="revealjs--noteless" src='../../../assets/talk-html5/index.html'></iframe>

@@ -16,11 +16,11 @@ ishome: 1
     <article>
       <header>
         <h3>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <a href="{{ post.url | prepend: site.baseurl }}">
             {{ post.title }}
           </a>
         </h3>
-        <time class="meta" datetime="{{ post.date }}">
+        <time datetime="{{ post.date }}">
           {{ post.date | date: "%B %-d, %Y" }}
         </time>
       </header>
