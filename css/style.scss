@@ -18,9 +18,7 @@
 
 // Utilities
 // **********
-@import "utilities/helpers";
 @import "utilities/mixins";
-@import "state";
 
 // Base
 // *****
@@ -33,14 +31,4 @@
 
 // Components
 // ***********
-@import "components/banner";
-@import "components/button";
-@import "components/embeds";
-@import "components/feature";
-@import "components/images";
 @import "components/logo";
-@import "components/nav";
-
-// Theme
-// ******
-@import "theme/theme";
