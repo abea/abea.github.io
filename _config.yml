@@ -7,7 +7,7 @@ meta:
   # Meta
   title: Alex Bea
   description: "Front end and javascript developer" # used by search engines
-  default_img: "img/ab-logo-min.png"
+  default_img:
 
   # Header and footer text
   header_text:
@@ -37,7 +37,7 @@ meta:
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Work+Sans:800"
+  google_fonts:
 
 # PAGINATION
 # paginate: 10
