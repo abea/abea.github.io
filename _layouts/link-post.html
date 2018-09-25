@@ -2,20 +2,17 @@
 layout: default
 ---
 <article>
-  <section>
-    <header>
-      <h1 class="text-center">{{ page.title }}</h1>
-      {% if page.audio %}
-        {% include components/page-audio.html %}
-      {% endif %}
-    </header>
-    <p class="h2">
-      <strong>Link: <a href="{{ page.link }}">{{ page.title }} from {{ page.source }}</a></strong>
-    </p>
-    {{ content }}
-  </section>
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if page.audio %}
+      {% include components/page-audio.html %}
+    {% endif %}
+  </header>
+  <p>
+    <strong>Link: <a href="{{ page.link }}">{{ page.title }} from {{ page.source }}</a></strong>
+  </p>
+  {{ content }}
 </article>
-
 <!-- Disqus -->
 {% if site.meta.disqus_shortname %}
 <aside>

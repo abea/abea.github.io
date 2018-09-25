@@ -5,11 +5,10 @@ title: Blog posts
 permalink: /blog/
 ---
 
-<div class="l-listing">
 {% for post in site.posts %}
 <article>
   <header>
-    <time class="meta" datetime="{{ post.date }}">
+    <time datetime="{{ post.date }}">
       {{ post.date | date: "%B %-d, %Y" }}
     </time>
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -21,4 +20,3 @@ permalink: /blog/
   </p>
 </article>
 {% endfor %}
-</div>
