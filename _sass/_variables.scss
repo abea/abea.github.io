@@ -1,80 +1,11 @@
 // Breakpoints
 $bp-palm: 20em;
 $bp-hands: 37.5em;
-$bp-hands-wide: 53.125em;
+$bp-hands-wide: 53.13em;
 $bp-lap: 75em;
 $bp-desk: 100em;
 // $bp-wall
 
-// Brand colours
-// http://paletton.com/palette.php?uid=60A0u0kw0w0jvDaoOy4y4oODajv
-$color-primary: #a63c06;
-$color-primary-dark: darken(adjust-hue($color-primary, -3%), 6%);
-$color-primary-light: lighten(adjust-hue($color-primary, 4%), 10%);
-$color-secondary: #297799;
-
-$white: #fff;
-$gray-10: mix($color-primary, darken($white, 10%), 5%);
-$gray-20: mix($color-primary, darken($white, 20%), 5%);
-$gray-80: mix($color-primary, darken($white, 80%), 5%);
-$gray-90: mix($color-primary, darken($white, 90%), 5%);
-$black: #000;
-
-$color-pos: #23b249;
-$color-neg: #c11526;
-$color-neut: $color-primary-light;
-
 // Typography
-$system-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$system-fonts: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
 $font-family-main: $system-fonts;
-$font-family-headings: "Work Sans", $system-fonts;
-$font-size: 1.125rem;
-$font-size-h1: 2.5rem;
-$font-size-h2: 2rem;
-$font-size-h3: 1.5rem;
-$font-size-h4: 1.25rem;
-
-$em-base: 16px;
-$font-size-base: 1.125rem;
-$font-size-small: 80%;
-
-$line-height-base: 1.4;
-
-// Padding
-$padding-large: 15%;
-$padding-small: 5%;
-$padding-x-small: 1%;
-
-
-$background-color: #fff;
-$border-color: rgba($gray-80, .25);
-
-// Typography colours
-$text-color: $gray-80;
-$text-light: lighten($text-color, 10%);
-$link-color: $color-secondary;
-$link-color-hover: adjust-hue(saturate(darken($link-color, 10%), 2%), 4%);
-$selection-color: adjust-hue(desaturate(lighten($color-secondary, 20%), 5%), -3%); // visible when highlighting text
-$form-border-color: $gray-20;
-
-// Other colours
-$linked-border: 1px solid $link-color;
-$form-border: 1px solid $form-border-color;
-$default-border: .0625rem solid $border-color;
-
-// Banner colors
-$banner-bg: $color-primary;
-$banner-color: $white;
-$banner-color-hover: $link-color-hover;
-
-// Feature image for articles
-$feature-image-text-color: $white;
-$feature-image-text-light: $gray-20;
-$feature-bg-size: cover;
-
-// Layout
-// *******
-$gutter: 1.25rem;
-$gutter-vertical: 1.25em;
-$max-width: 64rem;
-$content-width: 42rem;
