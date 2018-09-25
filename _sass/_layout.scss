@@ -13,3 +13,9 @@ body {
 
   > main { flex-grow: 1; }
 }
+
+.l-container {
+  width: 100%;
+  max-width: $layout-width;
+  @include margin(null auto);
+}

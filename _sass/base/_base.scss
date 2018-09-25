@@ -1,1 +1,9 @@
 // TODO Refresh on lobotomized owl selector.
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-primary;
+}
+
+img {
+  max-width: 100%;
+}

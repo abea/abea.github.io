@@ -1,4 +1,4 @@
-<header>
+<header class="l-container">
   <!-- {% include components/svg-logo.html %} -->
   <h1>
     <a href="/">{{ site.meta.title }}</a>
@@ -6,21 +6,15 @@
   <nav>
     <ul>
       {% for page in site.pages %}
-      {% if page.title and page.hide != true %}
-      <li>
-        <a href="{{ page.url | prepend: site.baseurl }}">
-          {% if page.menu_title %}{{ page.menu_title }}{% else %}{{ page.title }}{% endif %}
-        </a>
-      </li>
-      {% endif %}
+        {% if page.title and page.hide != true %}
+        <li>
+          <a href="{{ page.url | prepend: site.baseurl }}">
+            {% if page.menu_title %}{{ page.menu_title }}{% else %}{{ page.title }}{% endif %}
+          </a>
+        </li>
+        {% endif %}
       {% endfor %}
-      <li>
-        <a href="{{ site.baseurl }}/styleguide" target="_blank">Styleguide</a>
-      </li>
     </ul>
   </nav>
-  {% if site.meta.header_text %}
-    {{ site.meta.header_text }}
-  {% endif %}
   {% include components/color-band.html %}
 </header>
