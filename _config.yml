@@ -11,7 +11,8 @@ meta:
 
   # Header and footer text
   header_text:
-  footer_text:
+  footer_text: >
+    <a href="/2018/09/24/jacked-up">Why does this site look broken?</a>
 
   # Icons
   rss: true
