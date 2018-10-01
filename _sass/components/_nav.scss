@@ -1,0 +1,11 @@
+.c-nav__list {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: block;
+    @media (min-width: $bp-hands) {
+      display: inline-block;
+    }
+  }
+}

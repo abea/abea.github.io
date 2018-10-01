@@ -1,13 +1,13 @@
-<header class="l-container">
-  <!-- {% include components/svg-logo.html %} -->
+<header class="l-container c-header">
+  <!-- include components/svg-logo.html -->
   <h1>
     <a href="/">{{ site.meta.title }}</a>
   </h1>
   <nav>
-    <ul>
+    <ul class="c-nav__list">
       {% for page in site.pages %}
         {% if page.title and page.hide != true %}
-        <li>
+        <li class="c-nav__list__item">
           <a href="{{ page.url | prepend: site.baseurl }}">
             {% if page.menu_title %}{{ page.menu_title }}{% else %}{{ page.title }}{% endif %}
           </a>
