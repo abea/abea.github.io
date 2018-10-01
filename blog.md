@@ -1,7 +1,6 @@
 ---
 layout: listing
-menu_title: Blog
-title: Blog posts
+title: Writing
 permalink: /blog/
 ---
 
