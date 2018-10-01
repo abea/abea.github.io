@@ -1,4 +1,4 @@
-### Monday, October 1, 2018
+Monday, October 1, 2018
 
 - Added breakpoint border color indicator (TEMP).
 - Nav list component layout for header nav and footer social nav.
