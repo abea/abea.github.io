@@ -14,8 +14,16 @@ body {
   > main { flex-grow: 1; }
 }
 
-.l-container {
-  width: 100%;
-  max-width: $layout-width;
+.l-container,
+.l-content {
+  width: 90vw;
   @include margin(null auto);
+}
+
+.l-container {
+  max-width: $layout-width;
+}
+
+.l-content {
+  max-width: $content-width;
 }

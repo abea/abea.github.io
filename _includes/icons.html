@@ -1,5 +1,5 @@
 {% if site.meta.rss %}
-<li>
+<li class="c-nav__list__item">
 	<a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.meta.str_rss_follow }}">RSS
 		<!-- {% include social-icons/rss.svg %} -->
 	</a>
@@ -7,7 +7,7 @@
 {% endif %}
 
 {% if site.meta.email_address %}
-<li>
+<li class="c-nav__list__item">
 	<a href="mailto:{{ site.meta.email_address }}" title="{{ site.meta.str_email }}">Email
 		<!-- {% include social-icons/envelope.svg %} -->
 	</a>
@@ -15,7 +15,7 @@
 {% endif %}
 
 {% if site.meta.github %}
-<li>
+<li class="c-nav__list__item">
 	<a href="https://github.com/{{ site.meta.github }}" title="{{ site.meta.str_follow_on }} GitHub">Github
 		<!-- {% include social-icons/github.svg %} -->
 	</a>
@@ -23,7 +23,7 @@
 {% endif %}
 
 {% if site.meta.linkedin %}
-<li>
+<li class="c-nav__list__item">
 	<a href="{{ site.meta.linkedin }}" title="{{ site.meta.str_follow_on }} LinkedIn">LinkedIn
 		<!-- {% include social-icons/linkedin.svg %} -->
 	</a>
@@ -31,7 +31,7 @@
 {% endif %}
 
 {% if site.meta.stack_exchange %}
-<li>
+<li class="c-nav__list__item">
 	<a href="{{ site.meta.stack_exchange }}" title="{{ site.meta.str_follow_on }} Stack Exchange">Stack Exchange
 		<!-- {% include social-icons/stack-exchange.svg %} -->
 	</a>
@@ -39,7 +39,7 @@
 {% endif %}
 
 {% if site.meta.twitter %}
-<li>
+<li class="c-nav__list__item">
 	<a href="https://twitter.com/{{ site.meta.twitter }}" title="{{ site.meta.str_follow_on }} Twitter">Twitter
 		<!-- {% include social-icons/twitter.svg %} -->
 	</a>

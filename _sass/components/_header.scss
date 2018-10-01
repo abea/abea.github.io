@@ -1,0 +1,8 @@
+.c-header {
+  @media (min-width: $bp-palm) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: $spacing-unit;
+    align-items: center;
+  }
+}
