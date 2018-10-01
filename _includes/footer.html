@@ -1,13 +1,13 @@
-<footer class="l-container">
-  <p>
+<footer class="l-container c-footer">
+  <p class="c-footer__tagline">
     {% if site.meta.footer_text %}
-      {{ site.meta.footer_text }}<br/>
+      {{ site.meta.footer_text }}
     {% endif %}
-    &copy; {{ 'now' | date: "%Y" }} {{ site.meta.title }}
   </p>
   <ul class="c-nav__list">
     {% include icons.html %}
   </ul>
+  <p class="c-footer__meta">&copy; {{ 'now' | date: "%Y" }} {{ site.meta.title }}</p>
 </footer>
 
 
