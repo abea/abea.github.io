@@ -33,10 +33,10 @@ body {
     display: grid;
     grid-gap: $spacing-unit;
     grid-template: repeat(4, auto) / repeat(2, 50%); // rows / columns
-    grid-template-areas: 'intro photo'
-      'intro photo'
+    grid-template-areas: 'intro project'
       'intro writing'
-      'project writing';
+      'photo writing'
+      'photo writing';
   }
 
   img { max-width: 100%; }
