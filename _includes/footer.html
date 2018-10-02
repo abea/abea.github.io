@@ -4,9 +4,11 @@
       {{ site.meta.footer_text }}
     {% endif %}
   </p>
-  <ul class="c-nav__list">
-    {% include icons.html %}
-  </ul>
+  <nav class="c-nav">
+    <ul class="c-nav__list">
+      {% include icons.html %}
+    </ul>
+  </nav>
   <p class="c-footer__meta">&copy; {{ 'now' | date: "%Y" }} {{ site.meta.title }}</p>
 </footer>
 
