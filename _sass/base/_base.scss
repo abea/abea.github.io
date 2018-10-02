@@ -1,15 +1,29 @@
 // TODO Refresh on lobotomized owl selector.
 body {
-  border: 2px solid $color-zero; // TEMP
+  border: 2px solid map-get($colors-persephone, 'white'); // TEMP
   font-family: $font-family-primary;
   transition: border-color linear 1s; // TEMP
 
   // TEMP... I think I'm going to keep this.
-  @media (min-width: $bp-palm) { border-color: $color-palm; }
-  @media (min-width: $bp-hands) { border-color: $color-hands; }
-  @media (min-width: $bp-hands-wide) { border-color: $color-hands-wide; }
-  @media (min-width: $bp-lap) { border-color: $color-lap; }
-  @media (min-width: $bp-desk) { border-color: $color-desk; }
+  @media (min-width: $bp-palm) {
+    border-color: map-get($colors-persephone, 'black');
+  }
+
+  @media (min-width: $bp-hands) {
+    border-color: map-get($colors-persephone, 'base');
+  }
+
+  @media (min-width: $bp-hands-wide) {
+    border-color: map-get($colors-persephone, 'border');
+  }
+
+  @media (min-width: $bp-lap) {
+    border-color: map-get($colors-persephone, 'highlight');
+  }
+
+  @media (min-width: $bp-desk) {
+    border-color: map-get($colors-persephone, 'shadow');
+  }
 }
 
 img {
