@@ -3,7 +3,18 @@ layout: home
 ishome: 1
 ---
 
-  <section>
+<div class="l-features">
+  <section class="l-features__intro">
+    <h2>This me</h2>
+    <p>
+      Greetings! I'm a web developer, husband, uncle, reluctant cat parent, and enthusiastic learner.
+    </p>
+    <p><a href="/about">More about me</a></p>
+  </section>
+  <section class="l-features__photo">
+    <img src="{{ site.baseurl }}/img/alex-bea.jpg" alt="headshot photo of Alex Bea">
+  </section>
+  <section class="l-features__writing">
     <h2>Latest writing</h2>
     {% for post in site.posts limit:1 %}
     <article>
@@ -27,3 +38,10 @@ ishome: 1
       <a href="/blog">More writing</a>
     </p>
   </section>
+  <section class="l-features__project">
+    <h2>Check it out</h2>
+    <p>
+      I recently whipped up a little bookmarklet to make website support easier for devs like me who need to view production issues in local environments. Check out <a href="/projects/#localhost-swap">Localhost Swap</a>
+    </p>
+  </section>
+</div>

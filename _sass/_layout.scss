@@ -27,3 +27,32 @@ body {
 .l-content {
   max-width: $content-width;
 }
+
+.l-features {
+  @media (min-width: $bp-hands) {
+    display: grid;
+    grid-gap: $spacing-unit;
+    grid-template: repeat(4, auto) / repeat(2, 50%); // rows / columns
+    grid-template-areas: 'intro project'
+      'intro writing'
+      'photo writing'
+      'photo writing';
+  }
+
+  img { max-width: 100%; }
+}
+
+.l-features__intro { grid-area: intro; }
+.l-features__writing { grid-area: writing; }
+.l-features__project { grid-area: project; }
+.l-features__photo {
+  grid-area: photo;
+
+  @supports (object-fit: cover) {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
