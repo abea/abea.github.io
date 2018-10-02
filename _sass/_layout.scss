@@ -43,6 +43,16 @@ body {
 }
 
 .l-features__intro { grid-area: intro; }
-.l-features__photo { grid-area: photo; }
 .l-features__writing { grid-area: writing; }
 .l-features__project { grid-area: project; }
+.l-features__photo {
+  grid-area: photo;
+
+  @supports (object-fit: cover) {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
