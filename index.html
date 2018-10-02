@@ -3,7 +3,17 @@ layout: home
 ishome: 1
 ---
 
-  <section>
+<div class="l-features">
+  <section class="l-features__intro">
+    <h3>About</h3>
+    <p>
+      Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+    </p>
+  </section>
+  <section class="l-features__photo">
+    <img src="{{ site.baseurl }}/img/alex-bea.jpg" alt="headshot photo of Alex Bea">
+  </section>
+  <section class="l-features__writing">
     <h2>Latest writing</h2>
     {% for post in site.posts limit:1 %}
     <article>
@@ -27,3 +37,10 @@ ishome: 1
       <a href="/blog">More writing</a>
     </p>
   </section>
+  <section class="l-features__project">
+    <h2>Project</h2>
+    <p>
+      Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+    </p>
+  </section>
+</div>

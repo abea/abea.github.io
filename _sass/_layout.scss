@@ -27,3 +27,22 @@ body {
 .l-content {
   max-width: $content-width;
 }
+
+.l-features {
+  @media (min-width: $bp-hands) {
+    display: grid;
+    grid-gap: $spacing-unit;
+    grid-template: repeat(4, auto) / repeat(2, 50%); // rows / columns
+    grid-template-areas: 'intro photo'
+      'intro photo'
+      'intro writing'
+      'project writing';
+  }
+
+  img { max-width: 100%; }
+}
+
+.l-features__intro { grid-area: intro; }
+.l-features__photo { grid-area: photo; }
+.l-features__writing { grid-area: writing; }
+.l-features__project { grid-area: project; }
