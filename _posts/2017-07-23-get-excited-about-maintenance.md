@@ -6,7 +6,7 @@ source: Andrew Russell and Lee Vinsel in The New York Times
 tags:
 - career
 - links
-redirect_from: /2017/07/23/get-excited/about-maintenance
+redirect_from: /2017/07/23/get-excited-about-maintenance
 ---
 
 I started a post yesterday about my new role in web development, but it felt silly to write a pure life update post. That's not really what I want this blog to be. Then this morning I read the NY Times opinion piece linked above. It directly compared the attention and excitement that "innovation" receives and the minimal attention and disregard that maintenance tends to receive. The piece argues for policy that focuses on maintenance due to its need and as an area where diverging political factions can likely agree.
