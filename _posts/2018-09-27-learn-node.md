@@ -5,6 +5,7 @@ tags:
 - career
 - node
 - javascript
+redirect_from: /2018/09/27/learn-node
 ---
 
 Despite having worked with and on [*the best Node.js CMS in the universe*](https://apostrophecms.org/) for over a year now, I’ve had trouble understanding the line where Node ended and ApostropheCMS began. I know Apostrophe well, but my understanding of Node was fairly limited. To remedy that, I picked up Wes Bos’ [Learn Node course](https://learnnode.com/) many months back, and a month or so ago finally wrapped it up.
