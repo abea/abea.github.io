@@ -4,6 +4,7 @@ title: Giving Up the Domain
 tags:
 - personal
 - web development
+redirect_from: /2016/03/05/giving-up-domain
 ---
 
 

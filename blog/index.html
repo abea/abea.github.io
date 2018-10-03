@@ -1,0 +1,31 @@
+---
+layout: listing
+title: Writing
+---
+
+{% for post in paginator.posts %}
+<article>
+  <header>
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <h3>{{ post.title }}</h3>
+    </a>
+    <time datetime="{{ post.date }}">
+      {{ post.date | date: "%B %-d, %Y" }}
+    </time>
+  </header>
+  <p>
+    {{ post.excerpt | strip_html | strip_newlines | truncate: 300 }}
+  </p>
+</article>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<nav>
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">Previous</a> |
+  {% endif %}
+  Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  {% if paginator.next_page %}
+  | <a href="{{ paginator.next_page_path }}">Next</a>
+  {% endif %}
+</nav>
+{% endif %}

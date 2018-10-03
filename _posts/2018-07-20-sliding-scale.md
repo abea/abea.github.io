@@ -6,6 +6,7 @@ source: Cap Watkins on capwatkins.com
 tags:
 - career
 - links
+redirect_from: /2018/07/20/sliding-scale
 ---
 
 Yesterday afternoon, a bunch of us developers were finishing up work a little late in the office and were clearly a little punchy from calls, meetings, and staring at the screen all day. Someone (me) brought up a somewhat contentious enhancement/fix to [ApostropheCMS](https://apostrophecms.org/) and another dev started up about a related feature he was trying to un-suck in a project.
