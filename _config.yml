@@ -41,8 +41,8 @@ meta:
   google_fonts:
 
 # PAGINATION
-# paginate: 10
-# paginate_path: "blog/page:num"
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 # COLLECTIONS
 collections:
@@ -65,5 +65,6 @@ sass:
 plugins:
   - jekyll-redirect-from
   - jekyll-paginate
+  - jekyll-sitemap
   - kramdown
   - rouge
