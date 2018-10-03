@@ -4,6 +4,7 @@ title: Responsive breakpoints naming by ergonomic context
 tags:
 - sass
 - front end development
+redirect_from: /2016/12/17/ergonomic-breakpoint-variables
 ---
 
 Ask 20 front end developers what they like to name their responsive breakpoints and you’ll get… probably 10 or so answers. Most people use similar ones, but many of us like to switch it up. For me, I’ve landed on a system I like based on screen interaction context.

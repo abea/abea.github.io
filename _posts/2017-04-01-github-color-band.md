@@ -4,6 +4,7 @@ title: Interior decorating with the GitHub events API
 tags:
 - javascript
 - fun
+redirect_from: /2017/04/01/github-color-band
 ---
 
 Doing mostly Drupal and Wordpress CMS development I haven't had too much need to work with APIs. Google Maps API has come up regularly, but it's so robust and well documented that it can feel like cheating. In order to play with an API (and make this site a tad prettier in the process), I decided to make my own GitHub activity timeline inspired by the one on a GitHub user profile.

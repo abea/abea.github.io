@@ -4,6 +4,7 @@ title: Pattern Lab with Github Pages
 audio: styleguide-post.mp3
 tags:
 - front end development
+redirect_from: /2017/02/23/pattern-lab
 ---
 
 After tinkering with this personal portfolio site for a while more or less live, I recently decided to take the opportunity of full control to set up a style guide for a different kind of development. Since, as of today, this site is built with the static site generator Jekyll and hosted by Github, my big question was how to build and display this new style guide.

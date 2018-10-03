@@ -5,6 +5,7 @@ audio: digital-konmari.mp3
 tags:
 - personal
 - organization
+redirect_from: /2016/10/31/digital-konmari
 ---
 
 As many friends and family of mine know, we went all in on Marie Kondo’s fantastic [exercise in privilege](http://www.theatlantic.com/entertainment/archive/2016/03/marie-kondo-and-the-privilege-of-clutter/475266/), the Art of Tidying Up — aka the KonMari method. You may be familiar with the basic concepts:
