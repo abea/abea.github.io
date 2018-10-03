@@ -1,3 +1,15 @@
+Wednesday, October 3, 2018
+
+- Finally gets pagination working on blog index.
+- Changes blog page path structure and adds redirects for recent and popular posts.
+- Updates navigation to avoid paginated blog pages in the nav.
+
+Tuesday, October 2, 2018
+
+- Updates homepage layout and content
+- Header and footer layout adjustment.
+- Minor update to about page.
+
 Monday, October 1, 2018
 
 - Added breakpoint border color indicator (TEMP).
@@ -5,3 +17,4 @@ Monday, October 1, 2018
 - Basic header layout using CSS Grid(!).
 - Tightened content width for better readability.
 - Blog section title change. Probably will change again.
+- Adds localhost swap bookmarket to projects
