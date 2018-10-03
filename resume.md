@@ -2,7 +2,6 @@
 layout: page
 title: Alexander Bea
 permalink: /resume/
-hide: true
 ---
 
 alex.bea@gmail.com
