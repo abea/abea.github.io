@@ -5,11 +5,11 @@
   </h1>
   <nav class="c-nav">
     <ul class="c-nav__list">
-      {% for page in site.data.nav.docs %}
-        {% if page.title %}
+      {% for item in site.data.nav.docs %}
+        {% if item.title %}
         <li class="c-nav__list__item">
-          <a href="{{ page.url | prepend: site.baseurl }}">
-            {{ page.title }}
+          <a href="{{ item.url | prepend: site.baseurl }}">
+            {{ item.title }}
           </a>
         </li>
         {% endif %}
