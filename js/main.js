@@ -123,16 +123,18 @@ function checkState() {
   }
 }
 
-// Start the API call.
-ghXhr.open('GET', reqUrl, true);
-// On readystatechange run the timeline function.
-ghXhr.onreadystatechange = checkState;
-ghXhr.onerror = () => {
-  console.error('Github API call didn\'t work.');
-  timeline.remove();
-};
+if (timeline) {
+  // Start the API call.
+  ghXhr.open('GET', reqUrl, true);
+  // On readystatechange run the timeline function.
+  ghXhr.onreadystatechange = checkState;
+  ghXhr.onerror = () => {
+    console.error('Github API call didn\'t work.');
+    timeline.remove();
+  };
 
-ghXhr.send();
+  ghXhr.send();
+}
 
 
 // End Github activity banner
