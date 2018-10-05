@@ -38,7 +38,7 @@ meta:
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts:
+  google_fonts: 'Vollkorn:600'
 
 # PAGINATION
 paginate: 5
