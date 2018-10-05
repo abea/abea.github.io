@@ -2,27 +2,28 @@
 body {
   border: 2px solid map-get($colors-persephone, 'white'); // TEMP
   font-family: $font-family-primary;
+  line-height: $lh-base;
   transition: border-color linear 1s; // TEMP
 
   // TEMP... I think I'm going to keep this.
   @media (min-width: $bp-palm) {
-    border-color: map-get($colors-persephone, 'black');
+    border-color: map-get($colors-persephone, dark);
   }
 
   @media (min-width: $bp-hands) {
-    border-color: map-get($colors-persephone, 'base');
+    border-color: map-get($colors-persephone, primary);
   }
 
   @media (min-width: $bp-hands-wide) {
-    border-color: map-get($colors-persephone, 'border');
+    border-color: map-get($colors-persephone, secondary);
   }
 
   @media (min-width: $bp-lap) {
-    border-color: map-get($colors-persephone, 'highlight');
+    border-color: map-get($colors-persephone, highlight);
   }
 
   @media (min-width: $bp-desk) {
-    border-color: map-get($colors-persephone, 'shadow');
+    border-color: map-get($colors-persephone, shadow);
   }
 }
 
