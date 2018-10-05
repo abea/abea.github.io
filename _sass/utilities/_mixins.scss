@@ -5,3 +5,21 @@
     @content;
   }
 }
+
+@mixin all-headers ($asParent: false) {
+  @if $asParent == true {
+    h1 &, h2 &, h3 &, h4 &, h5 &, h6 & { @content; }
+  } @else {
+    h1, h2, h3, h4, h5, h6 { @content; }
+  }
+}
+
+@mixin all-text ($asParent: false) {
+  @include all-headers($asParent) { @content; }
+
+  @if $asParent == true {
+    p & { @content; }
+  } @else {
+    p { @content; }
+  }
+}

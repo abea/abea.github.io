@@ -11,9 +11,9 @@ Please explore some of my work below. In addition, I have [years of experience](
 {% assign revPortfolio = site.portfolio | sort:"launched" | reverse %}
 {% for project in revPortfolio %}
 <article>
-  <a href="{{ project.url | prepend: site.baseurl }}">
-    <h3>{{ project.title }}</h3>
-  </a>
+  <h3>
+    <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+  </h3>
   <p>{{ project.short-description }}</p>
   <a href="{{ project.url | prepend: site.baseurl }}">
     <img src="/{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
