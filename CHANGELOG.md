@@ -1,3 +1,11 @@
+Friday, October 5, 2018
+
+- Adds headline typeface, Vollkorn, and link styles. Additional font styles.
+- Fix/adjustment to homepage feature image.
+- Fix for Github timeline console error.
+- Adds CNAME file for HTTPS in Github.
+- Updates the Persephone color scheme.
+
 Wednesday, October 3, 2018
 
 - Finally gets pagination working on blog index.
