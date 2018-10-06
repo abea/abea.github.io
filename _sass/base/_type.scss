@@ -18,6 +18,6 @@ a {
   }
 
   @include all-text (true) {
-    border-bottom: 2px solid $color-link;
+    border-bottom: 2px solid rgba($color-link, 0.6);
   }
 }

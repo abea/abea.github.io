@@ -1,9 +1,9 @@
 <footer class="l-container c-footer">
+  {% if site.meta.footer_text %}
   <p class="c-footer__tagline">
-    {% if site.meta.footer_text %}
       {{ site.meta.footer_text }}
-    {% endif %}
   </p>
+  {% endif %}
   <nav class="c-nav">
     <ul class="c-nav__list c-nav__list--icons">
       {% include icons.html %}

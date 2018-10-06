@@ -7,6 +7,7 @@ permalink: /changelog/
 ## Saturday, October 6, 2018
 
 - Site no longer looks jacked up.
+- Adds project blurb for Philly Bike History.
 - Fixes page headings to use browser styles better.
 - Nav updates for icon nav and adding color.
 - Work page intro update. Home page arrangement.
