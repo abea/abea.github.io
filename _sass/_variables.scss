@@ -21,7 +21,11 @@ $lh-small: 1.4;
 $layout-width: 60rem;
 $content-width: 40rem;
 $spacing-unit: 1rem;
-$spacing-half: $spacing-unit / 2;
+$spacing-small: $spacing-unit / 2;
+$spacing-gutter: $spacing-unit * 2;
+
+$content-img-height: $spacing-unit * 25;
+$teaser-img-height: $spacing-unit * 15;
 
 // Colors
 // ******
@@ -44,3 +48,7 @@ $colors: $colors-persephone;
 
 $color-text: map-get($colors-grey, dark);
 $color-link: map-get($colors, secondary);
+
+// Misc
+// ****
+$border-outline: 1px solid rgba(map-get($colors-grey, dark), 0.25);

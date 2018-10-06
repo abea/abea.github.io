@@ -3,20 +3,28 @@
   padding: 0;
 }
 
+@mixin nav-item-inline {
+  display: inline-block;
+  margin: 0 ($spacing-small / 2);
+  font-size: inherit;
+}
+
 .c-nav__list__item {
   display: block;
-  margin-top: $spacing-half / 2;
+  margin-top: $spacing-small / 2;
   font-size: $font-size-small;
   line-height: $lh-small;
 
   @media (min-width: $bp-hands) {
-    display: inline-block;
-    margin: 0 ($spacing-half / 2);
-    font-size: inherit;
+    @include nav-item-inline;
   }
 
   @include haf {
     @include color-series;
+  }
+
+  .c-nav__list--icons & {
+    @include nav-item-inline;
   }
 
   a {

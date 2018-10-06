@@ -3,7 +3,7 @@
   iframe {
     @include margin($spacing-unit auto);
     display: block;
-    max-height: $spacing-unit * 25;
-    border: 1px solid rgba(map-get($colors-grey, dark), 0.25);
+    max-height: $content-img-height;
+    border: $border-outline;
   };
 }

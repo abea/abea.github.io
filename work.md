@@ -10,13 +10,15 @@ Check out some of my work here. They're a small reflection of my [years of exper
 
 {% assign revPortfolio = site.portfolio | sort:"launched" | reverse %}
 {% for project in revPortfolio %}
-<article>
-  <h3>
-    <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-  </h3>
-  <p>{{ project.short-description }}</p>
-  <a href="{{ project.url | prepend: site.baseurl }}">
-    <img src="/{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
+<article class="c-teaser c-teaser--media">
+  <div class="c-teaser__info">
+    <h2>
+      <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+    </h2>
+    <p>{{ project.short-description }}</p>
+  </div>
+  <a class="c-teaser__thumbnail" href="{{ project.url | prepend: site.baseurl }}">
+    <img class="c-teaser__img" src="/{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
   </a>
 </article>
 {% endfor %}

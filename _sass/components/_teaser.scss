@@ -1,0 +1,35 @@
+.c-teaser {
+  &:nth-of-type(n + 2) {
+    margin-top: $spacing-gutter;
+  }
+}
+
+.c-teaser--media {
+  @media (min-width: $bp-hands) {
+    @supports(display: grid) {
+      display: grid;
+      grid-gap: 0 $spacing-unit;
+      grid-template-columns: 40% 60%;
+      grid-template-areas: 'photo ...';
+    }
+  }
+}
+
+.c-teaser__thumbnail {
+  grid-area: photo;
+  line-height: 0;
+}
+
+.c-teaser__img {
+  @include margin($spacing-unit auto null);
+  display: block;
+  max-height: $teaser-img-height;
+  border: $border-outline;
+
+  @media (min-width: $bp-hands) {
+    @supports(display: grid) {
+      max-height: none;
+      margin: 0;
+    }
+  }
+}
