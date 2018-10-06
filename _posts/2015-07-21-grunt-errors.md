@@ -4,6 +4,7 @@ title: Dealing with Grunt errors
 tags:
 - grunt
 - web development
+redirect_from: /2015/07/21/grunt-errors
 ---
 
 This is very much one of those "write about it to not forget it" posts. I'm guessing I'll be writing a good number of those. Some intro first.
@@ -31,7 +32,7 @@ npm ERR!  { [Error: EACCES, rmdir '/usr/local/lib/node_modules/grunt-cli']
 npm ERR!   errno: -13,
 npm ERR!   code: 'EACCES',
 npm ERR!   path: '/usr/local/lib/node_modules/grunt-cli' }
-npm ERR! 
+npm ERR!
 npm ERR! Please try running this command again as root/Administrator.
 npm ERR! error rolling back Error: EACCES, rmdir '/usr/local/lib/node_modules/grunt-cli'
 npm ERR! error rolling back     at Error (native)

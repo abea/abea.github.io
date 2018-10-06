@@ -5,6 +5,7 @@ youtubeID: XdFY-zpT4JY
 tags:
 - career
 - web development
+redirect_from: /2015/06/23/remote-working-junior-developer
 ---
 
 As a new developer, I’m looking forward to finding a good position as a junior developer. Being able to work under more experienced devs means that I’d be able to be part of projects I wouldn’t have access to if on my own. It also means that I’d be able to learn from others’ experience, whether it be new languages, more advanced techniques on languages I know, or more general development practices and processes.

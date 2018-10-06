@@ -5,6 +5,7 @@ image: "img/blog/linkedin-no.jpg"
 tags:
 - career
 - personal
+redirect_from: /2016/05/02/practice-saying-no
 ---
 
 It was really in my first job out of grad school when I learned what has become the most important and most difficult lesson for modern life. I think it was in one of my first performance reviews there at 1Sky. The review was positive overall, though my manager, our digital director, identified some instances when I missed deadlines. Fortunately, he diagnosed that not from laziness, but that I was overloading myself.

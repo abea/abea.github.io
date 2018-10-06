@@ -5,6 +5,7 @@ tags:
 - web design
 - software
 youtubeID: 56wXV0oBTg8
+redirect_from: /2015/06/22/working-with-macaw
 ---
 
 Every now and again something comes along in your life that you pretty much can’t do without, but it drives you nuts nevertheless. Maybe a boyfriend or girlfriend (#butnotmywifesheisperfect), the beat up car that gets you to work, or… software.
@@ -24,7 +25,7 @@ I have enough comfort with Photoshop to know a few things. First, that I’m cap
 
 Once I really dove in, my experience designing in Macaw was both  amazingly simple and incredibly frustrating at times. To be fair, the same could be said for most learning processes (see: me and AngularJS right now). The Macaw toolset is very recognizable as a mix of photo editor tools, wire framing tools,   and common WYSIWYG editors. Smash Pixelmator (my PS alternative of choice), Omnigraffle, and CKEditor together and the aftermath is right there on the left bar.
 
-![Macaw toolbar detail screenshot]({{ site.url }}/img/blog/macaw-regions-tools.png) 
+![Macaw toolbar detail screenshot]({{ site.url }}/img/blog/macaw-regions-tools.png)
 
 Varying by the element you’re working on, the right bar is a variety of attributes that are familiar to anyone with intermediate experience with CSS: borders, padding, width and max-/min-width, typography options, and nearly every other typical attribute. You can also add classes, ids, and rename elements, for example as HTML5 elements such as *footer* or *aside*. All of that is really cool and easy.
 
@@ -47,11 +48,11 @@ My biggest frustrations with Macaw came through element interaction. There were 
 The good news is that I learned a few tips to make things go smoothly (credit to [Nichole Burton](https://twitter.com/burtonnichole) for passing along her experience):
 1. When adding an element to a container, double-click into that container first. If you’re looking at the outline view on the right, you’ll know you’re within that container when only its children are bright with all else faded grey.
 2. This is sort of a 1a, really. If you shouldn’t just drag things into an element to make it a container (see [Macaw documentation ](http://docs.macaw.co/#drawing) for the terminology), then how do you make the container in the first place!? My go-to method is now to drop in some text or other small block (often text) in the area where I want the container to be. I then use the container tool to draw the block *around* that small block. Once the container is sized, you can add things in there pretty easily and delete the starter block if you don’t actually need it.
-3. Create components in another page. I was designing a blog post template in this case and wanted to use my client’s real blog post in the design to be most true to his use-case. It may seem simple, but a typical professional blog post has headers, images, paragraphs, block quotes, and more. In Macaw, each of these is its own element that have to be drawn together into what looks like a blog post. 
+3. Create components in another page. I was designing a blog post template in this case and wanted to use my client’s real blog post in the design to be most true to his use-case. It may seem simple, but a typical professional blog post has headers, images, paragraphs, block quotes, and more. In Macaw, each of these is its own element that have to be drawn together into what looks like a blog post.
 Rather than struggle through this complex region where it could unexpectedly interact with other page elements, I created the blog post content on a new page, saved it as a component, and then double-clicked into the post region and dragged the component into the post region. I did this with a few other components as well. For example, I made one sign-up form, saved it as a component, and added it to two different regions of the page.
 
-4. As mentioned above, make good use absolute or fixed positioning. You can see social media links in my menu bar in the video above. At a smaller width, I had those pop down into the photo banner as the main menu went full width. To keep the published code looking right, I didn’t want to recreate the icons in the banner and use show/hide on the separate groups. 
-Instead, the smaller-width sets the icons to absolute positioning and has them pulled just out of their parent container. Absolute positioning means that they’re not going to disrupt the site logo and everything is in its place. Ultimately this may be close to the solution in actual CSS, so it’s an instructive moment as well. 
+4. As mentioned above, make good use absolute or fixed positioning. You can see social media links in my menu bar in the video above. At a smaller width, I had those pop down into the photo banner as the main menu went full width. To keep the published code looking right, I didn’t want to recreate the icons in the banner and use show/hide on the separate groups.
+Instead, the smaller-width sets the icons to absolute positioning and has them pulled just out of their parent container. Absolute positioning means that they’re not going to disrupt the site logo and everything is in its place. Ultimately this may be close to the solution in actual CSS, so it’s an instructive moment as well.
 
 ## Coming to a point
 I’m not done with this project and, as much as I had trouble along the way, I’m certainly finishing this one with Macaw and will very likely continue using it. I’ve heard great things about [Sketch](http://bohemiancoding.com/sketch/), but without the responsive feature and exporting browser-ready demos, I’m not tempted to put time into it. Most of my big problems with Macaw were solvable. Some do seem like issues that should be addressed, but  at least I know how to work around them for now.

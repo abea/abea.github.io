@@ -4,6 +4,7 @@ title: Thoughts on code refactoring
 tags:
 - front end development
 - web development
+redirect_from: /2016/05/07/refactor-projects
 ---
 
 My favorite thing about web developer is the problem solving. As a kid who did logic puzzles all afternoon and then went on to have calculus be a favorite class, that's been the clearest guiding light in my dev career so far. It shouldn't be much of a surprise then how much I was looking forward to a serious refactoring project.

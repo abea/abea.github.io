@@ -4,6 +4,7 @@ title: Figuring out Pattern Lab's git workflow
 tags:
 - style guides
 - web development
+redirect_from: /2016/04/03/pattern-lab-git
 ---
 
 Being both a front end developer and a pedant, I've been excited about the idea of good, maintainable style guides for a while now. The promise is amazing: future development made easier to extend and harder to screw up thanks to comprehensive documentation of all the styles the site needs. [Pattern Lab](http://patternlab.io/) has emerged in the last year as the style guide system to beat. When I started using it, however, a major question had me stuck for days.

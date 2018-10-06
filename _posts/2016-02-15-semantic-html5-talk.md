@@ -7,6 +7,7 @@ tags:
 - web development
 - accessibility
 - career
+redirect_from: /2016/02/15/semantic-html5-talk
 ---
 
 
