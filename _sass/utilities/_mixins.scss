@@ -28,7 +28,7 @@
   $index: 1;
 
   @each $name, $hex in $colors {
-    &:nth-child(#{$index}n + #{$index}) {
+    &:nth-child(#{length($colors)}n + #{$index}) {
       #{$prop}: $hex;
     }
     $index: $index + 1;
