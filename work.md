@@ -4,7 +4,7 @@ title: My Work
 permalink: /work/
 ---
 
-Please explore some of my work below. In addition, I have [years of experience]({{ site.meta.linkedin }}) with digital strategy and web project management both within organizations and as an agency project manager. I'd love to talk about how we can collaborate. Please [email me](mailto:alex.bea@gmail.com).
+Check out some of my work here. They're a small reflection of my [years of experience]({{ site.meta.linkedin }}) with web development, project management, and digital strategy both within organizations and at agencies. [Let's talk.](mailto:alex.bea@gmail.com)
 
 ## Case Studies
 
