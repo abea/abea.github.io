@@ -33,7 +33,7 @@ $colors-persephone: (
   secondary: darken(#8f5da7, 10%)
 );
 
-$color-group: $colors-persephone;
+$colors: $colors-persephone;
 
-$color-text: map-get($color-group, dark);
-$color-link: map-get($color-group, secondary);
+$color-text: map-get($colors, dark);
+$color-link: map-get($colors, secondary);
