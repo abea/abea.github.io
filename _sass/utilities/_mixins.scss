@@ -18,9 +18,9 @@
   @include all-headers($asParent) { @content; }
 
   @if $asParent == true {
-    p & { @content; }
+    p &, li &, blockquote & { @content; }
   } @else {
-    p { @content; }
+    p, li, blockquote { @content; }
   }
 }
 
