@@ -1,47 +1,47 @@
 {% if site.meta.rss %}
 <li class="c-nav__list__item">
-	<a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.meta.str_rss_follow }}">RSS
-		<!-- {% include social-icons/rss.svg %} -->
-	</a>
+  <a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.meta.str_rss_follow }}"><span class="u-sr-only">RSS</span>
+    {% include svgs/rss.svg %}
+  </a>
 </li>
 {% endif %}
 
 {% if site.meta.email_address %}
 <li class="c-nav__list__item">
-	<a href="mailto:{{ site.meta.email_address }}" title="{{ site.meta.str_email }}">Email
-		<!-- {% include social-icons/envelope.svg %} -->
-	</a>
+  <a href="mailto:{{ site.meta.email_address }}" title="{{ site.meta.str_email }}"><span class="u-sr-only">Email</span>
+    {% include svgs/gmail.svg %}
+  </a>
 </li>
 {% endif %}
 
 {% if site.meta.github %}
 <li class="c-nav__list__item">
-	<a href="https://github.com/{{ site.meta.github }}" title="{{ site.meta.str_follow_on }} GitHub">Github
-		<!-- {% include social-icons/github.svg %} -->
-	</a>
+  <a href="https://github.com/{{ site.meta.github }}" title="{{ site.meta.str_follow_on }} GitHub"><span class="u-sr-only">Github</span>
+    {% include svgs/github.svg %}
+  </a>
 </li>
 {% endif %}
 
 {% if site.meta.linkedin %}
 <li class="c-nav__list__item">
-	<a href="{{ site.meta.linkedin }}" title="{{ site.meta.str_follow_on }} LinkedIn">LinkedIn
-		<!-- {% include social-icons/linkedin.svg %} -->
-	</a>
+  <a href="{{ site.meta.linkedin }}" title="{{ site.meta.str_follow_on }} LinkedIn"><span class="u-sr-only">LinkedIn</span>
+    {% include svgs/linkedin.svg %}
+  </a>
 </li>
 {% endif %}
 
 {% if site.meta.stack_exchange %}
 <li class="c-nav__list__item">
-	<a href="{{ site.meta.stack_exchange }}" title="{{ site.meta.str_follow_on }} Stack Exchange">Stack Exchange
-		<!-- {% include social-icons/stack-exchange.svg %} -->
-	</a>
+  <a href="{{ site.meta.stack_overflow }}" title="{{ site.meta.str_follow_on }} Stack Overflow"><span class="u-sr-only">Stack Overflow</span>
+    {% include svgs/stackoverflow.svg %}
+  </a>
 </li>
 {% endif %}
 
 {% if site.meta.twitter %}
 <li class="c-nav__list__item">
-	<a href="https://twitter.com/{{ site.meta.twitter }}" title="{{ site.meta.str_follow_on }} Twitter">Twitter
-		<!-- {% include social-icons/twitter.svg %} -->
-	</a>
+  <a href="https://twitter.com/{{ site.meta.twitter }}" title="{{ site.meta.str_follow_on }} Twitter"><span class="u-sr-only">Twitter</span>
+    {% include svgs/twitter.svg %}
+  </a>
 </li>
 {% endif %}
