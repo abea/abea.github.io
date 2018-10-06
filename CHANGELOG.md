@@ -1,3 +1,9 @@
+---
+layout: page
+title: Changelog
+permalink: /changelog/
+---
+
 ## Saturday, October 6, 2018
 
 - Site no longer looks jacked up.
