@@ -1,15 +1,20 @@
 @include all-headers {
   font-family: $font-family-heading;
   font-weight: 600;
+  line-height: $lh-small;
 }
 
 a {
-  color: inherit;
+  color: mix($color-link, $color-text);
   text-decoration: none;
   transition: 0.25s color;
 
   @include haf {
     color: $color-link;
+
+    nav & {
+      border-bottom: 2px solid currentColor;
+    }
   }
 
   @include all-text (true) {

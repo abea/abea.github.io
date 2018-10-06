@@ -1,11 +1,40 @@
 .c-nav__list {
   margin: 0;
   padding: 0;
+}
 
-  &__item {
-    display: block;
-    @media (min-width: $bp-hands) {
-      display: inline-block;
-    }
+@mixin nav-item-inline {
+  display: inline-block;
+  margin: 0 ($spacing-small / 2);
+  font-size: inherit;
+}
+
+.c-nav__list__item {
+  display: block;
+  margin-top: $spacing-small / 2;
+  font-size: $font-size-small;
+  line-height: $lh-small;
+
+  @media (min-width: $bp-hands) {
+    @include nav-item-inline;
+  }
+
+  @include haf {
+    @include color-series;
+  }
+
+  .c-nav__list--icons & {
+    @include nav-item-inline;
+  }
+
+  a {
+    color: inherit;
+    border-color: currentColor;
+  }
+
+  svg {
+    max-width: $font-size-primary * 1.5;
+    max-height: $font-size-primary * 1.5;
+    fill: currentColor;
   }
 }

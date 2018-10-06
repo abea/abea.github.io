@@ -1,0 +1,9 @@
+.c-article {
+  img,
+  iframe {
+    @include margin($spacing-unit auto);
+    display: block;
+    max-height: $content-img-height;
+    border: $border-outline;
+  };
+}

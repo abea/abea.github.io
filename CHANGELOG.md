@@ -1,4 +1,18 @@
-Friday, October 5, 2018
+---
+layout: page
+title: Changelog
+permalink: /changelog/
+---
+
+## Saturday, October 6, 2018
+
+- Site no longer looks jacked up.
+- Fixes page headings to use browser styles better.
+- Nav updates for icon nav and adding color.
+- Work page intro update. Home page arrangement.
+- Article image layout, teasers layout, other minor layout updates.
+
+## Friday, October 5, 2018
 
 - Adds headline typeface, Vollkorn, and link styles. Additional font styles.
 - Fix/adjustment to homepage feature image.
@@ -6,19 +20,19 @@ Friday, October 5, 2018
 - Adds CNAME file for HTTPS in Github.
 - Updates the Persephone color scheme.
 
-Wednesday, October 3, 2018
+## Wednesday, October 3, 2018
 
 - Finally gets pagination working on blog index.
 - Changes blog page path structure and adds redirects for recent and popular posts.
 - Updates navigation to avoid paginated blog pages in the nav.
 
-Tuesday, October 2, 2018
+## Tuesday, October 2, 2018
 
 - Updates homepage layout and content
 - Header and footer layout adjustment.
 - Minor update to about page.
 
-Monday, October 1, 2018
+## Monday, October 1, 2018
 
 - Added breakpoint border color indicator (TEMP).
 - Nav list component layout for header nav and footer social nav.
