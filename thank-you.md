@@ -9,7 +9,7 @@ Thanks for your email to connect about [work, the universe, and everything](http
 
 Cheers, Alex
 
-<ul>
+<ul class="c-nav__list c-nav__list--icons">
   {% include icons.html %}
 </ul>
 <!-- @TODO Replace header__social class. Not semantic. -->
