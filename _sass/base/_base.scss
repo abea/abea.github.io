@@ -1,11 +1,9 @@
-// TODO Refresh on lobotomized owl selector.
 body {
-  border: 2px solid map-get($colors-persephone, 'white'); // TEMP
+  border: 2px solid map-get($colors-persephone, 'white');
   font-family: $font-family-primary;
   line-height: $lh-base;
-  transition: border-color linear 1s; // TEMP
+  transition: border-color linear 1s;
 
-  // TEMP... I think I'm going to keep this.
   @media (min-width: $bp-palm) {
     border-color: map-get($colors-persephone, dark);
   }

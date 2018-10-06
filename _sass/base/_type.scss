@@ -1,10 +1,11 @@
 @include all-headers {
   font-family: $font-family-heading;
   font-weight: 600;
+  line-height: $lh-small;
 }
 
 a {
-  color: inherit;
+  color: mix($color-link, $color-text);
   text-decoration: none;
   transition: 0.25s color;
 
