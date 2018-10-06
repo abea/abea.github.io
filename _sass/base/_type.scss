@@ -10,6 +10,10 @@ a {
 
   @include haf {
     color: $color-link;
+
+    nav & {
+      border-bottom: 2px solid currentColor;
+    }
   }
 
   @include all-text (true) {

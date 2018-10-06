@@ -23,3 +23,14 @@
     p { @content; }
   }
 }
+
+@mixin color-series($prop: 'color') {
+  $index: 1;
+
+  @each $name, $hex in $colors {
+    &:nth-child(#{$index}n + #{$index}) {
+      #{$prop}: $hex;
+    }
+    $index: $index + 1;
+  }
+}

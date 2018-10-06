@@ -4,8 +4,21 @@
 
   &__item {
     display: block;
+    padding: $spacing-half / 2;
+    font-size: $font-size-small;
+
     @media (min-width: $bp-hands) {
       display: inline-block;
+      font-size: inherit;
+    }
+
+    @include haf {
+      @include color-series;
+    }
+
+    a {
+      color: inherit;
+      border-color: currentColor;
     }
   }
 }
