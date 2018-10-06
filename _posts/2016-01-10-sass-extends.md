@@ -5,6 +5,7 @@ tags:
 - sass
 - front end development
 - web development
+redirect_from: /2016/01/10/sass-extends
 ---
 
 

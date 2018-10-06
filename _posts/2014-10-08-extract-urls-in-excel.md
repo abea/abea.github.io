@@ -3,6 +3,7 @@ layout: post
 title: Extract URLs from linked text into new column
 tags:
 - stuff I searched for
+redirect_from: /2014/10/08/extract-urls-in-excel
 ---
 
 *First in my imagined series, “Stuff I searched for,” aka “Posts with boring titles that may hopefully come in handy for someone someday.”*
@@ -11,7 +12,7 @@ tags:
 
 I’m the internal lead for a major website redesign and rebuild at [Oceana](http://oceana.org). One part of that process has involve taking a hard look at all existing content on our website and figuring out what to do with it all. Once that was done, we could use that as a master list to (in most cases) repurpose the previous versions of pages for the new site[^1]. Some XML sitemaps may include the page names (important for organization), but ours doesn’t.
 
-The first step was to get the full list of pages. Our (other) sitemap page worked for that—essentially a menu tree. Once that was copy-pasted into an Excel doc, since Google docs stripped the hyperlinks, I needed a way to pull the URLs out into a new column. 
+The first step was to get the full list of pages. Our (other) sitemap page worked for that—essentially a menu tree. Once that was copy-pasted into an Excel doc, since Google docs stripped the hyperlinks, I needed a way to pull the URLs out into a new column.
 
 *[CUE INTERNET SEARCHING MUSIC]*
 

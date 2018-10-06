@@ -6,6 +6,7 @@ tags:
 - jekyll
 - web development
 - links
+redirect_from: /2016/06/23/embed-youtube-jekyll
 ---
 
 *Second in my maybe-less-imagined series, “Stuff I searched for”*

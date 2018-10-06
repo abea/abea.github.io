@@ -3,6 +3,7 @@ layout: post
 title: Here's to blogging little things
 tags:
 - inspiration
+redirect_from: /2015/08/25/blog-little-things
 ---
 
 > There are lots of things that can be blogged about and yet, we are stuck in the dilemma of, – “Is it worth something to write?”. The fear of being insignificant aka “Nobody will read it” syndrome, inhibits us from writing that simple thing that might have helped many people.

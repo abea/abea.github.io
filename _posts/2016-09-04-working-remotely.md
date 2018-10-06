@@ -7,6 +7,7 @@ tags:
 - career
 - web development
 - links
+redirect_from: /2016/09-04/working-remotely
 ---
 
 Over the summer my team at Singlebrook was merged into the Drupal development team at Minneapolis' [OriginEight](https://www.origineight.net/). This has meant a few things, including going back to being full-on remote working.

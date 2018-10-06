@@ -5,6 +5,7 @@ tags:
 - game development
 - javascript
 - canvas
+redirect_from: /2015/08/05/making-pong
 ---
 
 Subtitle: Adventures in `<canvas>`.

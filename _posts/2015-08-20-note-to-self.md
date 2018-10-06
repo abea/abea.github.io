@@ -4,6 +4,7 @@ title: My note to self
 tags:
 - organization
 - inspiration
+redirect_from: /2015/08/20/note-to-self
 ---
 
 *This post [originally appeared as a submission to the New Organizing Institute's Tip of the Day series](http://archive.neworganizing.com/content/blog/tip-keep-a-note-to-self). Now discontinued, the series offered daily tips by and for NOI's community of progressive organizers. While framed here for advocacy organizers, I've continued to find this practice super valuable in web development and in life.*
@@ -25,6 +26,6 @@ You can include anything, but **keep it short**. If this turns into an essay you
 
 Give it a shot. Remembering why and how you want to work in advocacy requires a little reminding every now and again--even if it's simply to wash your coffee mug every day.
 
-> **Update:** My only major thought to add to this post is to use a service like [If This Then That](http://ifttt.com) to automatize the process. I combined IFTTT's built-in Date & Time trigger with its Email channel to have the message sent to me every month on the 13th (arbitrary date, happens to include my birthday). 
-> 
+> **Update:** My only major thought to add to this post is to use a service like [If This Then That](http://ifttt.com) to automatize the process. I combined IFTTT's built-in Date & Time trigger with its Email channel to have the message sent to me every month on the 13th (arbitrary date, happens to include my birthday).
+>
 > [I've made an IFTTT template you can add and personalize.](https://ifttt.com/recipes/317809-monthly-mantra) Note that formatting the email does require a little HTML. Here's to remembering the important stuff!

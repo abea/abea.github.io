@@ -4,6 +4,7 @@ title: The first web development interview
 tags:
 - career
 - web development
+redirect_from: /2015/12/05/first-dev-interview
 ---
 
 
@@ -30,7 +31,7 @@ Because my wife told me to. Seriously, that's ultimately why. Yes, someone at IW
 
 My first interview was with two of the dev team. I'd met one of them at my previous non-tech interview, which definitely helped. It's also worth mentioning here that I'd met a couple of other people from the company at a local MeetUp group. We never got into deep discussion, but seeing familiar faces and having my face also be familiar made the whole process easier.
 
-The initial interview went well and mostly focused around development process and the code I'd written to date. Several of their questions directly related back to specific technologies I'd listed on my resume and cover letter. We talked about my experience and thoughts on Sass, Grunt, and the Bourbon ecosystem compared to Bootstrap, their framework of choice. 
+The initial interview went well and mostly focused around development process and the code I'd written to date. Several of their questions directly related back to specific technologies I'd listed on my resume and cover letter. We talked about my experience and thoughts on Sass, Grunt, and the Bourbon ecosystem compared to Bootstrap, their framework of choice.
 
 The most stressful part of this interview was most definitely my code walkthrough. They asked me to walk through my [Pong script](https://github.com/abea/pong/blob/master/scripts/script.js). On one hand, I wrote it, so I know the code well. On the other, I'm not always good at recalling exactly how or why I did something without looking over the code for a bit. I had reviewed this code the night before, however I still said “um” more than I’d like. I also wasn't sure how deeply to go with this. The script is about 250 lines, and after a bit it feels like reading the phone book. I took it step by step, describing the purposes of major object and functions, as well as reasoning behind them, and after about half the file an interviewer graciously said that was enough.
 
@@ -38,7 +39,7 @@ The most stressful part of this interview was most definitely my code walkthroug
 
 ![ Barny Stinson giving a thumbs up ](/img/blog/interview-thumbs-up.gif)
 
-I got a second interview! This one was with the CEO and CFO of IWM. I'd met both of them during my interviews for the non-tech position earlier in the year, so again it helped to not be meeting them for the first time. 
+I got a second interview! This one was with the CEO and CFO of IWM. I'd met both of them during my interviews for the non-tech position earlier in the year, so again it helped to not be meeting them for the first time.
 
 I think I did well on the technical questions, including stuff like "What happens when you type in a URL and hit Enter?" and "What would you do if a web form you were using wouldn't submit?" That first question threw me at first and I started into [the DNS process](https://howdns.works/). He then asked a follow up, which made clear that (duh) he was asking this front end candidate how the browser got and used the file it received from the remote server.
 
