@@ -1,4 +1,6 @@
 .c-footer {
+  margin-top: $spacing-gutter;
+
   @media (min-width: $bp-hands) {
     display: grid;
     grid-template: auto auto / 1fr 1fr;
