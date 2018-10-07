@@ -1,0 +1,42 @@
+{% comment %}
+  Based on https://thinkshout.com/blog/2014/12/creating-dynamic-menus-in-jekyll/.
+
+  First, identify parts of the current page's path.
+{% endcomment %}
+{% assign url_parts = page.path | split: '/' %}
+{% assign url_parts_size = url_parts | size %}
+{% assign rm = url_parts | last %}
+{% assign base_url = page.url | replace: rm %}
+{% comment %}
+  Create an empty array, then loop through site pages, finding subpages
+  of the current page.
+{% endcomment %}
+{% assign subnav = '' | split: '' %}
+
+{% for node in site.pages %}
+  {% if node.url contains base_url and node.url != base_url %}
+    {% assign node_url_parts = node.path | split: '/' %}
+    {% assign node_url_parts_size = node_url_parts | size %}
+    {% assign filename = node_url_parts | last %}
+    {% if url_parts_size == node_url_parts_size %}
+      {% comment %}Add subpages to the subnav array.{% endcomment %}
+      {% capture page_info %}
+         {{node.title}}|{{node.url}}
+      {% endcapture %}
+      {% assign subpage = page_info | split: '::' %}
+      {% assign subnav = subnav | concat: subpage %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% comment %}If there are subnav items, populate a subnav.{% endcomment %}
+{% assign subnav_length = subnav | size %}
+{% if subnav_length > 0 %}
+  <ul class="c-nav__list">
+    {% for p in subnav %}
+      {% assign link_parts = p | split: '|' %}
+      {% assign label = link_parts | first %}
+      {% assign url = link_parts | last %}
+      <li class="c-nav__list__item"><a href='{{url}}'>{{label}}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
