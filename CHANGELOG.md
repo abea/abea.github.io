@@ -4,6 +4,11 @@ title: Changelog
 permalink: /changelog/
 ---
 
+## Monday, October 8, 2018
+
+- Adds post for the end of redesign phase.
+- Reduces home image size for minor performance boost.
+
 ## Saturday, October 6, 2018
 
 - Site no longer looks jacked up.
