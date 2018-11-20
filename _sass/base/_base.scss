@@ -1,7 +1,5 @@
 body {
   border: 2px solid map-get($colors-persephone, 'white');
-  font-family: $font-family-primary;
-  line-height: $lh-base;
   transition: border-color linear 1s;
 
   @media (min-width: $bp-palm) {

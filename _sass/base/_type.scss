@@ -1,3 +1,19 @@
+body {
+  font-family: $font-family-primary;
+  line-height: $lh-base;
+}
+
+p {
+  @include margin(0 null);
+
+  + p {
+    text-indent: $lh-base * 1em;
+  }
+}
+
+// TODO Try adjusting heading and line-height to set vertical rhythm.
+// https://betterwebtype.com/rhythm-in-web-typography
+
 @include all-headers {
   font-family: $font-family-heading;
   font-weight: 600;
