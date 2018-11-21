@@ -1,23 +1,31 @@
+// NOTE: I'm purposesly leaving out most font styles. When I started
+// redesigning by fully defaulting to browser styles I gained an appreciation
+// for both what is provided by browsers and the subtle differences. It's also
+// an education in what various browsers do and do not provide.
+
 body {
   font-family: $font-family-primary;
+  font-size: $font-size-primary;
   line-height: $lh-base;
 }
 
 p {
-  @include margin(0 null);
+  @include margin(0 null .25em);
 
-  + p {
-    text-indent: $lh-base * 1em;
-  }
+  + p { text-indent: $lh-base * 1em; }
 }
 
 // TODO Try adjusting heading and line-height to set vertical rhythm.
 // https://betterwebtype.com/rhythm-in-web-typography
 
 @include all-headers {
+  @include margin(1em null .25em);
   font-family: $font-family-heading;
+  font-display: swap; // NOTE: #PE. Prevents flash of invisible text.
   font-weight: 600;
   line-height: $lh-small;
+
+  &:first-child { margin-top: 0; }
 }
 
 a {
