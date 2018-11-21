@@ -25,7 +25,6 @@ meta:
 
   # Scripts
   google_analytics: "UA-32705264-1"
-  disqus_shortname: "alexbea"
 
   # Localization strings
   str_follow_on: "Follow on"
