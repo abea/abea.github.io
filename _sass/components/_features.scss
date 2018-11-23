@@ -1,0 +1,29 @@
+.c-features {
+  @media (min-width: $bp-hands) {
+    display: grid;
+    grid-gap: $spacing-unit;
+    grid-template: repeat(4, auto) / repeat(2, 50%); // rows / columns
+    grid-template-areas: 'intro project'
+      'photo writing'
+      'photo writing'
+      '... writing';
+  }
+
+  img { max-width: 100%; }
+}
+
+.c-features__intro { grid-area: intro; }
+.c-features__writing { grid-area: writing; }
+.c-features__project { grid-area: project; }
+.c-features__photo {
+  grid-area: photo;
+
+  @supports (object-fit: cover) {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      max-height: none;
+    }
+  }
+}
