@@ -4,17 +4,17 @@ ishome: 1
 ---
 
 <div class="c-features">
-  <section class="c-features__intro c-features__text">
-    <h2>This is me</h2>
+  <section class="c-features__feature c-features__intro">
+    <h2>Howdy</h2>
     <p>
       Greetings! I'm a web developer, husband, uncle, reluctant cat parent, and enthusiastic learner.<br>
       <a href="/about">More about me</a>
     </p>
   </section>
-  <section class="c-features__photo">
+  <section class="c-features__feature c-features__photo">
     <img src="{{ site.baseurl }}/img/alex-bea-small.jpg" alt="headshot photo of Alex Bea">
   </section>
-  <section class="c-features__writing c-features__text">
+  <section class="c-features__feature c-features__writing">
     <h2>Latest writing</h2>
     {% for post in site.posts limit:1 %}
     <article>
@@ -38,7 +38,7 @@ ishome: 1
       <a href="/blog">More writing</a>
     </p>
   </section>
-  <section class="c-features__project c-features__text">
+  <section class="c-features__feature c-features__project">
     <h2>Check it out</h2>
     <p>
       To exercise and gain skills around Node.js, MongoDB, unit testing with Mocha, and building APIs, I built an API that organizes and delivers historical data for Philadelphia's Indego bike share and city weather. Check out <a href="/projects/#bike-history">Philly Bike History</a>.

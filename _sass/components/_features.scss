@@ -1,15 +1,25 @@
 .c-features {
   @media (min-width: $bp-hands) {
     display: grid;
-    grid-gap: $spacing-unit;
-    grid-template: repeat(4, auto) / repeat(2, 50%); // rows / columns
-    grid-template-areas: 'intro project'
-      'photo writing'
-      'photo writing'
-      '... writing';
+    grid-gap: ($spacing-unit * 2) $spacing-unit;
+    grid-template: repeat(3, auto) / repeat(12 1fr); // rows / columns
+    grid-template-areas:
+      'intro intro intro intro intro intro intro intro photo photo photo photo'
+      'project project project project project project writing writing writing writing writing writing'
+      'project project project project project project writing writing writing writing writing writing';
   }
 
   img { max-width: 100%; }
+}
+
+.c-features__feature {
+  + .c-features__feature {
+    margin-top: $spacing-unit * 2;
+
+    @media (min-width: $bp-hands) {
+      margin-top: 0;
+    }
+  }
 }
 
 .c-features__intro { grid-area: intro; }
