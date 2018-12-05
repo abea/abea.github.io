@@ -9,8 +9,13 @@ body {
   line-height: $lh-base;
 }
 
+// NOTE: It still looks a bit odd to me to have little vertical margin on
+// paragraphs and to use text indentation instead. This originally came from
+// my reading https://betterwebtype.com/rhythm-in-web-typography. I almost
+// removed it, but my favorite typographer, Jessica Hische, uses this approach,
+// so I'm going to give it more time.
 p {
-  @include margin(0 null .25em);
+  @include margin(0 null .5em);
 
   + p { text-indent: $lh-base * 1em; }
 }
