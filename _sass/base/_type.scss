@@ -14,9 +14,12 @@ body {
 // my reading https://betterwebtype.com/rhythm-in-web-typography. I almost
 // removed it, but my favorite typographer, Jessica Hische, uses this approach,
 // so I'm going to give it more time.
-p {
+p,
+blockquote {
   @include margin(0 null .5em);
+}
 
+p {
   + p { text-indent: $lh-base * 1em; }
 }
 
@@ -48,5 +51,29 @@ a {
 
   @include all-text (true) {
     border-bottom: 2px solid rgba($color-link, 0.6);
+  }
+}
+
+blockquote {
+  position: relative;
+  margin-left: 0;
+  padding: $spacing-unit 0 $spacing-small $spacing-gutter;
+  // border-left: 2px solid;
+  // border-color: $color-primary;
+  font-weight: 500;
+  color: $color-primary-text;
+
+  &::before {
+    // Convert the hex color to work in a data image.
+    $svg-color: str-replace(inspect($color-primary-text), '#', '%23');
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 1em * $lh-base;
+    width: 1em;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='307.046' height='307.046'%3E%3Cpath d='M239.087 142.427L101.259 4.597c-6.133-6.129-16.073-6.129-22.203 0L67.955 15.698c-6.129 6.133-6.129 16.076 0 22.201l115.621 115.626-115.621 115.61c-6.129 6.136-6.129 16.086 0 22.209l11.101 11.101c6.13 6.136 16.07 6.136 22.203 0l137.828-137.831c6.135-6.127 6.135-16.058 0-22.187z' fill='#{$svg-color}' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

@@ -48,7 +48,8 @@ $colors: $colors-persephone;
 
 $color-text: map-get($colors-grey, dark);
 $color-link: map-get($colors, secondary);
-
+$color-primary: map-get($colors-persephone, primary);
+$color-primary-text: darken($color-primary, 5%);
 // Misc
 // ****
 $border-outline: 1px solid rgba(map-get($colors-grey, dark), 0.25);
