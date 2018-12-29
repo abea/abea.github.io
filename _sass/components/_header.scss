@@ -1,8 +1,10 @@
 .c-header {
+  @include margin($spacing-gutter null);
+
   @media (min-width: $bp-palm) {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: $spacing-unit;
+    grid-gap: $spacing-unit;
     align-items: center;
   }
 }

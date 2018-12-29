@@ -1,5 +1,5 @@
 .c-footer {
-  margin-top: $spacing-gutter;
+  @include margin($spacing-gutter null);
 
   @media (min-width: $bp-hands) {
     display: grid;

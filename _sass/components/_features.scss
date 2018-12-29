@@ -1,0 +1,39 @@
+.c-features {
+  @media (min-width: $bp-hands) {
+    display: grid;
+    grid-gap: ($spacing-unit * 2) $spacing-unit;
+    grid-template: repeat(3, auto) / repeat(12 1fr); // rows / columns
+    grid-template-areas:
+      'intro intro intro intro intro intro intro intro photo photo photo photo'
+      'project project project project project project writing writing writing writing writing writing'
+      'project project project project project project writing writing writing writing writing writing';
+  }
+
+  img { max-width: 100%; }
+}
+
+.c-features__feature {
+  + .c-features__feature {
+    margin-top: $spacing-unit * 2;
+
+    @media (min-width: $bp-hands) {
+      margin-top: 0;
+    }
+  }
+}
+
+.c-features__intro { grid-area: intro; }
+.c-features__writing { grid-area: writing; }
+.c-features__project { grid-area: project; }
+.c-features__photo {
+  grid-area: photo;
+
+  @supports (object-fit: cover) {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      max-height: none;
+    }
+  }
+}
