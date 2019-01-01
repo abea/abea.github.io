@@ -1,6 +1,6 @@
 {% if site.meta.rss %}
 <li class="c-nav__list__item">
-  <a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.meta.str_rss_follow }}"><span class="u-sr-only">RSS</span>
+  <a class="c-icon--circle"  href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="{{ site.meta.str_rss_follow }}"><span class="u-sr-only">RSS</span>
     {% include svgs/rss.svg %}
   </a>
 </li>
@@ -8,7 +8,7 @@
 
 {% if site.meta.email_address %}
 <li class="c-nav__list__item">
-  <a href="mailto:{{ site.meta.email_address }}" title="{{ site.meta.str_email }}"><span class="u-sr-only">Email</span>
+  <a class="c-icon--circle"  href="mailto:{{ site.meta.email_address }}" title="{{ site.meta.str_email }}"><span class="u-sr-only">Email</span>
     {% include svgs/gmail.svg %}
   </a>
 </li>
@@ -16,7 +16,7 @@
 
 {% if site.meta.github %}
 <li class="c-nav__list__item">
-  <a href="https://github.com/{{ site.meta.github }}" title="{{ site.meta.str_follow_on }} GitHub"><span class="u-sr-only">Github</span>
+  <a class="c-icon--circle"  href="https://github.com/{{ site.meta.github }}" title="{{ site.meta.str_follow_on }} GitHub"><span class="u-sr-only">Github</span>
     {% include svgs/github.svg %}
   </a>
 </li>
@@ -24,7 +24,7 @@
 
 {% if site.meta.linkedin %}
 <li class="c-nav__list__item">
-  <a href="{{ site.meta.linkedin }}" title="{{ site.meta.str_follow_on }} LinkedIn"><span class="u-sr-only">LinkedIn</span>
+  <a class="c-icon--circle"  href="{{ site.meta.linkedin }}" title="{{ site.meta.str_follow_on }} LinkedIn"><span class="u-sr-only">LinkedIn</span>
     {% include svgs/linkedin.svg %}
   </a>
 </li>
@@ -32,7 +32,7 @@
 
 {% if site.meta.stack_exchange %}
 <li class="c-nav__list__item">
-  <a href="{{ site.meta.stack_overflow }}" title="{{ site.meta.str_follow_on }} Stack Overflow"><span class="u-sr-only">Stack Overflow</span>
+  <a class="c-icon--circle"  href="{{ site.meta.stack_overflow }}" title="{{ site.meta.str_follow_on }} Stack Overflow"><span class="u-sr-only">Stack Overflow</span>
     {% include svgs/stackoverflow.svg %}
   </a>
 </li>
@@ -40,7 +40,7 @@
 
 {% if site.meta.twitter %}
 <li class="c-nav__list__item">
-  <a href="https://twitter.com/{{ site.meta.twitter }}" title="{{ site.meta.str_follow_on }} Twitter"><span class="u-sr-only">Twitter</span>
+  <a class="c-icon--circle"  href="https://twitter.com/{{ site.meta.twitter }}" title="{{ site.meta.str_follow_on }} Twitter"><span class="u-sr-only">Twitter</span>
     {% include svgs/twitter.svg %}
   </a>
 </li>
