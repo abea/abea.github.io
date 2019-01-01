@@ -39,6 +39,7 @@ $colors-persephone: (
   highlight: #cf3664,
   shadow: #6e1930,
 );
+
 $colors-grey: (
   white: #cfd3d4,
   dark: #1d1f27
@@ -50,6 +51,8 @@ $color-text: map-get($colors-grey, dark);
 $color-link: map-get($colors, secondary);
 $color-primary: map-get($colors-persephone, primary);
 $color-primary-text: darken($color-primary, 5%);
+$color-white: #fff;
+
 // Misc
 // ****
 $border-outline: 1px solid rgba(map-get($colors-grey, dark), 0.25);
