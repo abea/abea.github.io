@@ -1,4 +1,6 @@
 _site
+.git
+.vscode
 .sass-cache
 .DS_Store
 _posts/_drafts
