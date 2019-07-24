@@ -67,4 +67,3 @@ plugins:
   - jekyll-sitemap
   - kramdown
   - rouge
-  - jekyll-redirect-from # Enable redirects
