@@ -15,7 +15,7 @@ meta:
 
   # Icons
   rss: true
-  email_address: "alex.bea@gmail.com" # Full email address
+  email_address: # Full email address
   bitbucket:
   github: "abea" # github profile name
   instagram:

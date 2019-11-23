@@ -17,10 +17,6 @@ I've enjoyed giving talks at my local web development Meetups.
 - [SCSS introduction](http://alexbea.com/2016/06/09/sass-talk.html), Ithaca Web People
 - [Semantic HTML Rules](http://alexbea.com/2016/02/15/semantic-html5-talk.html), Ithaca Web People
 
-## Get in touch
-
-If you're interested in working together or simply discussing generally important or cool matters, send me a message at [alex.bea@gmail.com](mailto:alex.bea@gmail.com). I'll reply as soon as I'm able.
-
 ## Favorite tools
 
 Though I get a little better at resisting playing with all the latest shiny tools every day, I do enjoy a lot that others have created. Here are a bunch that I like and have used while working on this and other sites.
