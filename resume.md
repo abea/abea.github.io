@@ -4,7 +4,7 @@ title: Alexander Bea
 permalink: /resume/
 ---
 
-📧 [Email](mailto:alex.bea@gmail.com) | 
+📧 [Email](mailto:alex.bea@gmail.com) |
 🕴 [LinkedIn](http://www.linkedin.com/in/alexbea) | 
 🐦 [Twitter](https://twitter.com/alexbea)
 
