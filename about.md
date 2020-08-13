@@ -8,7 +8,7 @@ Howdy. I am a web developer and proponent of building efficient, accessible, and
 
 I've always appreciated the power of the web, but [took a roundabout way to becoming a developer]({{ site.meta.linkedin }}). I've been an academic nerd in grad school, studying digital communications. After that I was a digital advocacy nerd, supporting a couple of great climate change and environmental organizations. Finally, I started focusing in on being a web development nerd, as a technical project manager then developer.
 
-I'm constantly on the hunt to learn new things. Some of my favorite sources are [Shop Talk Show](http://shoptalkshow.com/), [Javascript Weekly](https://javascriptweekly.com/), [Responsive Design Weekly](https://responsivedesign.is/), [Toolsday](https://spec.fm/podcasts/toolsday), and of course [tweeters](https://twitter.com/alexbea/lists/web-development).
+I'm constantly on the hunt to learn new things. Some of my favorite sources are [Javascript Weekly](https://javascriptweekly.com/), [Dev.to](https://dev.to/), [Responsive Design Weekly](https://responsivedesign.is/), and of course tweeters.
 
 ## Speaking
 
