@@ -9,7 +9,7 @@ permalink: /uses
 Every developer has their preferred tools for their work. Some change fairly frequently, but these are my core tools and ones that have become steady partners in code.
 
 ## Dev tools
-- **Atom**: I know VS Code is snappier and definitely handles huge files better. Still, I'm keyed in to Atom, it works well, and it feels better to have something run by Github as a cornerstone of my work than by Microsoft.
+- **VS Code**: I finally made the switch from Atom. After some lock-up on large files and wanting to use some features not in Atom, I figured it was time. And since Microsoft owns Github now, avoiding it to support Github doesn't make so much sense.
 - **iTerm**: My lead dev introduced me to iTerm and many of the customizations I still use on my first day of my first full-time dev job. Syntax highlighting and easy split window management are the biggest gains.
 - **[Meslo LG font](https://github.com/andreberg/Meslo-Font)**: I've used this almost since I started using iTerm. It's one of many OSS fonts I downloaded around then and I simply like this one the best for daily work.
 - **[svgo](https://github.com/svg/svgo)**: A fantastic tool to optimize SVGs from the command line. It's more flexible than that, but I mostly use it from the CLI.
