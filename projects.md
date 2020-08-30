@@ -13,10 +13,7 @@ In later 2017, P'unk Avenue (my employer) designed a back end challenge for pros
 
 Put simply, [the challenge](https://github.com/punkave/backend-challenge) was to create an app that would continuously gather both weather and Indego bike station data (the Philadelphia bike share system), then make it available via a new API. The final step was to add a Vue front end. I kept this very basic (frankly as I was ready to move onto other projects), but using the Vue wrapper for Chart.js was an interesting exercise as well. The full requirements are in [the README file](https://github.com/abea/bike-history#requirements).
 
-[Check out the code on Github](https://github.com/abea/bike-history). The live API is currently available at [indego-history.herokuapp.com](https://indego-history.herokuapp.com). And a few API calls to get you started:
-- [one station at one time](https://indego-history.herokuapp.com/api/v1/stations/3004?at=2019-02-10T22:00)
-- [all stations at one time](https://indego-history.herokuapp.com/api/v1/stations?at=2019-02-10T12:00)
-- [one station over time](https://indego-history.herokuapp.com/api/v1/stations/3101?from=2019-02-10T12:00&to=2019-02-12T12:00)
+[Check out the code on Github](https://github.com/abea/bike-history).
 
 ## <a name="localhost-swap"></a>Localhost Swap
 I do support on legacy websites every day. That often being asked to diagnose or change something that someone noticed on a specific page of a website--work that I do running a local version of the website. Most humans (like me before today) would click into the address bar, copy the URL path (the URL after the domain), and paste it after `localhost:3000` or whatever port they might be using.
