@@ -14,29 +14,5 @@ ishome: 1
   <section class="c-features__feature c-features__photo">
     <img src="{{ site.baseurl }}/img/alex-bea-small.jpg" alt="headshot photo of Alex Bea">
   </section>
-  <section class="c-features__feature c-features__writing">
-    <h2>Latest writing</h2>
-    {% for post in site.posts limit:1 %}
-    <article>
-      <header>
-        <h3>
-          <a href="{{ post.url | prepend: site.baseurl }}">
-            {{ post.title }}
-          </a>
-        </h3>
-        <time datetime="{{ post.date }}">
-          {{ post.date | date: "%B %-d, %Y" }}
-        </time>
-      </header>
-      <p>
-        {{ post.excerpt | strip_html | strip_newlines | truncate: 400 }}<br/>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ site.meta.str_read_more }}</a>
-      </p>
-    </article>
-    {% endfor %}
-    <p>
-      <a href="/blog">More writing</a>
-    </p>
-  </section>
   <section class="c-features__feature c-features__project"></section>
 </div>

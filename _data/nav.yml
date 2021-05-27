@@ -2,8 +2,6 @@ docs_list_title: Primary navigation
 docs:
 - title: About
   url: /about
-- title: Writing
-  url: /blog
 - title: Projects
   url: /projects
 - title: Work
